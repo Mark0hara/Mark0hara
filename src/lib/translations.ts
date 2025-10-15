@@ -128,17 +128,22 @@ export const translations = {
         {
           name: "AWS Certified Cloud Practitioner",
           logo: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png",
-          status: "Completed"
+          status: "Completed",
+          credlyUrl: "https://www.credly.com/badges/c81c5fdb-1736-413e-b37c-316ed9d9e985/linked_in_profile"
         },
         {
-          name: "Advanced English C1 (EFE SET)",
+          name: "Advanced English C1 (EF SET)",
           logo: "https://pbs.twimg.com/profile_images/1846105019013013504/XUA9kTZh_400x400.jpg",
-          status: "Completed"
+          status: "Completed",
+          certificateUrl: "https://cert.efset.org/ZWypQE",
+          pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
         },
         {
           name: "Cybersecurity Bootcamp (DigitalTalent/DesafioLatam)",
           logo: "https://camo.githubusercontent.com/1b92fb3d095f38ef9d281f69d9133fcd8123e901a95e19d7548befa5a00e9f2c/68747470733a2f2f6465736166696f6c6174616d2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032342f30352f63726f707065642d666c617469636f6e2d6c6174616d2e706e67",
-          status: "Completed"
+          status: "Completed",
+          certificateUrl: "https://desafiosdev.s3.amazonaws.com/uploads/certification/image/770/certificacion-aprobacion-de-carrera-nuevo-g1-m10-seguridad-en-redes-de-datos-desarrollo-de-empleabilidad-en-la-industria-digital-para-especialidades-ele069875088642-505(3).png",
+          pdfPath: "/certificates/Certificado_Seguridad.pdf"
         },
         {
           name: "AWS Solutions Architect Associate",
@@ -339,17 +344,22 @@ export const translations = {
         {
           name: "AWS Certified Cloud Practitioner",
           logo: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png",
-          status: "Completado"
+          status: "Completado",
+          credlyUrl: "https://www.credly.com/badges/c81c5fdb-1736-413e-b37c-316ed9d9e985/linked_in_profile"
         },
         {
           name: "Inglés Avanzado C1 (EF SET)",
           logo: "https://pbs.twimg.com/profile_images/1846105019013013504/XUA9kTZh_400x400.jpg",
-          status: "Completado"
+          status: "Completado",
+          certificateUrl: "https://cert.efset.org/ZWypQE",
+          pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
         },
         {
           name: "Bootcamp Ciberseguridad (Talento Digital)",
           logo: "https://camo.githubusercontent.com/1b92fb3d095f38ef9d281f69d9133fcd8123e901a95e19d7548befa5a00e9f2c/68747470733a2f2f6465736166696f6c6174616d2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032342f30352f63726f707065642d666c617469636f6e2d6c6174616d2e706e67",
-          status: "Completado"
+          status: "Completado",
+          certificateUrl: "https://desafiosdev.s3.amazonaws.com/uploads/certification/image/770/certificacion-aprobacion-de-carrera-nuevo-g1-m10-seguridad-en-redes-de-datos-desarrollo-de-empleabilidad-en-la-industria-digital-para-especialidades-ele069875088642-505(3).png",
+          pdfPath: "/certificates/Certificado_Seguridad.pdf"
         },
         {
           name: "AWS Solutions Architect Associate",

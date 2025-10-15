@@ -1,8 +1,9 @@
 import React from 'react';
-import { Award, CheckCircle, Clock } from 'lucide-react';
+import { Award, CheckCircle, Clock, ExternalLink, Download } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const Certifications: React.FC = () => {
   const { t } = useLanguage();
@@ -63,10 +64,55 @@ const Certifications: React.FC = () => {
                         )}
                       </Badge>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                       <Award className="w-4 h-4 text-primary" />
                       <span>Professional Certification</span>
                     </div>
+                    
+                    {/* Certificate Links */}
+                    {(cert.credlyUrl || cert.certificateUrl || cert.pdfPath) && (
+                      <div className="flex flex-wrap gap-2">
+                        {cert.credlyUrl && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="gap-2"
+                            asChild
+                          >
+                            <a href={cert.credlyUrl} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-3 h-3" />
+                              Ver Certificado
+                            </a>
+                          </Button>
+                        )}
+                        {cert.certificateUrl && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="gap-2"
+                            asChild
+                          >
+                            <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-3 h-3" />
+                              Ver en Línea
+                            </a>
+                          </Button>
+                        )}
+                        {cert.pdfPath && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="gap-2"
+                            asChild
+                          >
+                            <a href={cert.pdfPath} target="_blank" rel="noopener noreferrer">
+                              <Download className="w-3 h-3" />
+                              Descargar PDF
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
