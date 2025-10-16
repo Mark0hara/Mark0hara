@@ -91,8 +91,8 @@
 ### 🔹 [Network Infrastructure Monitoring](https://github.com/Mark0hara/Network-Infrastructure-Monitoring)  
 Comprehensive monitoring solution for network infrastructure using Python and AWS cloud.  
 
-### 🔹 [Cybersecurity Threat Detection](https://github.com/Mark0hara/acme-express)  
-Automated threat detection system implementing security best practices.
+### 🔹 [Cloud Zabbix Monitoring](https://mark-o-hara-it.vercel.app)  
+Deploying and monitoring AWS cloud with Zabbix in the cloud
 
 ###  🔹 [Portfolio Web](https://mark-o-hara-it.vercel.app)  
 Personal portfolio displayed on Vercel and Firebase. 
