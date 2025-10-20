@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import ciscoLogo from '@/assets/cisco.png';
+import packetTracerLogo from '@/assets/packet-tracer.png';
 
 const Portfolio: React.FC = () => {
   const { t } = useLanguage();
@@ -36,10 +38,10 @@ const Portfolio: React.FC = () => {
       'Zabbix': 'https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png',
       'Linux': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
       'GNS3': 'https://www.gns3.com/assets/custom/gns3/images/logo-colour.png',
-      'Packet Tracer': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg',
+      'Packet Tracer': packetTracerLogo,
       'Networking': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
       'Redes': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
-      'Cisco': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg',
+      'Cisco': ciscoLogo,
       'Cybersecurity': 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png',
       'Ciberseguridad': 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png',
       'OSPF': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
