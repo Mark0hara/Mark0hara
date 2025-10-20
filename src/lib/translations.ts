@@ -199,11 +199,11 @@ export const translations = {
           status: "In Progress"
         },
         {
-          title: "Network Configuration with GNS3",
-          description: "Advanced network topology design and simulation using GNS3 for enterprise environments.",
-          technologies: ["GNS3", "Networking", "Cisco"],
-          githubUrl: "https://github.com/marco-jara",
-          status: "In Progress"
+          title: "Real Network Configurations with Packet Tracer",
+          description: "Advanced network topology design and simulation using Cisco Packet Tracer, based on real enterprise projects I have worked on.",
+          technologies: ["Cisco", "Packet Tracer", "Networking", "Cybersecurity"],
+          githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
+          status: "Completed"
         },
         {
           title: "Portfolio-Tuto",
@@ -415,11 +415,11 @@ export const translations = {
           status: "En Progreso"
         },
         {
-          title: "Configuración de Redes con GNS3",
-          description: "Diseño y simulación de topologías de red avanzadas usando GNS3 para entornos empresariales.",
-          technologies: ["GNS3", "Redes", "Cisco"],
-          githubUrl: "https://github.com/marco-jara",
-          status: "En Progreso"
+          title: "Configuraciones Reales de Red con Packet Tracer",
+          description: "Diseño avanzado de topologías de red y simulación utilizando Cisco Packet Tracer, basado en proyectos reales de empresas en los que he trabajado.",
+          technologies: ["Cisco", "Packet Tracer", "Redes", "Ciberseguridad"],
+          githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
+          status: "Completado"
         },
         {
           title: "Portfolio-Tuto",

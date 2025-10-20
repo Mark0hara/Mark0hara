@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ExternalLink, ArrowRight } from 'lucide-react';
+import { Github, ExternalLink, ArrowRight, GitBranch } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -36,9 +36,12 @@ const Portfolio: React.FC = () => {
       'Zabbix': 'https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png',
       'Linux': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
       'GNS3': 'https://www.gns3.com/assets/custom/gns3/images/logo-colour.png',
+      'Packet Tracer': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg',
       'Networking': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
       'Redes': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
       'Cisco': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg',
+      'Cybersecurity': 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png',
+      'Ciberseguridad': 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png',
       'OSPF': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
       'Boto3': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
       'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -50,6 +53,8 @@ const Portfolio: React.FC = () => {
     
     return images[tech] || '';
   };
+
+  const isGitLabUrl = (url: string) => url.includes('gitlab.com');
 
   return (
     <section id="portfolios" className="py-20 px-4 relative overflow-hidden">
@@ -138,7 +143,11 @@ const Portfolio: React.FC = () => {
                     className="flex-1 btn-hover-effect btn-shine arrow-hover group/btn transition-all duration-300 hover:-translate-y-1"
                     onClick={() => window.open(project.githubUrl, '_blank')}
                   >
-                    <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
+                    {isGitLabUrl(project.githubUrl) ? (
+                      <GitBranch className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
+                    ) : (
+                      <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
+                    )}
                     {t.portfolios.viewCode}
                     <ArrowRight className="w-4 h-4 ml-auto arrow-icon" />
                   </Button>
