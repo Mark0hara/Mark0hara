@@ -187,7 +187,7 @@ export const translations = {
         {
           title: "Network Infrastructure Monitoring",
           description: "Comprehensive monitoring solution for network infrastructure using Python and cloud platforms.",
-          technologies: ["Python", "AWS CloudWatch"],
+          technologies: ["Python", "AWS"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
@@ -201,7 +201,7 @@ export const translations = {
         {
           title: "Real Network Configurations with Packet Tracer",
           description: "Advanced network topology design and simulation using Cisco Packet Tracer, based on real enterprise projects I have worked on.",
-          technologies: ["Cisco", "Packet Tracer", "Networking", "Cybersecurity"],
+          technologies: ["Cisco", "Packet Tracer", "Cybersecurity"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
         },
@@ -403,7 +403,7 @@ export const translations = {
         {
           title: "Monitoreo de Infraestructura de Red",
           description: "Solución integral de monitoreo para infraestructura de red usando Python y plataformas cloud.",
-          technologies: ["Python", "AWS CloudWatch"],
+          technologies: ["Python", "AWS"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
@@ -417,7 +417,7 @@ export const translations = {
         {
           title: "Configuraciones Reales de Red con Packet Tracer",
           description: "Diseño avanzado de topologías de red y simulación utilizando Cisco Packet Tracer, basado en proyectos reales de empresas en los que he trabajado.",
-          technologies: ["Cisco", "Packet Tracer", "Redes", "Ciberseguridad"],
+          technologies: ["Cisco", "Packet Tracer", "Ciberseguridad"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completado"
         },
