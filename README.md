@@ -92,8 +92,8 @@
 ### 🔹 [Network Infrastructure Monitoring](https://github.com/Mark0hara/Network-Infrastructure-Monitoring)  
 Comprehensive monitoring solution for network infrastructure using Python and AWS cloud.  
 
-### 🔹 [Cloud Zabbix Monitoring](https://mark-o-hara-it.vercel.app)  
-Deploying and monitoring AWS cloud with Zabbix in the cloud
+### 🔹 [Network Configs](https://gitlab.com/mark-o-hara/network-configs)  
+Here I show how I design and manage robust network infrastructures.
 
 ###  🔹 [Portfolio Web](https://mark-o-hara-it.vercel.app)  
 Personal portfolio displayed on Vercel and Firebase. 
