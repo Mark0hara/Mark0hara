@@ -59,9 +59,10 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Server" width="45" height="45"/>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" width="45" height="45"/>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="45" height="45"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/250px-Cisco_logo_blue_2016.svg.png" alt="Cisco" width="50" height="50"/>
       </p>
       <p>
-        <strong>Remote Support • Windows Server • Jira/ServiceNow • Hardware/Software • Linux</strong>
+        <strong>Remote Support • Windows Server • Jira/ServiceNow • Hardware/Software • Linux • Cisco</strong>
       </p>
     </td>
   </tr>
