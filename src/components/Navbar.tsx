@@ -69,10 +69,11 @@ const Navbar: React.FC = () => {
                 onClick={toggleLanguage}
                 variant="outline"
                 size="sm"
-                className="hover-glow hover-lift magnetic-hover group"
+                className="hover-glow hover-lift magnetic-hover group relative overflow-hidden"
               >
-                <Globe className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" />
-                {language.toUpperCase()}
+                <Globe className="w-4 h-4 mr-2 transition-all duration-500 group-hover:rotate-180 group-hover:scale-110" />
+                <span className="transition-all duration-300 group-hover:scale-105">{language.toUpperCase()}</span>
+                <div className="absolute inset-0 bg-primary/10 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-md" />
               </Button>
             </div>
           </div>
@@ -91,9 +92,10 @@ const Navbar: React.FC = () => {
               onClick={toggleLanguage}
               variant="outline"
               size="sm"
-              className="hover-lift"
+              className="hover-lift relative overflow-hidden group"
             >
-              <Globe className="w-4 h-4" />
+              <Globe className="w-4 h-4 transition-all duration-500 group-hover:rotate-180" />
+              <div className="absolute inset-0 bg-primary/10 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-md" />
             </Button>
             <Button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
