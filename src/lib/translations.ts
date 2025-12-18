@@ -1,3 +1,4 @@
+// Translations for EN and ES
 export const translations = {
   en: {
     nav: {
