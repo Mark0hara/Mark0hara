@@ -10,9 +10,12 @@ import Contact from '@/components/Contact';
 import ScrollProgress from '@/components/ScrollProgress';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import { useKonamiCode } from '@/hooks/useKonamiCode';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { toast } from 'sonner';
 
 const Index = () => {
+  const { isTransitioning } = useLanguage();
+
   // Easter egg: Konami code
   useKonamiCode(() => {
     toast('🎮 Konami Code Activated!', {
@@ -41,8 +44,9 @@ const Index = () => {
       }, i * 50);
     }
   });
+
   return (
-    <div className="min-h-screen relative">
+    <div className={`min-h-screen relative ${isTransitioning ? 'language-glitch' : ''}`}>
       {/* Unified gradient background */}
       <div className="fixed inset-0 bg-gradient-to-br from-background via-background to-secondary/10 dark:from-background dark:via-background dark:to-primary/5 transition-colors duration-500" />
       
@@ -54,6 +58,14 @@ const Index = () => {
       
       {/* Particles background */}
       <ParticlesBackground />
+      
+      {/* Glitch overlay effect */}
+      {isTransitioning && (
+        <div className="fixed inset-0 z-50 pointer-events-none">
+          <div className="glitch-overlay" />
+          <div className="glitch-scanlines" />
+        </div>
+      )}
       
       <div className="relative z-10">
         <Navbar />
