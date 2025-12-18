@@ -22,7 +22,7 @@ export const translations = {
       jobs: [
         {
           company: "Fiverr/Freelance",
-          companyLogo: "https://fiverr-res.cloudinary.com/npm-assets/layout-service/standard.0638957.png",
+          companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
           position: "IT Support Engineer",
           location: "Remote",
           period: "January 2025 – December 2025",
@@ -157,10 +157,10 @@ export const translations = {
           pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
         },
         {
-          name: "Cybersecurity Bootcamp (DigitalTalent/DesafioLatam)",
-          logo: "https://camo.githubusercontent.com/1b92fb3d095f38ef9d281f69d9133fcd8123e901a95e19d7548befa5a00e9f2c/68747470733a2f2f6465736166696f6c6174616d2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032342f30352f63726f707065642d666c617469636f6e2d6c6174616d2e706e67",
+          name: "Data Network Security - Specialization",
+          logo: "https://www.acreditta.com/_next/image?url=https%3A%2F%2Facreditta-rutas-prod.s3.amazonaws.com%2Fmedia%2Fpublic%2Fbadge_templates%2Fimages%2F1640_badge_template_4ad4f3a4-1cbb-4493-b92a-4df013da5f7d%2Fmedium.png%3Ftime%3D1766074817936&w=1920&q=75",
           status: "Completed",
-          certificateUrl: "https://desafiosdev.s3.amazonaws.com/uploads/certification/image/770/certificacion-aprobacion-de-carrera-nuevo-g1-m10-seguridad-en-redes-de-datos-desarrollo-de-empleabilidad-en-la-industria-digital-para-especialidades-ele069875088642-505(3).png",
+          certificateUrl: "https://www.acreditta.com/credential/4eac24dc-ed6c-4483-8084-30e6da7a4bdd",
           pdfPath: "/certificates/Certificado_Seguridad.pdf"
         },
         {
@@ -255,7 +255,7 @@ export const translations = {
       jobs: [
         {
           company: "Fiverr/Autónomo",
-          companyLogo: "https://fiverr-res.cloudinary.com/npm-assets/layout-service/standard.0638957.png",
+          companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
           position: "Ingeniero de Soporte TI",
           location: "Remoto",
           period: "Enero 2025 – Diciembre 2025",
@@ -390,11 +390,10 @@ export const translations = {
           pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
         },
         {
-          name: "Bootcamp Ciberseguridad (Talento Digital)",
-          logo: "https://camo.githubusercontent.com/1b92fb3d095f38ef9d281f69d9133fcd8123e901a95e19d7548befa5a00e9f2c/68747470733a2f2f6465736166696f6c6174616d2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032342f30352f63726f707065642d666c617469636f6e2d6c6174616d2e706e67",
+          name: "Seguridad En Redes De Datos - Especialidad",
+          logo: "https://www.acreditta.com/_next/image?url=https%3A%2F%2Facreditta-rutas-prod.s3.amazonaws.com%2Fmedia%2Fpublic%2Fbadge_templates%2Fimages%2F1640_badge_template_4ad4f3a4-1cbb-4493-b92a-4df013da5f7d%2Fmedium.png%3Ftime%3D1766074817936&w=1920&q=75",
           status: "Completado",
-          certificateUrl: "https://desafiosdev.s3.amazonaws.com/uploads/certification/image/770/certificacion-aprobacion-de-carrera-nuevo-g1-m10-seguridad-en-redes-de-datos-desarrollo-de-empleabilidad-en-la-industria-digital-para-especialidades-ele069875088642-505(3).png",
-          pdfPath: "/certificates/Certificado_Seguridad.pdf"
+          certificateUrl: "https://www.acreditta.com/credential/4eac24dc-ed6c-4483-8084-30e6da7a4bdd"
         },
         {
           name: "AWS Solutions Architect Associate",
