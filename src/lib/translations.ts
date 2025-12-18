@@ -20,6 +20,21 @@ export const translations = {
       title: "Professional Experience",
       jobs: [
         {
+          company: "Fiverr/Freelance",
+          companyLogo: "https://fiverr-res.cloudinary.com/npm-assets/layout-service/standard.0638957.png",
+          position: "IT Support Engineer",
+          location: "Remote",
+          period: "January 2025 – December 2025",
+          achievements: [
+            "Level 1 and 2 technical support for international clients via AnyDesk and TeamViewer.",
+            "User administration in Microsoft 365 and Exchange Online.",
+            "Implementation of monitoring, technical documentation, and procedures.",
+            "TCP/IP network troubleshooting, VPN, and security policies.",
+            "Problem management (root cause analysis) and technical reports.",
+            "+50 clients served with outstanding evaluations."
+          ]
+        },
+        {
           company: "National Institute of Statistics",
           companyLogo: "censo",
           position: "IT Support Manager",
@@ -235,6 +250,21 @@ export const translations = {
     experience: {
       title: "Experiencia Profesional",
       jobs: [
+        {
+          company: "Fiverr/Autónomo",
+          companyLogo: "https://fiverr-res.cloudinary.com/npm-assets/layout-service/standard.0638957.png",
+          position: "Ingeniero de Soporte TI",
+          location: "Remoto",
+          period: "Enero 2025 – Diciembre 2025",
+          achievements: [
+            "Soporte técnico Nivel 1 y 2 para clientes internacionales vía AnyDesk y TeamViewer.",
+            "Administración de usuarios en Microsoft 365 y Exchange Online.",
+            "Implementación de monitoreo, documentación técnica y procedimientos.",
+            "Troubleshooting de redes TCP/IP, VPN y políticas de seguridad.",
+            "Gestión de problemas (root cause analysis) y reportes técnicos.",
+            "+50 clientes atendidos con evaluaciones sobresalientes."
+          ]
+        },
         {
           company: "Instituto Nacional de Estadísticas",
           companyLogo: "censo",
