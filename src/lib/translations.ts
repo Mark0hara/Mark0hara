@@ -142,6 +142,9 @@ export const translations = {
     },
     certifications: {
       title: "Certifications",
+      viewCertificate: "View Certificate",
+      viewOnline: "View Online",
+      downloadPdf: "Download PDF",
       items: [
         {
           name: "AWS Certified Cloud Practitioner",
@@ -375,6 +378,9 @@ export const translations = {
     },
     certifications: {
       title: "Certificaciones",
+      viewCertificate: "Ver Certificado",
+      viewOnline: "Ver en Línea",
+      downloadPdf: "Descargar PDF",
       items: [
         {
           name: "AWS Certified Cloud Practitioner",
@@ -393,7 +399,8 @@ export const translations = {
           name: "Seguridad En Redes De Datos - Especialidad",
           logo: "https://www.acreditta.com/_next/image?url=https%3A%2F%2Facreditta-rutas-prod.s3.amazonaws.com%2Fmedia%2Fpublic%2Fbadge_templates%2Fimages%2F1640_badge_template_4ad4f3a4-1cbb-4493-b92a-4df013da5f7d%2Fmedium.png%3Ftime%3D1766074817936&w=1920&q=75",
           status: "Completado",
-          certificateUrl: "https://www.acreditta.com/credential/4eac24dc-ed6c-4483-8084-30e6da7a4bdd"
+          certificateUrl: "https://www.acreditta.com/credential/4eac24dc-ed6c-4483-8084-30e6da7a4bdd",
+          pdfPath: "/certificates/Certificado_Seguridad.pdf"
         },
         {
           name: "AWS Solutions Architect Associate",

@@ -79,9 +79,9 @@ const Certifications: React.FC = () => {
                             className="gap-2"
                             asChild
                           >
-                            <a href={cert.credlyUrl} target="_blank" rel="noopener noreferrer">
+                          <a href={cert.credlyUrl} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="w-3 h-3" />
-                              Ver Certificado
+                              {t.certifications.viewCertificate}
                             </a>
                           </Button>
                         )}
@@ -94,7 +94,7 @@ const Certifications: React.FC = () => {
                           >
                             <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="w-3 h-3" />
-                              Ver en Línea
+                              {t.certifications.viewOnline}
                             </a>
                           </Button>
                         )}
@@ -107,7 +107,7 @@ const Certifications: React.FC = () => {
                           >
                             <a href={cert.pdfPath} target="_blank" rel="noopener noreferrer">
                               <Download className="w-3 h-3" />
-                              Descargar PDF
+                              {t.certifications.downloadPdf}
                             </a>
                           </Button>
                         )}
