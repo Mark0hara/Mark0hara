@@ -41,9 +41,10 @@ export const translations = {
           location: "Santiago, Paseo Bulnes",
           period: "January 2024 – July 2024",
           achievements: [
-            "Led the implementation of mobile devices for the National Census 2024.",
-            "Provided technical support for notebooks, routers, and mobile devices.",
-            "Coordinated equipment delivery and technical documentation, reducing incident resolution times by 30%."
+            "Monitored critical distributed infrastructure during national census operations.",
+            "Coordinated and deployed over 300 devices, reducing incidents and response times by 30%.",
+            "Performed incident diagnosis, escalation, and documentation following ITIL standards.",
+            "Produced technical reports and updated internal knowledge base."
           ]
         },
         {
@@ -53,9 +54,10 @@ export const translations = {
           location: "Santiago, Macul",
           period: "May 2023 – December 2023",
           achievements: [
-            "Implemented cybersecurity solutions with Kaspersky, achieving 100% threat detection and containment.",
-            "Automated capacity and performance reports in AWS CloudWatch, preventing cloud overutilization costs by 20%.",
-            "Optimized Office 365 license and account management, improving operational continuity."
+            "Managed user access, permissions, and licensing across cloud and on-prem environments.",
+            "Built automated AWS-based reporting to improve resource visibility and operational compliance by 20%.",
+            "Performed remote diagnostics and incident analysis using enterprise support tools.",
+            "Role relevance: cloud operations, automation, governance, access control, monitoring."
           ]
         }
       ]
@@ -272,9 +274,10 @@ export const translations = {
           location: "Santiago, Paseo Bulnes",
           period: "Enero 2024 – Julio 2024",
           achievements: [
-            "Lideré la implementación de dispositivos móviles para el Censo Nacional 2024.",
-            "Brindé soporte técnico para notebooks, routers y equipos móviles.",
-            "Coordiné la entrega de equipos y documentación técnica, reduciendo tiempos de resolución en 30%."
+            "Monitoreo de infraestructura crítica distribuida durante operaciones del censo nacional.",
+            "Coordinación y despliegue de más de 300 dispositivos, reduciendo incidentes y tiempos de respuesta en 30%.",
+            "Diagnóstico de incidentes, escalamiento y documentación siguiendo estándares ITIL.",
+            "Elaboración de reportes técnicos y actualización de base de conocimiento interna."
           ]
         },
         {
@@ -284,9 +287,10 @@ export const translations = {
           location: "Santiago, Macul",
           period: "Mayo 2023 – Diciembre 2023",
           achievements: [
-            "Implementé soluciones de ciberseguridad con Kaspersky, logrando 100% de detección y contención de amenazas.",
-            "Automaticé reportes de capacidad en AWS CloudWatch, previniendo costos por sobreuso en 20%.",
-            "Optimicé la administración de licencias Office 365, mejorando la continuidad operativa."
+            "Gestión de accesos de usuarios, permisos y licencias en entornos cloud y on-prem.",
+            "Desarrollo de reportes automatizados basados en AWS para mejorar visibilidad de recursos y cumplimiento operativo en 20%.",
+            "Diagnóstico remoto y análisis de incidentes utilizando herramientas de soporte empresarial.",
+            "Relevancia del rol: operaciones cloud, automatización, gobernanza, control de acceso, monitoreo."
           ]
         }
       ]
