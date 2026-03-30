@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
     { href: '#home', label: t.nav.home },
     { href: '#experience', label: t.nav.experience },
     { href: '#skills', label: t.nav.skills },
+    { href: '#methodology', label: t.nav.methodology },
     { href: '#certifications', label: t.nav.certifications },
     { href: '#portfolios', label: t.nav.portfolios },
     { href: '#contact', label: t.nav.contact },
