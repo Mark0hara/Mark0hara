@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Shield, Terminal, Network, Box, Activity, Mail, Code, Server, BookOpen, Users, Brain, Globe, Cloud, Database } from 'lucide-react';
+import { Shield, Terminal, Network, Box, Activity, Mail, Code, Server, BookOpen, Users, Brain, Globe, Cloud, Database, Search, FileText, Wrench } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const SkillsCloud = () => {
@@ -12,22 +12,14 @@ const SkillsCloud = () => {
     'AWS': Cloud,
     'Linux': Terminal,
     'Networking': Network,
+    'CloudWatch': Activity,
     'Zabbix': Activity,
-    'Microsoft 365': Mail,
-    'Windows Server': Server,
-    'Cybersecurity': Shield,
-    'Ciberseguridad': Shield,
-    'Virtualization': Box,
-    'Virtualización': Box,
     'Python': Code,
     'PowerShell': Terminal,
     'ITIL': BookOpen,
-    'Leadership': Users,
-    'Liderazgo': Users,
-    'Teamwork': Users,
-    'Trabajo en equipo': Users,
-    'Analytical Thinking': Brain,
-    'Pensamiento analítico': Brain,
+    'Troubleshooting': Wrench,
+    'Documentation': FileText,
+    'Documentación': FileText,
     'Advanced English': Globe,
     'Inglés Avanzado': Globe
   };
