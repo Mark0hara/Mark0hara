@@ -4,61 +4,67 @@ export const translations = {
     nav: {
       home: "Home",
       experience: "Experience",
-      skills: "Skills",
+      skills: "Tech Stack",
+      methodology: "Methodology",
       certifications: "Certifications",
-      portfolios: "Portfolios",
+      portfolios: "Projects",
       contact: "Contact",
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "Cloud & Network Engineer",
+      subtitle: "Cloud Support Engineer",
       location: "Santiago - Chile",
-      description: "Telecommunications and Network Engineer with experience in IT support, cloud platform administration, and cybersecurity projects. I have managed solutions on AWS and Microsoft, optimizing resources and strengthening IT security.",
+      description: "Cloud-focused engineer with hands-on experience in AWS infrastructure, incident troubleshooting, and monitoring. Proven track record resolving L1/L2 incidents, automating operational tasks, and maintaining high-availability environments.",
       downloadCV: "Download CV",
-      contactMe: "Contact Me",
+      contactMe: "Let's Talk",
+      bullets: [
+        "AWS Certified — EC2, S3, IAM, CloudWatch, Lambda, Cost Explorer",
+        "L1/L2 Incident Response — RCA, escalation, ITIL-based workflows",
+        "Monitoring & Alerting — Zabbix, CloudWatch dashboards, SNS notifications"
+      ]
     },
     experience: {
       title: "Professional Experience",
       jobs: [
         {
-          company: "Fiverr/Freelance",
+          company: "Fiverr / Freelance",
           companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
-          position: "IT Support Engineer",
+          position: "IT Support Engineer (L1/L2)",
           location: "Remote",
           period: "January 2025 – December 2025",
           achievements: [
-            "Level 1 and 2 technical support for international clients via AnyDesk and TeamViewer.",
-            "User administration in Microsoft 365 and Exchange Online.",
-            "Implementation of monitoring, technical documentation, and procedures.",
-            "TCP/IP network troubleshooting, VPN, and security policies.",
-            "Problem management (root cause analysis) and technical reports.",
-            "+50 clients served with outstanding evaluations."
+            "Delivered L1/L2 remote support for 50+ international clients via AnyDesk and TeamViewer with outstanding ratings.",
+            "Administered Microsoft 365 tenants: user provisioning, Exchange Online, conditional access policies.",
+            "Performed TCP/IP, DNS, DHCP, and VPN troubleshooting across Windows and Linux environments.",
+            "Conducted root cause analysis (RCA) on recurring incidents and documented resolutions in internal KB.",
+            "Built monitoring procedures and standardized technical documentation for client onboarding.",
+            "Applied ITIL-aligned workflows for incident management, escalation, and change requests."
           ]
         },
         {
           company: "National Institute of Statistics",
           companyLogo: "censo",
-          position: "IT Support Manager",
+          position: "Infrastructure Support Lead",
           location: "Santiago, Paseo Bulnes",
           period: "January 2024 – July 2024",
           achievements: [
-            "Monitored critical distributed infrastructure during national census operations.",
-            "Coordinated and deployed over 300 devices, reducing incidents and response times by 30%.",
-            "Performed incident diagnosis, escalation, and documentation following ITIL standards.",
-            "Produced technical reports and updated internal knowledge base."
+            "Monitored critical distributed infrastructure (300+ endpoints) during national census operations using centralized dashboards.",
+            "Coordinated device deployment and provisioning, reducing incident response time by 30%.",
+            "Performed real-time incident triage, escalation, and resolution following ITIL standards.",
+            "Produced operational reports and maintained internal knowledge base for field support teams."
           ]
         },
         {
           company: "SC Informática",
           companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "Project Management Engineer and IT Administrator",
+          position: "Cloud Operations & IT Administrator",
           location: "Santiago, Macul",
           period: "May 2023 – December 2023",
           achievements: [
-            "Managed user access, permissions, and licensing across cloud and on-prem environments.",
-            "Built automated AWS-based reporting to improve resource visibility and operational compliance by 20%.",
-            "Performed remote diagnostics and incident analysis using enterprise support tools.",
-            "Role relevance: cloud operations, automation, governance, access control, monitoring."
+            "Managed IAM policies, user access, and licensing across AWS and Microsoft 365 environments.",
+            "Built automated AWS-based reporting (Boto3 + CloudWatch) improving resource visibility and compliance by 20%.",
+            "Performed remote diagnostics and incident analysis using enterprise ticketing and support tools.",
+            "Owned cloud operations tasks: cost monitoring, access governance, and infrastructure documentation."
           ]
         }
       ]
@@ -71,74 +77,96 @@ export const translations = {
       period: "2018 – 2023"
     },
     skills: {
-      title: "Technical Stack",
-      subtitle: "Explore my technical and soft skills 🌟 Move the mouse or touch to interact",
+      title: "Tech Stack",
+      subtitle: "Core technologies I work with daily. Move the mouse or touch to interact 🔧",
       cloud: [
-        { name: 'AWS', description: 'EC2, S3, Lambda, CloudWatch, IAM, Cost Optimization' },
-        { name: 'Cybersecurity', description: 'Kaspersky, Firewalls, IDS/IPS, Vulnerability Analysis' },
-        { name: 'IT Administration', description: 'Windows Server, Active Directory, GPO, Office 365' },
-        { name: 'Python', description: 'Automation, scripting, APIs, AWS Boto3' },
-        { name: 'Linux', description: 'Ubuntu, CentOS, Bash scripting, systemd' },
-        { name: 'Networking', description: 'TCP/IP, VLANs, VPN, DNS, DHCP, Routing' },
+        { name: 'AWS', description: 'EC2, S3, Lambda, CloudWatch, IAM, VPC, Cost Explorer, SNS' },
+        { name: 'Linux', description: 'Ubuntu, CentOS, Bash scripting, systemd, journalctl, cron' },
+        { name: 'Networking', description: 'TCP/IP, DNS, DHCP, VPN, VLANs, SNMP, Routing, Subnetting' },
       ],
       development: [
-        { name: 'Zabbix', description: 'Infrastructure monitoring, alerts, custom dashboards' },
-        { name: 'Virtualization', description: 'VMware, Hyper-V, Docker, Kubernetes' },
-        { name: 'PowerShell', description: 'Windows automation, Active Directory management' },
-        { name: 'ITIL', description: 'IT service management, incident & change management' },
-        { name: 'Technical Support', description: 'Ticket management, remote support, hardware/software troubleshooting' },
+        { name: 'CloudWatch', description: 'Metrics, alarms, dashboards, log groups, anomaly detection' },
+        { name: 'Zabbix', description: 'Agent-based monitoring, triggers, escalations, custom templates' },
+        { name: 'Python', description: 'Boto3, automation scripts, log parsing, API integrations' },
+        { name: 'PowerShell', description: 'AD automation, M365 management, scheduled tasks' },
       ],
       softSkills: [
-        { name: 'Leadership', description: 'Team management, decision making' },
-        { name: 'Teamwork', description: 'Effective collaboration, communication' },
-        { name: 'Analytical Thinking', description: 'Problem solving, critical analysis' },
-        { name: 'Advanced English', description: 'Technical oral and written communication' }
+        { name: 'ITIL', description: 'Incident, Problem, Change Management workflows' },
+        { name: 'Troubleshooting', description: 'Systematic diagnosis, RCA, escalation procedures' },
+        { name: 'Documentation', description: 'Runbooks, SOPs, knowledge base articles' },
+        { name: 'Advanced English', description: 'Technical oral and written communication (C1)' }
       ],
       categories: {
         cloud: {
-          title: "Cloud & Infrastructure",
-          description: "AWS, Linux, Networking, Zabbix, Microsoft 365, Windows Server"
+          title: "Cloud & Networking",
+          description: "AWS, Linux, TCP/IP, VPN, DNS, VLANs, IAM"
         },
         development: {
-          title: "Development & Automation",
-          description: "Python, PowerShell, Docker, Virtualization, ITIL"
+          title: "Monitoring & Automation",
+          description: "CloudWatch, Zabbix, Python (Boto3), PowerShell"
         },
         soft: {
-          title: "Soft Skills",
-          description: "Leadership, Teamwork, Analytical Thinking, English"
+          title: "Operations & Methodology",
+          description: "ITIL, Troubleshooting, RCA, Documentation, English C1"
         }
       },
       technical: {
         title: "Technical Skills",
         cloud: {
           title: "Cloud Platforms",
-          items: ["AWS", "Microsoft Azure", "Google Cloud Platform"]
+          items: ["AWS (EC2, S3, IAM, VPC, Lambda)", "CloudWatch", "Cost Explorer", "SNS"]
         },
         security: {
-          title: "Cybersecurity",
-          items: ["Kaspersky", "Vulnerability Analysis", "Security Policies", "Incident Response"]
+          title: "Security & Compliance",
+          items: ["IAM Policies", "Security Groups", "NACLs", "Incident Response"]
         },
         networking: {
-          title: "Networks",
-          items: ["Automation", "VPN", "Firewalls", "Network Monitoring", "LAN/WAN"]
+          title: "Networking",
+          items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
         },
         database: {
-          title: "Databases",
-          items: ["MySQL", "SQL Server"]
+          title: "Systems",
+          items: ["Windows Server", "Active Directory", "Microsoft 365", "Exchange Online"]
         },
         support: {
-          title: "Technical Support",
-          items: ["Remote Support", "Windows Server", "Jira", "ServiceNow", "Hardware/Software", "Linux"]
+          title: "Monitoring",
+          items: ["Zabbix", "CloudWatch Dashboards", "SNS Alerts", "Log Analysis"]
         },
         programming: {
-          title: "Programming",
-          items: ["Python", "MySQL"]
+          title: "Automation",
+          items: ["Python (Boto3)", "Bash", "PowerShell"]
         }
       },
       soft: {
-        title: "Soft Skills",
-        items: ["Problem solving under pressure", "Critical and analytical thinking", "Effective communication", "Time and priority management", "Teamwork and collaboration", "Adaptability to change", "Attention to detail", "Project leadership", "Customer/internal user orientation", "Proactivity and continuous learning"]
+        title: "Professional Skills",
+        items: ["Systematic troubleshooting under pressure", "Root cause analysis (RCA)", "Clear incident communication", "Priority-based triage", "Cross-team collaboration", "ITIL-aligned workflows", "Attention to detail in logs and metrics", "Runbook and SOP creation", "Client-facing technical support", "Continuous learning mindset"]
       }
+    },
+    methodology: {
+      title: "How I Work",
+      subtitle: "Structured troubleshooting methodology for cloud and infrastructure incidents",
+      steps: [
+        {
+          title: "1. Detect & Triage",
+          description: "Alert fires from CloudWatch or Zabbix. I classify severity (P1–P4), identify blast radius, and determine if immediate action or escalation is needed.",
+          icon: "alert"
+        },
+        {
+          title: "2. Investigate & Isolate",
+          description: "Check CloudWatch logs, EC2 instance status, security groups, and network configs. Reproduce the issue. Narrow down to the failing component — is it compute, network, IAM, or application-level?",
+          icon: "search"
+        },
+        {
+          title: "3. Resolve & Document",
+          description: "Apply the fix: restart services, adjust IAM policies, modify security groups, scale resources. Validate resolution with metrics. Document RCA, timeline, and preventive actions in the knowledge base.",
+          icon: "check"
+        },
+        {
+          title: "4. Prevent & Automate",
+          description: "Create CloudWatch alarms for early detection. Write Boto3 scripts to automate repetitive fixes. Update runbooks so the next engineer can resolve it faster.",
+          icon: "shield"
+        }
+      ]
     },
     certifications: {
       title: "Certifications",
@@ -177,12 +205,12 @@ export const translations = {
       title: "Languages",
       items: {
         spanish: "Spanish: Native",
-        english: "English: Advanced"
+        english: "English: Advanced (C1)"
       }
     },
     contact: {
-      title: "Let's Connect",
-      subtitle: "I'm always open to discussing new opportunities and collaborations",
+      title: "Available for Cloud Roles",
+      subtitle: "Open to Cloud Support Engineer, Cloud Engineer, and Infrastructure roles. Let's connect.",
       form: {
         name: "Your Name",
         email: "Your Email",
@@ -195,33 +223,33 @@ export const translations = {
       }
     },
     portfolios: {
-      title: "My Projects",
-      subtitle: "A collection of projects that showcase my skills and experience in telecommunications, network engineering, and cybersecurity.",
-      technologiesUsed: "Technologies Used:",
+      title: "Projects",
+      subtitle: "Real-world cloud infrastructure, monitoring, and networking projects demonstrating hands-on engineering skills.",
+      technologiesUsed: "Stack:",
       viewCode: "View Code",
       cta: {
         title: "Let's Build Something Together",
-        subtitle: "I'm always open to collaborating on interesting projects and exploring new opportunities.",
+        subtitle: "Open to collaborating on cloud infrastructure and monitoring projects.",
         button: "Get In Touch"
       },
       projects: [
         {
-          title: "Network Infrastructure Monitoring",
-          description: "Comprehensive monitoring solution for network infrastructure using Python and cloud platforms.",
-          technologies: ["Python", "AWS"],
+          title: "AWS High-Availability Architecture",
+          description: "Designed and deployed a multi-AZ architecture on AWS with auto-scaling EC2 instances, Application Load Balancer, and CloudWatch alarms. Reduced single points of failure and achieved 99.9% uptime in testing. Implemented IAM least-privilege policies and VPC security groups.",
+          technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
-          title: "Cloud Zabbix Monitoring",
-          description: "Zabbix implementation in cloud infrastructure for real-time network monitoring and alerts.",
+          title: "Hybrid Monitoring: Zabbix + CloudWatch",
+          description: "Deployed Zabbix server on EC2 to monitor on-prem and cloud resources. Configured CloudWatch custom metrics, SNS alerting, and Zabbix triggers for CPU, memory, disk, and network anomalies. Reduced mean time to detect (MTTD) by 40% through automated escalation workflows.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "In Progress"
         },
         {
           title: "Real Network Configurations with Packet Tracer",
-          description: "Advanced network topology design and simulation using Cisco Packet Tracer, based on real enterprise projects I have worked on.",
+          description: "Enterprise network topology design with VLANs, inter-VLAN routing, ACLs, and OSPF. Simulated real-world scenarios: link failures, broadcast storms, and security policy enforcement. Documented troubleshooting procedures for each topology.",
           technologies: ["Cisco", "Packet Tracer", "Cybersecurity"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
@@ -240,61 +268,67 @@ export const translations = {
     nav: {
       home: "Inicio",
       experience: "Experiencia",
-      skills: "Habilidades",
+      skills: "Stack Técnico",
+      methodology: "Metodología",
       certifications: "Certificaciones",
-      portfolios: "Portafolios",
+      portfolios: "Proyectos",
       contact: "Contacto",
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "Ingeniero en Cloud y Redes",
-      location: "El Monte – Talagante",
-      description: "Ingeniero en Telecomunicaciones y Redes con experiencia en soporte TI, administración de plataformas cloud y proyectos de ciberseguridad. He gestionado soluciones en AWS y Microsoft, optimizando recursos y fortaleciendo la seguridad informática.",
+      subtitle: "Cloud Support Engineer",
+      location: "Santiago - Chile",
+      description: "Ingeniero enfocado en cloud con experiencia práctica en infraestructura AWS, troubleshooting de incidentes y monitoreo. Track record comprobado resolviendo incidentes L1/L2, automatizando tareas operativas y manteniendo entornos de alta disponibilidad.",
       downloadCV: "Descargar CV",
-      contactMe: "Contáctame",
+      contactMe: "Hablemos",
+      bullets: [
+        "AWS Certified — EC2, S3, IAM, CloudWatch, Lambda, Cost Explorer",
+        "Respuesta a Incidentes L1/L2 — RCA, escalamiento, flujos ITIL",
+        "Monitoreo & Alertas — Zabbix, dashboards CloudWatch, notificaciones SNS"
+      ]
     },
     experience: {
       title: "Experiencia Profesional",
       jobs: [
         {
-          company: "Fiverr/Autónomo",
+          company: "Fiverr / Freelance",
           companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
-          position: "Ingeniero de Soporte TI",
+          position: "IT Support Engineer (L1/L2)",
           location: "Remoto",
           period: "Enero 2025 – Diciembre 2025",
           achievements: [
-            "Soporte técnico Nivel 1 y 2 para clientes internacionales vía AnyDesk y TeamViewer.",
-            "Administración de usuarios en Microsoft 365 y Exchange Online.",
-            "Implementación de monitoreo, documentación técnica y procedimientos.",
-            "Troubleshooting de redes TCP/IP, VPN y políticas de seguridad.",
-            "Gestión de problemas (root cause analysis) y reportes técnicos.",
-            "+50 clientes atendidos con evaluaciones sobresalientes."
+            "Soporte remoto L1/L2 para 50+ clientes internacionales vía AnyDesk y TeamViewer con evaluaciones sobresalientes.",
+            "Administración de tenants Microsoft 365: provisioning de usuarios, Exchange Online, políticas de acceso condicional.",
+            "Troubleshooting de TCP/IP, DNS, DHCP y VPN en entornos Windows y Linux.",
+            "Root cause analysis (RCA) en incidentes recurrentes y documentación de resoluciones en KB interna.",
+            "Creación de procedimientos de monitoreo y documentación técnica estandarizada para onboarding de clientes.",
+            "Flujos de trabajo alineados a ITIL para gestión de incidentes, escalamiento y solicitudes de cambio."
           ]
         },
         {
           company: "Instituto Nacional de Estadísticas",
           companyLogo: "censo",
-          position: "Gestor Soporte TI",
+          position: "Líder de Soporte de Infraestructura",
           location: "Santiago, Paseo Bulnes",
           period: "Enero 2024 – Julio 2024",
           achievements: [
-            "Monitoreo de infraestructura crítica distribuida durante operaciones del censo nacional.",
-            "Coordinación y despliegue de más de 300 dispositivos, reduciendo incidentes y tiempos de respuesta en 30%.",
-            "Diagnóstico de incidentes, escalamiento y documentación siguiendo estándares ITIL.",
-            "Elaboración de reportes técnicos y actualización de base de conocimiento interna."
+            "Monitoreo de infraestructura crítica distribuida (300+ endpoints) durante operaciones del censo nacional con dashboards centralizados.",
+            "Coordinación de despliegue y provisioning de dispositivos, reduciendo tiempos de respuesta en 30%.",
+            "Triage de incidentes en tiempo real, escalamiento y resolución siguiendo estándares ITIL.",
+            "Elaboración de reportes operativos y mantenimiento de base de conocimiento interna para equipos de soporte en campo."
           ]
         },
         {
           company: "SC Informática",
           companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "Ingeniero en Gestión de Proyectos y Administrador TI",
+          position: "Cloud Operations & Administrador TI",
           location: "Santiago, Macul",
           period: "Mayo 2023 – Diciembre 2023",
           achievements: [
-            "Gestión de accesos de usuarios, permisos y licencias en entornos cloud y on-prem.",
-            "Desarrollo de reportes automatizados basados en AWS para mejorar visibilidad de recursos y cumplimiento operativo en 20%.",
-            "Diagnóstico remoto y análisis de incidentes utilizando herramientas de soporte empresarial.",
-            "Relevancia del rol: operaciones cloud, automatización, gobernanza, control de acceso, monitoreo."
+            "Gestión de políticas IAM, acceso de usuarios y licencias en entornos AWS y Microsoft 365.",
+            "Desarrollo de reportes automatizados con AWS (Boto3 + CloudWatch) mejorando visibilidad de recursos y compliance en 20%.",
+            "Diagnóstico remoto y análisis de incidentes con herramientas de ticketing y soporte empresarial.",
+            "Tareas de operaciones cloud: monitoreo de costos, gobernanza de acceso y documentación de infraestructura."
           ]
         }
       ]
@@ -307,74 +341,96 @@ export const translations = {
       period: "2018 – 2023"
     },
     skills: {
-      title: "Stack Tecnológico",
-      subtitle: "Explora mis competencias técnicas y blandas 🌟 Mueve el mouse o toca para interactuar",
+      title: "Stack Técnico",
+      subtitle: "Tecnologías core con las que trabajo a diario. Mueve el mouse o toca para interactuar 🔧",
       cloud: [
-        { name: 'AWS', description: 'EC2, S3, Lambda, CloudWatch, IAM, Cost Optimization' },
-        { name: 'Cybersecurity', description: 'Kaspersky, Firewalls, Wireshark, SIEM' },
-        { name: 'IT Administration', description: 'Windows Server, Active Directory, Office 365' },
-        { name: 'Python', description: 'Automatización, scripting, APIs' },
-        { name: 'Linux', description: 'Ubuntu, CentOS, Bash scripting, systemd' },
-        { name: 'Networking', description: 'SD-WAN, VLANs, VPN, DNS, DHCP, Routing, SNMP' },
+        { name: 'AWS', description: 'EC2, S3, Lambda, CloudWatch, IAM, VPC, Cost Explorer, SNS' },
+        { name: 'Linux', description: 'Ubuntu, CentOS, Bash scripting, systemd, journalctl, cron' },
+        { name: 'Networking', description: 'TCP/IP, DNS, DHCP, VPN, VLANs, SNMP, Routing, Subnetting' },
       ],
       development: [
-        { name: 'Zabbix', description: 'Monitoreo de Equipos, Alertas, Dashboards Customs' },
-        { name: 'Virtualization', description: 'VMware, Hyper-V, Docker, Masterización' },
-        { name: 'PowerShell', description: 'Windows Automation, Active Directory management' },
-        { name: 'ITIL', description: 'Administración de Servicios IT, Gestión de incidentes y Cambios' },
-        { name: 'Technical Support', description: 'Gestión de tickets, Asistencia remota, Resolución de problemas de hardware/software.' },
+        { name: 'CloudWatch', description: 'Métricas, alarmas, dashboards, log groups, detección de anomalías' },
+        { name: 'Zabbix', description: 'Monitoreo basado en agentes, triggers, escalaciones, templates custom' },
+        { name: 'Python', description: 'Boto3, scripts de automatización, parsing de logs, integraciones API' },
+        { name: 'PowerShell', description: 'Automatización AD, gestión M365, tareas programadas' },
       ],
       softSkills: [
-        { name: 'Liderazgo', description: 'Gestión de equipos, Toma de decisiones' },
-        { name: 'Trabajo en equipo', description: 'Colaboración efectiva, Comunicación' },
-        { name: 'Pensamiento analítico', description: 'Resolución de problemas, Análisis crítico' },
-        { name: 'Inglés Avanzado', description: 'Comunicación técnica oral y Escrita' }
+        { name: 'ITIL', description: 'Flujos de Incident, Problem y Change Management' },
+        { name: 'Troubleshooting', description: 'Diagnóstico sistemático, RCA, procedimientos de escalamiento' },
+        { name: 'Documentación', description: 'Runbooks, SOPs, artículos de knowledge base' },
+        { name: 'Inglés Avanzado', description: 'Comunicación técnica oral y escrita (C1)' }
       ],
       categories: {
         cloud: {
-          title: "Cloud & Infraestructura",
-          description: "AWS, Linux, Networking, Zabbix, Microsoft 365, Windows Server"
+          title: "Cloud & Networking",
+          description: "AWS, Linux, TCP/IP, VPN, DNS, VLANs, IAM"
         },
         development: {
-          title: "Desarrollo & Automatización",
-          description: "ITIL, Python, PowerShell, Docker, Virtualización"
+          title: "Monitoreo & Automatización",
+          description: "CloudWatch, Zabbix, Python (Boto3), PowerShell"
         },
         soft: {
-          title: "Habilidades Blandas",
-          description: "Liderazgo, Trabajo en equipo, Pensamiento analítico, Inglés"
+          title: "Operaciones & Metodología",
+          description: "ITIL, Troubleshooting, RCA, Documentación, Inglés C1"
         }
       },
       technical: {
         title: "Habilidades Técnicas",
         cloud: {
           title: "Plataformas Cloud",
-          items: ["AWS", "Microsoft Azure", "Google Cloud Platform"]
+          items: ["AWS (EC2, S3, IAM, VPC, Lambda)", "CloudWatch", "Cost Explorer", "SNS"]
         },
         security: {
-          title: "Ciberseguridad",
-          items: ["Kaspersky", "Análisis Vulnerabilidades", "Políticas Seguridad", "Respuesta Incidentes"]
+          title: "Seguridad & Compliance",
+          items: ["Políticas IAM", "Security Groups", "NACLs", "Respuesta a Incidentes"]
         },
         networking: {
-          title: "Redes",
-          items: ["Automatización", "VPN", "Firewalls", "Monitoreo de Redes", "LAN/WAN"]
+          title: "Networking",
+          items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
         },
         database: {
-          title: "Bases de Datos",
-          items: ["MySQL", "SQL Server"]
+          title: "Sistemas",
+          items: ["Windows Server", "Active Directory", "Microsoft 365", "Exchange Online"]
         },
         support: {
-          title: "Soporte Técnico",
-          items: ["Soporte remoto", "Windows Server", "Jira", "ServiceNow", "Hardware/Software", "Linux"]
+          title: "Monitoreo",
+          items: ["Zabbix", "Dashboards CloudWatch", "Alertas SNS", "Análisis de Logs"]
         },
         programming: {
-          title: "Programación",
-          items: ["Python", "MySQL"]
+          title: "Automatización",
+          items: ["Python (Boto3)", "Bash", "PowerShell"]
         }
       },
       soft: {
-        title: "Habilidades Blandas",
-        items: ["Resolución de problemas bajo presión", "Pensamiento crítico y analítico", "Comunicación efectiva", "Gestión del tiempo y prioridades", "Trabajo en equipo y colaboración", "Adaptabilidad al cambio", "Atención al detalle", "Liderazgo en proyectos", "Orientación al cliente/usuario interno", "Proactividad y aprendizaje continuo"]
+        title: "Habilidades Profesionales",
+        items: ["Troubleshooting sistemático bajo presión", "Root cause analysis (RCA)", "Comunicación clara de incidentes", "Triage basado en prioridad", "Colaboración cross-team", "Flujos de trabajo alineados a ITIL", "Atención al detalle en logs y métricas", "Creación de runbooks y SOPs", "Soporte técnico orientado al cliente", "Mentalidad de aprendizaje continuo"]
       }
+    },
+    methodology: {
+      title: "Cómo Trabajo",
+      subtitle: "Metodología estructurada de troubleshooting para incidentes cloud e infraestructura",
+      steps: [
+        {
+          title: "1. Detectar & Triagear",
+          description: "Se dispara alerta desde CloudWatch o Zabbix. Clasifico severidad (P1–P4), identifico radio de impacto y determino si se requiere acción inmediata o escalamiento.",
+          icon: "alert"
+        },
+        {
+          title: "2. Investigar & Aislar",
+          description: "Reviso logs de CloudWatch, estado de instancias EC2, security groups y configuraciones de red. Reproduzco el issue. Aíslo el componente fallando — ¿es compute, network, IAM o nivel de aplicación?",
+          icon: "search"
+        },
+        {
+          title: "3. Resolver & Documentar",
+          description: "Aplico el fix: reiniciar servicios, ajustar políticas IAM, modificar security groups, escalar recursos. Valido resolución con métricas. Documento RCA, timeline y acciones preventivas en la knowledge base.",
+          icon: "check"
+        },
+        {
+          title: "4. Prevenir & Automatizar",
+          description: "Creo alarmas CloudWatch para detección temprana. Escribo scripts Boto3 para automatizar fixes repetitivos. Actualizo runbooks para que el próximo ingeniero lo resuelva más rápido.",
+          icon: "shield"
+        }
+      ]
     },
     certifications: {
       title: "Certificaciones",
@@ -413,12 +469,12 @@ export const translations = {
       title: "Idiomas",
       items: {
         spanish: "Español: Nativo",
-        english: "Inglés: Avanzado"
+        english: "Inglés: Avanzado (C1)"
       }
     },
     contact: {
-      title: "Conectemos",
-      subtitle: "Siempre estoy abierto a discutir nuevas oportunidades y colaboraciones",
+      title: "Disponible para Roles Cloud",
+      subtitle: "Abierto a posiciones de Cloud Support Engineer, Cloud Engineer e Infraestructura. Conectemos.",
       form: {
         name: "Tu Nombre",
         email: "Tu Correo",
@@ -431,40 +487,40 @@ export const translations = {
       }
     },
     portfolios: {
-      title: "Mis Proyectos",
-      subtitle: "Una colección de proyectos que demuestran mis habilidades y experiencia en telecomunicaciones, ingeniería de redes y ciberseguridad.",
-      technologiesUsed: "Tecnologías Utilizadas:",
+      title: "Proyectos",
+      subtitle: "Proyectos reales de infraestructura cloud, monitoreo y networking que demuestran habilidades de ingeniería práctica.",
+      technologiesUsed: "Stack:",
       viewCode: "Ver Código",
       cta: {
         title: "Construyamos Algo Juntos",
-        subtitle: "Siempre estoy abierto a colaborar en proyectos interesantes y explorar nuevas oportunidades.",
+        subtitle: "Abierto a colaborar en proyectos de infraestructura cloud y monitoreo.",
         button: "Conectemos"
       },
       projects: [
         {
-          title: "Monitoreo de Infraestructura de Red",
-          description: "Solución integral de monitoreo para infraestructura de red usando Python y plataformas cloud.",
-          technologies: ["Python", "AWS"],
+          title: "Arquitectura AWS Alta Disponibilidad",
+          description: "Diseño y despliegue de arquitectura multi-AZ en AWS con instancias EC2 auto-scaling, Application Load Balancer y alarmas CloudWatch. Reducción de puntos únicos de fallo y 99.9% uptime en pruebas. Implementación de políticas IAM de mínimo privilegio y security groups de VPC.",
+          technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
         {
-          title: "Monitoreo Zabbix en la Nube",
-          description: "Implementación de Zabbix en infraestructura cloud para monitoreo en tiempo real y alertas de red.",
+          title: "Monitoreo Híbrido: Zabbix + CloudWatch",
+          description: "Despliegue de servidor Zabbix en EC2 para monitorear recursos on-prem y cloud. Configuración de métricas custom en CloudWatch, alertas SNS y triggers Zabbix para CPU, memoria, disco y anomalías de red. Reducción de MTTD en 40% mediante flujos de escalamiento automatizados.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "En Progreso"
         },
         {
           title: "Configuraciones Reales de Red con Packet Tracer",
-          description: "Diseño avanzado de topologías de red y simulación utilizando Cisco Packet Tracer, basado en proyectos reales de empresas en los que he trabajado.",
+          description: "Diseño de topología de red empresarial con VLANs, inter-VLAN routing, ACLs y OSPF. Simulación de escenarios reales: fallas de enlace, broadcast storms y enforcement de políticas de seguridad. Documentación de procedimientos de troubleshooting para cada topología.",
           technologies: ["Cisco", "Packet Tracer", "Ciberseguridad"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completado"
         },
         {
           title: "Portfolio-Tuto",
-          description: "Landing page con formulario de contacto conectado a Firebase Firestore, desplegada en Vercel/Lovable. Una guía práctica para aprender a integrar Firebase y desplegar una web moderna sin backend.",
+          description: "Landing page con formulario de contacto conectado a Firebase Firestore, desplegada en Vercel/Lovable. Guía práctica para integrar Firebase y desplegar una web moderna sin backend.",
           technologies: ["React", "TypeScript", "Firebase", "Vercel"],
           githubUrl: "https://github.com/Mark0hara/Portfolio-Tuto",
           status: "Completado"
