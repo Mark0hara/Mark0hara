@@ -28,7 +28,7 @@
     <td align="center" width="50%">
       <h3>☁️ Cloud & Administration</h3>
       <p>
-        <img src="https://banner2.cleanpng.com/20180817/eqe/5f57f9bfeb7fb5ccee9564fa00b5935f.webp" alt="AWS" width="45" height="45"/>
+        <img src="https://www.pngall.com/wp-content/uploads/13/AWS-Logo-PNG-Pic.png" alt="AWS" width="45" height="45"/>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="45" height="45"/>
         <img src="https://1000marcas.net/wp-content/uploads/2020/11/VMware-Logo-500x283.jpg" alt="VMware" width="45" height="45"/>
         <img src="https://img.icons8.com/color/48/office-365.png" alt="Microsoft 365" width="45" height="45"/>
