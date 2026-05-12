@@ -28,9 +28,9 @@
     <td align="center" width="50%">
       <h3>☁️ Cloud & Administration</h3>
       <p>
-        <img src="[https://i0.wp.com/www.spideronline.co.uk/wp-content/uploads/2024/11/aws.png?fit=597%2C597&ssl=1](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)" alt="AWS" width="45" height="45"/>
+        <img src="https://banner2.cleanpng.com/20180817/eqe/5f57f9bfeb7fb5ccee9564fa00b5935f.webp" alt="AWS" width="45" height="45"/>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="45" height="45"/>
-        <img src="https://1000marcas.net/wp-content/uploads/2020/11/VMware-Logo.png" alt="VMware" width="45" height="45"/>
+        <img src="https://1000marcas.net/wp-content/uploads/2020/11/VMware-Logo-500x283.jpg" alt="VMware" width="45" height="45"/>
         <img src="https://img.icons8.com/color/48/office-365.png" alt="Microsoft 365" width="45" height="45"/>
         <img src="https://www.vectorlogo.zone/logos/zabbix/zabbix-icon.svg" alt="Zabbix" width="45" height="45"/>
         <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" width="45" height="45"/>
