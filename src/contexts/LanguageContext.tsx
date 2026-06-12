@@ -1,4 +1,4 @@
-// Language Context Provider with Glitch Animation
+// Language Context Provider — instant, clean fade
 import React, { createContext, useContext, useState, ReactNode, useCallback } from 'react';
 import { translations, Language, TranslationKey } from '@/lib/translations';
 
@@ -17,29 +17,14 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
 
   const setLanguage = useCallback((lang: Language) => {
     if (lang === language) return;
-    
+    // brief opacity fade for polish; no glitch
     setIsTransitioning(true);
-    
-    // Change language at the middle of the glitch animation
-    setTimeout(() => {
-      setLanguageState(lang);
-    }, 300);
-    
-    // End transition after full animation
-    setTimeout(() => {
-      setIsTransitioning(false);
-    }, 600);
+    setLanguageState(lang);
+    window.setTimeout(() => setIsTransitioning(false), 200);
   }, [language]);
 
-  const value = {
-    language,
-    setLanguage,
-    t: translations[language],
-    isTransitioning,
-  };
-
   return (
-    <LanguageContext.Provider value={value}>
+    <LanguageContext.Provider value={{ language, setLanguage, t: translations[language], isTransitioning }}>
       {children}
     </LanguageContext.Provider>
   );
