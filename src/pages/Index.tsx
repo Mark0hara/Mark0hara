@@ -22,8 +22,8 @@ const Index = () => {
       <ScrollProgress />
 
       <div
-        className="relative z-10 transition-opacity duration-200"
-        style={{ opacity: isTransitioning ? 0.6 : 1 }}
+        className="relative z-10 transition-opacity duration-150 ease-out"
+        style={{ opacity: isTransitioning ? 0 : 1 }}
       >
         <Navbar />
         <main>

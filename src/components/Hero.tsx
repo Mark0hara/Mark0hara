@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           {/* Availability pill */}
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-8 rounded-full border border-border bg-card text-xs font-medium text-muted-foreground animate-fade-up">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75 animate-ping" />
+              <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500/60 opacity-60 animate-pulse" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
             </span>
             {(t.hero as any).availability ?? 'Open to roles'}

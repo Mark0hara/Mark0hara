@@ -17,10 +17,12 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
 
   const setLanguage = useCallback((lang: Language) => {
     if (lang === language) return;
-    // brief opacity fade for polish; no glitch
     setIsTransitioning(true);
-    setLanguageState(lang);
-    window.setTimeout(() => setIsTransitioning(false), 200);
+    // Fade out current text, swap, fade in new text — total ~300ms
+    window.setTimeout(() => {
+      setLanguageState(lang);
+      window.setTimeout(() => setIsTransitioning(false), 160);
+    }, 140);
   }, [language]);
 
   return (

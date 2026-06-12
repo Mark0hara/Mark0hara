@@ -10,36 +10,36 @@
 
 @layer base {
   :root {
-    /* Light mode — clean white surface */
-    --background: 0 0% 100%;
+    /* Light mode — premium enterprise (AWS / Stripe / Linear / Notion) */
+    --background: 210 40% 98%;          /* #F8FAFC */
     --foreground: 222 47% 11%;          /* #0F172A */
 
-    --card: 210 40% 98%;                /* #F8FAFC */
+    --card: 0 0% 100%;                  /* #FFFFFF */
     --card-foreground: 222 47% 11%;
-    --card-hover: 210 40% 96%;
+    --card-hover: 210 40% 98%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 217 91% 60%;             /* #3B82F6 */
+    --primary: 221 83% 53%;             /* #2563EB */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 54%;
+    --primary-hover: 224 76% 48%;       /* #1D4ED8 */
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 47% 11%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;    /* slate-500 */
+    --muted-foreground: 215 25% 35%;    /* #475569 */
 
-    --accent: 213 94% 68%;              /* #60A5FA */
-    --accent-foreground: 222 47% 11%;
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214 32% 91%;              /* #E2E8F0 */
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 213 27% 84%;              /* #CBD5E1 */
+    --input: 213 27% 84%;
+    --ring: 221 83% 53%;
 
     --radius: 0.625rem;
 
@@ -49,35 +49,35 @@
   }
 
   .dark {
-    /* Dark mode — deep slate */
+    /* Dark mode — premium slate */
     --background: 222 47% 11%;          /* #0F172A */
     --foreground: 210 40% 98%;          /* #F8FAFC */
 
-    --card: 220 26% 14%;                /* #111827-ish */
+    --card: 220 39% 11%;                /* #111827 */
     --card-foreground: 210 40% 98%;
-    --card-hover: 220 22% 18%;
+    --card-hover: 220 30% 16%;
 
-    --popover: 220 26% 14%;
+    --popover: 220 39% 11%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 217 91% 60%;             /* #3B82F6 */
     --primary-foreground: 0 0% 100%;
     --primary-hover: 213 94% 68%;
 
-    --secondary: 220 22% 18%;
+    --secondary: 215 28% 17%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 22% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 213 27% 84%;    /* #CBD5E1 */
 
-    --accent: 213 94% 68%;              /* #60A5FA */
-    --accent-foreground: 222 47% 11%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 18% 22%;              /* #1F2937 */
-    --input: 220 18% 22%;
+    --border: 215 19% 27%;              /* #334155 */
+    --input: 215 19% 27%;
     --ring: 217 91% 60%;
 
     --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
@@ -99,7 +99,20 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Smooth theme interpolation — only active while toggling, scoped to color props */
+  html.theme-transitioning,
+  html.theme-transitioning *,
+  html.theme-transitioning *::before,
+  html.theme-transitioning *::after {
+    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                fill 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                stroke 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
   h1, h2, h3, h4 {
@@ -271,18 +284,46 @@
     -webkit-text-fill-color: hsl(var(--foreground));
   }
 
-  /* Subtle decorative background — single very faint radial */
+  /* Infrastructure / topology background — slow diagonal lines */
+  @keyframes infra-pan {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 240px 240px, -240px 240px; }
+  }
   .background-pattern {
     background-image:
-      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.06), transparent 50%),
-      radial-gradient(circle at 80% 60%, hsl(var(--accent) / 0.05), transparent 50%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+      repeating-linear-gradient(
+        45deg,
+        hsl(221 83% 53% / 0.05) 0px,
+        hsl(221 83% 53% / 0.05) 1px,
+        transparent 1px,
+        transparent 120px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        hsl(221 83% 53% / 0.04) 0px,
+        hsl(221 83% 53% / 0.04) 1px,
+        transparent 1px,
+        transparent 120px
+      );
+    background-size: 240px 240px, 240px 240px;
+    animation: infra-pan 28s linear infinite;
   }
   .dark .background-pattern {
     background-image:
-      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.10), transparent 55%),
-      radial-gradient(circle at 80% 60%, hsl(var(--accent) / 0.08), transparent 55%);
+      repeating-linear-gradient(
+        45deg,
+        hsl(217 91% 60% / 0.08) 0px,
+        hsl(217 91% 60% / 0.08) 1px,
+        transparent 1px,
+        transparent 120px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        hsl(217 91% 60% / 0.06) 0px,
+        hsl(217 91% 60% / 0.06) 1px,
+        transparent 1px,
+        transparent 120px
+      );
   }
 
   /* Glitch / scanlines / language-glitch — completely removed (no-op) */
