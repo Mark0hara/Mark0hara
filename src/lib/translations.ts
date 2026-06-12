@@ -12,7 +12,8 @@ export const translations = {
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "Cloud Support Engineer",
+      subtitle: "IT Support Engineer · AWS Cloud Enthusiast · Infrastructure & Monitoring",
+      availability: "Open to Cloud Support / IT Engineer roles",
       location: "Santiago - Chile",
       description: "Cloud-focused engineer with hands-on experience in AWS infrastructure, incident troubleshooting, and monitoring. Proven track record resolving L1/L2 incidents, automating operational tasks, and maintaining high-availability environments.",
       downloadCV: "Download CV",
@@ -276,7 +277,8 @@ export const translations = {
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "Cloud Support Engineer",
+      subtitle: "IT Support Engineer · AWS Cloud Enthusiast · Infraestructura & Monitoreo",
+      availability: "Disponible para roles Cloud Support / IT Engineer",
       location: "Santiago - Chile",
       description: "Ingeniero enfocado en cloud con experiencia práctica en infraestructura AWS, troubleshooting de incidentes y monitoreo. Track record comprobado resolviendo incidentes L1/L2, automatizando tareas operativas y manteniendo entornos de alta disponibilidad.",
       downloadCV: "Descargar CV",
