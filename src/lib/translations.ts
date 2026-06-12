@@ -236,30 +236,37 @@ export const translations = {
       projects: [
         {
           title: "AWS High-Availability Architecture",
-          description: "Designed and deployed a multi-AZ architecture on AWS with auto-scaling EC2 instances, Application Load Balancer, and CloudWatch alarms. Reduced single points of failure and achieved 99.9% uptime in testing. Implemented IAM least-privilege policies and VPC security groups.",
+          description: "Multi-AZ architecture on AWS with auto-scaling EC2 instances, Application Load Balancer, and CloudWatch alarms. IAM least-privilege policies, VPC security groups, and 99.9% uptime in testing.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
-          title: "Hybrid Monitoring: Zabbix + CloudWatch",
-          description: "Deployed Zabbix server on EC2 to monitor on-prem and cloud resources. Configured CloudWatch custom metrics, SNS alerting, and Zabbix triggers for CPU, memory, disk, and network anomalies. Reduced mean time to detect (MTTD) by 40% through automated escalation workflows.",
+          title: "Zabbix Enterprise Deployment",
+          description: "Zabbix server on EC2 monitoring on-prem and cloud resources. Custom CloudWatch metrics, SNS alerting, and Zabbix triggers for CPU, memory, disk, and network anomalies. MTTD reduced by 40%.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
-          status: "In Progress"
+          status: "Completed"
         },
         {
-          title: "Real Network Configurations with Packet Tracer",
-          description: "Enterprise network topology design with VLANs, inter-VLAN routing, ACLs, and OSPF. Simulated real-world scenarios: link failures, broadcast storms, and security policy enforcement. Documented troubleshooting procedures for each topology.",
+          title: "CCNA / Networking Labs",
+          description: "Enterprise network topologies with VLANs, inter-VLAN routing, ACLs, and OSPF. Simulated link failures, broadcast storms, and security policy enforcement. Full troubleshooting procedures documented.",
           technologies: ["Cisco", "Packet Tracer", "Cybersecurity"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
         },
         {
-          title: "Portfolio-Tuto",
-          description: "Landing page with contact form connected to Firebase Firestore, deployed on Vercel/Lovable. A practical guide to learn how to integrate Firebase and deploy a modern website without a backend.",
-          technologies: ["React", "TypeScript", "Firebase", "Vercel"],
-          githubUrl: "https://github.com/Mark0hara/Portfolio-Tuto",
+          title: "Python Automation Scripts",
+          description: "Boto3 utilities for AWS reporting, IAM auditing, EC2 lifecycle, and S3 inventory. Bash and PowerShell scripts for log parsing, M365 user provisioning, and scheduled health checks.",
+          technologies: ["Python", "AWS", "Linux"],
+          githubUrl: "https://github.com/Mark0hara",
+          status: "Completed"
+        },
+        {
+          title: "IT Support Documentation",
+          description: "Runbooks, SOPs, and KB articles for L1/L2 incident handling: TCP/IP, DNS, DHCP, VPN, Active Directory, and Microsoft 365. ITIL-aligned workflows and post-incident reviews.",
+          technologies: ["Networking", "Cybersecurity"],
+          githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
         }
       ]
@@ -500,31 +507,38 @@ export const translations = {
       },
       projects: [
         {
-          title: "Arquitectura AWS Alta Disponibilidad",
-          description: "Diseño y despliegue de arquitectura multi-AZ en AWS con instancias EC2 auto-scaling, Application Load Balancer y alarmas CloudWatch. Reducción de puntos únicos de fallo y 99.9% uptime en pruebas. Implementación de políticas IAM de mínimo privilegio y security groups de VPC.",
+          title: "Plataforma de Monitoreo AWS",
+          description: "Arquitectura multi-AZ en AWS con EC2 auto-scaling, Application Load Balancer y alarmas CloudWatch. Políticas IAM de mínimo privilegio, security groups de VPC y 99.9% uptime en pruebas.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
         {
-          title: "Monitoreo Híbrido: Zabbix + CloudWatch",
-          description: "Despliegue de servidor Zabbix en EC2 para monitorear recursos on-prem y cloud. Configuración de métricas custom en CloudWatch, alertas SNS y triggers Zabbix para CPU, memoria, disco y anomalías de red. Reducción de MTTD en 40% mediante flujos de escalamiento automatizados.",
+          title: "Despliegue Empresarial de Zabbix",
+          description: "Servidor Zabbix en EC2 monitoreando recursos on-prem y cloud. Métricas custom de CloudWatch, alertas SNS y triggers Zabbix para CPU, memoria, disco y red. MTTD reducido en 40%.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
-          status: "En Progreso"
+          status: "Completado"
         },
         {
-          title: "Configuraciones Reales de Red con Packet Tracer",
-          description: "Diseño de topología de red empresarial con VLANs, inter-VLAN routing, ACLs y OSPF. Simulación de escenarios reales: fallas de enlace, broadcast storms y enforcement de políticas de seguridad. Documentación de procedimientos de troubleshooting para cada topología.",
+          title: "Laboratorios de Networking / CCNA",
+          description: "Topologías de red empresariales con VLANs, inter-VLAN routing, ACLs y OSPF. Simulación de fallas de enlace, broadcast storms y enforcement de políticas de seguridad. Documentación completa de troubleshooting.",
           technologies: ["Cisco", "Packet Tracer", "Ciberseguridad"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completado"
         },
         {
-          title: "Portfolio-Tuto",
-          description: "Landing page con formulario de contacto conectado a Firebase Firestore, desplegada en Vercel/Lovable. Guía práctica para integrar Firebase y desplegar una web moderna sin backend.",
-          technologies: ["React", "TypeScript", "Firebase", "Vercel"],
-          githubUrl: "https://github.com/Mark0hara/Portfolio-Tuto",
+          title: "Scripts de Automatización en Python",
+          description: "Utilidades Boto3 para reportes AWS, auditoría IAM, ciclo de vida EC2 e inventario S3. Scripts Bash y PowerShell para parsing de logs, provisioning M365 y chequeos de salud programados.",
+          technologies: ["Python", "AWS", "Linux"],
+          githubUrl: "https://github.com/Mark0hara",
+          status: "Completado"
+        },
+        {
+          title: "Documentación de Soporte TI",
+          description: "Runbooks, SOPs y artículos KB para manejo de incidentes L1/L2: TCP/IP, DNS, DHCP, VPN, Active Directory y Microsoft 365. Flujos alineados a ITIL y revisiones post-incidente.",
+          technologies: ["Redes", "Ciberseguridad"],
+          githubUrl: "https://github.com/Mark0hara",
           status: "Completado"
         }
       ]
