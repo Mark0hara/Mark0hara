@@ -99,14 +99,20 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    transition: background-color 0.7s ease, color 0.7s ease, border-color 0.7s ease;
+    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Smooth theme interpolation across all surfaces */
-  *, *::before, *::after {
-    transition-property: background-color, border-color, color, fill, stroke, box-shadow;
-    transition-duration: 0.7s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Smooth theme interpolation — only active while toggling, scoped to color props */
+  html.theme-transitioning,
+  html.theme-transitioning *,
+  html.theme-transitioning *::before,
+  html.theme-transitioning *::after {
+    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                fill 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                stroke 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
   h1, h2, h3, h4 {
