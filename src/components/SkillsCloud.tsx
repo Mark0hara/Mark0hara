@@ -37,6 +37,7 @@ const SkillsCloud = () => {
   const animationRef = useRef<number | null>(null);
   const touchRef = useRef({ startX: 0, startY: 0, currentX: 0, currentY: 0, touching: false });
   const targetRotationRef = useRef({ x: 0, y: 0 });
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const radius = 160;
@@ -107,25 +108,27 @@ const SkillsCloud = () => {
 
   useEffect(() => {
     let autoRotation = { x: 0, y: 0 };
-    
+
     const animate = () => {
-      autoRotation.y += 0.008;
-      autoRotation.x += 0.003;
-      
+      if (!isPaused && hoveredTag === null) {
+        autoRotation.y += 0.0025;
+        autoRotation.x += 0.001;
+      }
+
       setRotation({
         x: autoRotation.x + targetRotationRef.current.x,
         y: autoRotation.y + targetRotationRef.current.y
       });
       animationRef.current = requestAnimationFrame(animate);
     };
-    
+
     animate();
     return () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, []);
+  }, [isPaused, hoveredTag]);
 
   const rotatePoint = (x: number, y: number, z: number, angleX: number, angleY: number) => {
     const cosY = Math.cos(angleY);
@@ -167,6 +170,8 @@ const SkillsCloud = () => {
         <div 
           ref={containerRef}
           className="relative mx-auto touch-none"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
           style={{ 
             width: '100%',
             maxWidth: '600px',
