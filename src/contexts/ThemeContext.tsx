@@ -17,27 +17,14 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
   useEffect(() => {
     const root = document.documentElement;
-
-    // Activate global slow color transition only during the theme swap
-    root.classList.add('theme-transitioning');
-
-    if (theme === 'dark') {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
+    if (theme === 'dark') root.classList.add('dark');
+    else root.classList.remove('dark');
     localStorage.setItem('theme', theme);
-
-    const timer = setTimeout(() => {
-      root.classList.remove('theme-transitioning');
-    }, 750);
-
-    return () => clearTimeout(timer);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light');
-  };
+  const toggleTheme = React.useCallback(() => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
