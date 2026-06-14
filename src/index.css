@@ -29,7 +29,7 @@
     --secondary-foreground: 222 47% 11%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215 25% 35%;    /* #475569 */
+    --muted-foreground: 215 28% 25%;    /* darker for WCAG AA on #F8FAFC */
 
     --accent: 221 83% 53%;
     --accent-foreground: 0 0% 100%;
@@ -37,8 +37,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 213 27% 84%;              /* #CBD5E1 */
-    --input: 213 27% 84%;
+    --border: 214 25% 72%;              /* stronger separation on light bg */
+    --input: 214 25% 72%;
     --ring: 221 83% 53%;
 
     --radius: 0.625rem;
@@ -99,20 +99,24 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 
-  /* Smooth theme interpolation — only active while toggling, scoped to color props */
-  html.theme-transitioning,
-  html.theme-transitioning *,
-  html.theme-transitioning *::before,
-  html.theme-transitioning *::after {
-    transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                border-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                fill 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-                stroke 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  /* Theme transitions — scoped to surfaces & text primitives only.
+     Avoids `* { transition }` which forces style recalc on every node
+     (including animated ones) and causes the laggy theme switch. */
+  .glass-card,
+  .card-hover,
+  [class*="bg-card"],
+  [class*="bg-background"],
+  [class*="bg-muted"],
+  [class*="bg-secondary"],
+  [class*="border-border"],
+  [class*="text-foreground"],
+  [class*="text-muted-foreground"] {
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease;
   }
 
   h1, h2, h3, h4 {
