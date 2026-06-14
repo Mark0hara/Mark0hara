@@ -11,12 +11,12 @@
 @layer base {
   :root {
     /* Light mode — premium enterprise (AWS / Stripe / Linear / Notion) */
-    --background: 210 40% 98%;          /* #F8FAFC */
+    --background: 214 32% 94%;          /* #EEF2F7 — softer, depth vs white cards */
     --foreground: 222 47% 11%;          /* #0F172A */
 
     --card: 0 0% 100%;                  /* #FFFFFF */
     --card-foreground: 222 47% 11%;
-    --card-hover: 210 40% 98%;
+    --card-hover: 210 40% 98%;          /* #F8FAFC */
 
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
@@ -37,8 +37,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214 25% 72%;              /* stronger separation on light bg */
-    --input: 214 25% 72%;
+    --border: 215 20% 65%;              /* stronger, visible separation */
+    --input: 215 20% 65%;
     --ring: 221 83% 53%;
 
     --radius: 0.625rem;
