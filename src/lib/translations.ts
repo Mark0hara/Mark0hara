@@ -288,21 +288,36 @@ export const translations = {
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "IT Support Engineer · AWS Cloud Enthusiast · Infraestructura & Monitoreo",
-      availability: "Disponible para roles Cloud Support / IT Engineer",
+      subtitle: "IT Support Engineer · Infraestructura Cloud · Networking & Monitoreo",
+      availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
-      description: "Ingeniero enfocado en cloud con experiencia práctica en infraestructura AWS, troubleshooting de incidentes y monitoreo. Track record comprobado resolviendo incidentes L1/L2, automatizando tareas operativas y manteniendo entornos de alta disponibilidad.",
+      description: "Ingeniero en Telecomunicaciones y Redes con experiencia práctica soportando entornos empresariales en infraestructura cloud AWS, Microsoft 365, Active Directory, Windows Server, monitoreo y networking. Enfocado en confiabilidad operativa, troubleshooting estructurado y gestión de incidentes alineada a ITIL.",
       downloadCV: "Descargar CV",
       contactMe: "Hablemos",
       bullets: [
-        "AWS Certified — EC2, S3, IAM, CloudWatch, Lambda, Cost Explorer",
-        "Respuesta a Incidentes L1/L2 — RCA, escalamiento, flujos ITIL",
-        "Monitoreo & Alertas — Zabbix, dashboards CloudWatch, notificaciones SNS"
+        "Soporte TI Empresarial — Windows Server, Microsoft 365, Active Directory, Intune",
+        "Infraestructura Cloud — AWS EC2, VPC, CloudWatch, Auto Scaling, S3, IAM",
+        "Monitoreo y Observabilidad — Zabbix, Grafana, CloudWatch, alertas SNS",
+        "Networking (nivel CCNA) — Routing & Switching, VLANs, ACLs, NAT/PAT, troubleshooting"
       ]
     },
     experience: {
       title: "Experiencia Profesional",
       jobs: [
+        {
+          company: "Fiverr",
+          companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Fiverr_Logo_09.2020.svg/2560px-Fiverr_Logo_09.2020.svg.png",
+          position: "Freelancer – IT Support Engineer",
+          location: "Remoto",
+          period: "Enero 2025 – Diciembre 2025",
+          achievements: [
+            "Atendí a más de 50 clientes internacionales con altos niveles de satisfacción.",
+            "Entregué soporte técnico L1/L2 en sistemas Windows, redes y entornos Microsoft 365.",
+            "Realicé troubleshooting de conectividad TCP/IP, acceso VPN e incidentes relacionados con seguridad.",
+            "Implementé soluciones de monitoreo y documentación técnica para mejorar la visibilidad operativa.",
+            "Ejecuté análisis de causa raíz (RCA) y contribuí a la mejora continua de procesos."
+          ]
+        },
         {
           company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
