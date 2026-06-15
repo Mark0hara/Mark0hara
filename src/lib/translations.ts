@@ -289,44 +289,33 @@ export const translations = {
       title: "Experiencia Profesional",
       jobs: [
         {
-          company: "Fiverr / Freelance",
-          companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
-          position: "IT Support Engineer (L1/L2)",
-          location: "Remoto",
-          period: "Enero 2025 – Diciembre 2025",
-          achievements: [
-            "Soporte remoto L1/L2 para 50+ clientes internacionales vía AnyDesk y TeamViewer con evaluaciones sobresalientes.",
-            "Administración de tenants Microsoft 365: provisioning de usuarios, Exchange Online, políticas de acceso condicional.",
-            "Troubleshooting de TCP/IP, DNS, DHCP y VPN en entornos Windows y Linux.",
-            "Root cause analysis (RCA) en incidentes recurrentes y documentación de resoluciones en KB interna.",
-            "Creación de procedimientos de monitoreo y documentación técnica estandarizada para onboarding de clientes.",
-            "Flujos de trabajo alineados a ITIL para gestión de incidentes, escalamiento y solicitudes de cambio."
-          ]
-        },
-        {
-          company: "Instituto Nacional de Estadísticas",
+          company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
-          position: "Líder de Soporte de Infraestructura",
+          position: "IT Support Engineer",
           location: "Santiago, Paseo Bulnes",
           period: "Enero 2024 – Julio 2024",
           achievements: [
-            "Monitoreo de infraestructura crítica distribuida (300+ endpoints) durante operaciones del censo nacional con dashboards centralizados.",
-            "Coordinación de despliegue y provisioning de dispositivos, reduciendo tiempos de respuesta en 30%.",
-            "Triage de incidentes en tiempo real, escalamiento y resolución siguiendo estándares ITIL.",
-            "Elaboración de reportes operativos y mantenimiento de base de conocimiento interna para equipos de soporte en campo."
+            "Soporte TI empresarial sobre un entorno operativo distribuido de más de 300 dispositivos durante operaciones del censo nacional.",
+            "Despliegue, provisioning y configuración de equipos para asegurar la continuidad operativa en operaciones críticas de campo.",
+            "Monitoreo en tiempo real, triage de incidentes, escalamiento y resolución siguiendo procesos alineados a ITIL.",
+            "Diagnóstico y resolución de incidentes de hardware, software, conectividad y soporte al usuario final con tiempos de respuesta exigentes.",
+            "Mantenimiento de documentación técnica, runbooks operativos y artículos de base de conocimiento para equipos de soporte en terreno.",
+            "Contribución a la confiabilidad operativa y a la reducción de incidentes mediante troubleshooting estructurado y monitoreo proactivo."
           ]
         },
         {
           company: "SC Informática",
           companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "Cloud Operations & Administrador TI",
+          position: "IT Support Technician",
           location: "Santiago, Macul",
           period: "Mayo 2023 – Diciembre 2023",
           achievements: [
-            "Gestión de políticas IAM, acceso de usuarios y licencias en entornos AWS y Microsoft 365.",
-            "Desarrollo de reportes automatizados con AWS (Boto3 + CloudWatch) mejorando visibilidad de recursos y compliance en 20%.",
-            "Diagnóstico remoto y análisis de incidentes con herramientas de ticketing y soporte empresarial.",
-            "Tareas de operaciones cloud: monitoreo de costos, gobernanza de acceso y documentación de infraestructura."
+            "Soporte de hardware y software, mantenimiento de equipos y asistencia al usuario final en un entorno de servicios profesionales.",
+            "Administración de entornos Windows: cuentas de usuario, drivers, actualizaciones y software de productividad estándar.",
+            "Soporte técnico presencial y remoto, resolviendo incidentes de sistemas operativos, periféricos y conectividad.",
+            "Gestión de tickets de incidentes desde la apertura hasta el cierre, con comunicación clara al usuario y documentación precisa.",
+            "Troubleshooting sistemático para diagnosticar fallas de hardware, conflictos de software y problemas básicos de red.",
+            "Bases sólidas de administración de sistemas en soporte a operaciones diarias del negocio."
           ]
         }
       ]
