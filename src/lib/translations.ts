@@ -28,44 +28,33 @@ export const translations = {
       title: "Professional Experience",
       jobs: [
         {
-          company: "Fiverr / Freelance",
-          companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
-          position: "IT Support Engineer (L1/L2)",
-          location: "Remote",
-          period: "January 2025 – December 2025",
-          achievements: [
-            "Delivered L1/L2 remote support for 50+ international clients via AnyDesk and TeamViewer with outstanding ratings.",
-            "Administered Microsoft 365 tenants: user provisioning, Exchange Online, conditional access policies.",
-            "Performed TCP/IP, DNS, DHCP, and VPN troubleshooting across Windows and Linux environments.",
-            "Conducted root cause analysis (RCA) on recurring incidents and documented resolutions in internal KB.",
-            "Built monitoring procedures and standardized technical documentation for client onboarding.",
-            "Applied ITIL-aligned workflows for incident management, escalation, and change requests."
-          ]
-        },
-        {
-          company: "National Institute of Statistics",
+          company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
-          position: "Infrastructure Support Lead",
+          position: "IT Support Engineer",
           location: "Santiago, Paseo Bulnes",
           period: "January 2024 – July 2024",
           achievements: [
-            "Monitored critical distributed infrastructure (300+ endpoints) during national census operations using centralized dashboards.",
-            "Coordinated device deployment and provisioning, reducing incident response time by 30%.",
-            "Performed real-time incident triage, escalation, and resolution following ITIL standards.",
-            "Produced operational reports and maintained internal knowledge base for field support teams."
+            "Provided enterprise IT support across a distributed operational environment of 300+ end-user devices during national census operations.",
+            "Executed device deployment, provisioning, and configuration to ensure operational readiness and continuity in critical field operations.",
+            "Performed real-time monitoring, incident triage, escalation, and resolution following ITIL-aligned processes.",
+            "Diagnosed and resolved hardware, software, connectivity, and end-user incidents under strict response-time requirements.",
+            "Maintained technical documentation, operational runbooks, and knowledge base entries for field support teams.",
+            "Contributed to operational reliability and incident reduction through structured troubleshooting and proactive monitoring."
           ]
         },
         {
           company: "SC Informática",
           companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "Cloud Operations & IT Administrator",
+          position: "IT Support Technician",
           location: "Santiago, Macul",
           period: "May 2023 – December 2023",
           achievements: [
-            "Managed IAM policies, user access, and licensing across AWS and Microsoft 365 environments.",
-            "Built automated AWS-based reporting (Boto3 + CloudWatch) improving resource visibility and compliance by 20%.",
-            "Performed remote diagnostics and incident analysis using enterprise ticketing and support tools.",
-            "Owned cloud operations tasks: cost monitoring, access governance, and infrastructure documentation."
+            "Delivered hardware and software support, equipment maintenance, and end-user assistance in a professional services environment.",
+            "Administered Windows desktop environments, including user accounts, drivers, updates, and standard productivity software.",
+            "Provided on-site and remote technical support, resolving incidents related to operating systems, peripherals, and connectivity.",
+            "Managed incident tickets from intake to resolution, ensuring clear communication with users and accurate problem documentation.",
+            "Applied systematic troubleshooting to diagnose hardware failures, software conflicts, and basic network issues.",
+            "Built foundational systems administration experience supporting day-to-day business operations."
           ]
         }
       ]
