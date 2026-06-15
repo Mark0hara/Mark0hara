@@ -485,36 +485,36 @@ export const translations = {
       },
       projects: [
         {
-          title: "Plataforma de Monitoreo AWS",
-          description: "Arquitectura multi-AZ en AWS con EC2 auto-scaling, Application Load Balancer y alarmas CloudWatch. Políticas IAM de mínimo privilegio, security groups de VPC y 99.9% uptime en pruebas.",
+          title: "Arquitectura AWS de Alta Disponibilidad",
+          description: "Problema: Cargas en una sola AZ sin recuperación automática generaban riesgo de downtime y visibilidad limitada sobre la salud de los recursos.\n\nSolución: Diseño y despliegue de una arquitectura multi-AZ en AWS con EC2 Auto Scaling detrás de un Application Load Balancer, segmentación de VPC con subnets públicas/privadas, Security Groups y NACLs endurecidos, y políticas IAM de mínimo privilegio. Integración de alarmas CloudWatch y notificaciones SNS para detección proactiva de incidentes.\n\nTecnologías: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nResultado: Infraestructura resiliente y auto-reparable con 99.9% de uptime en pruebas de carga, escalamiento automático según demanda y observabilidad extremo a extremo en capas de cómputo y red.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
         {
           title: "Despliegue Empresarial de Zabbix",
-          description: "Servidor Zabbix en EC2 monitoreando recursos on-prem y cloud. Métricas custom de CloudWatch, alertas SNS y triggers Zabbix para CPU, memoria, disco y red. MTTD reducido en 40%.",
+          description: "Problema: Falta de visibilidad unificada sobre infraestructura híbrida on-prem y cloud, retrasando la detección y respuesta a incidentes.\n\nSolución: Despliegue de un servidor Zabbix sobre AWS EC2 con agentes distribuidos en hosts Windows y Linux. Creación de templates, triggers y reglas de escalamiento para CPU, memoria, disco, servicios y anomalías de red. Integración con métricas de CloudWatch y notificaciones SNS para centralizar alertas y flujos on-call.\n\nTecnologías: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nResultado: Observabilidad centralizada sobre infraestructura híbrida, reducción del MTTD en incidentes críticos y alertas estandarizadas alineadas a gestión de incidentes ITIL.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "Completado"
         },
         {
-          title: "Laboratorios de Networking / CCNA",
-          description: "Topologías de red empresariales con VLANs, inter-VLAN routing, ACLs y OSPF. Simulación de fallas de enlace, broadcast storms y enforcement de políticas de seguridad. Documentación completa de troubleshooting.",
-          technologies: ["Cisco", "Packet Tracer", "Ciberseguridad"],
+          title: "Laboratorio de Networking Empresarial (Nivel CCNA)",
+          description: "Problema: Validar diseños de routing, segmentación y seguridad sobre escenarios realistas de redes empresariales antes de aplicar cambios en entornos similares a producción.\n\nSolución: Construcción de topologías multi-sitio en Cisco Packet Tracer y EVE-NG cubriendo routing y switching, segmentación VLAN, inter-VLAN routing, ACLs, NAT/PAT, OSPF y trunking. Simulación de fallas de enlace, broadcast storms y enforcement de políticas, documentando procedimientos de troubleshooting estructurados.\n\nTecnologías: Cisco IOS, Packet Tracer, EVE-NG, Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF.\n\nResultado: Experiencia práctica sólida en networking basada en conocimiento de nivel CCNA, incluyendo routing, switching, VLANs, ACLs, NAT/PAT y troubleshooting de redes empresariales.",
+          technologies: ["Cisco", "Packet Tracer", "Redes"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completado"
         },
         {
-          title: "Scripts de Automatización en Python",
-          description: "Utilidades Boto3 para reportes AWS, auditoría IAM, ciclo de vida EC2 e inventario S3. Scripts Bash y PowerShell para parsing de logs, provisioning M365 y chequeos de salud programados.",
+          title: "Toolkit de Automatización Cloud y Sistemas",
+          description: "Problema: Tareas operativas repetitivas en entornos AWS y Microsoft 365 consumían tiempo de ingeniería e incrementaban el riesgo de error humano.\n\nSolución: Construcción de un toolkit en Python (Boto3), PowerShell y Bash para automatizar inventario y reportes de recursos AWS, auditoría IAM, acciones de ciclo de vida EC2, mantenimiento de S3, provisioning de usuarios en Microsoft 365 y Active Directory, y chequeos de salud programados. Estandarización de logging, manejo de errores y reporting.\n\nTecnologías: Python (Boto3), PowerShell, Bash, AWS (EC2, S3, IAM, CloudWatch), Microsoft 365, Active Directory.\n\nResultado: Reducción de la carga manual sobre tareas operativas recurrentes, mayor consistencia en actividades de administración y mejor visibilidad sobre recursos cloud e identidad.",
           technologies: ["Python", "AWS", "Linux"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completado"
         },
         {
-          title: "Documentación de Soporte TI",
-          description: "Runbooks, SOPs y artículos KB para manejo de incidentes L1/L2: TCP/IP, DNS, DHCP, VPN, Active Directory y Microsoft 365. Flujos alineados a ITIL y revisiones post-incidente.",
+          title: "Runbooks y Base de Conocimiento de Operaciones TI",
+          description: "Problema: El manejo inconsistente de incidentes y el conocimiento tribal aumentaban los tiempos de resolución y dificultaban el onboarding de nuevo personal de soporte.\n\nSolución: Diseño de un set estructurado de runbooks, SOPs y artículos de base de conocimiento para el manejo de incidentes L1/L2 sobre TCP/IP, DNS, DHCP, VPN, Active Directory, Microsoft 365, Intune y Windows Server. Estandarización de flujos alineados a ITIL para gestión de incidentes, problemas y cambios, incluyendo plantillas de post-incident review.\n\nTecnologías: ITIL, Active Directory, Microsoft 365, Intune, Windows Server, fundamentos de Redes.\n\nResultado: Resolución de incidentes más rápida y consistente, rutas de escalamiento más claras y documentación operativa reutilizable que sustenta la confiabilidad y la escalabilidad del equipo.",
           technologies: ["Redes", "Ciberseguridad"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completado"
