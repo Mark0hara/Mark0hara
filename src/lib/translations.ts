@@ -225,35 +225,35 @@ export const translations = {
       projects: [
         {
           title: "AWS High-Availability Architecture",
-          description: "Multi-AZ architecture on AWS with auto-scaling EC2 instances, Application Load Balancer, and CloudWatch alarms. IAM least-privilege policies, VPC security groups, and 99.9% uptime in testing.",
+          description: "Problem: Single-AZ workloads with no automatic recovery created downtime risk and limited visibility into resource health.\n\nSolution: Designed and deployed a multi-AZ AWS architecture using EC2 Auto Scaling behind an Application Load Balancer, VPC segmentation with public/private subnets, hardened Security Groups and NACLs, and least-privilege IAM policies. Integrated CloudWatch alarms and SNS notifications for proactive incident detection.\n\nTechnologies: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nOutcome: Resilient, self-healing infrastructure with 99.9% uptime in load testing, automated scaling under demand, and end-to-end observability across compute and network layers.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
           title: "Zabbix Enterprise Deployment",
-          description: "Zabbix server on EC2 monitoring on-prem and cloud resources. Custom CloudWatch metrics, SNS alerting, and Zabbix triggers for CPU, memory, disk, and network anomalies. MTTD reduced by 40%.",
+          description: "Problem: Lack of unified visibility across hybrid on-prem and cloud infrastructure delayed incident detection and response.\n\nSolution: Deployed a Zabbix monitoring server on AWS EC2 with agents distributed across Windows and Linux hosts. Built custom templates, triggers, and escalation rules for CPU, memory, disk, services, and network anomalies. Integrated CloudWatch metrics and SNS notifications to centralize alerts and on-call workflows.\n\nTechnologies: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nOutcome: Centralized observability across hybrid infrastructure, faster mean time to detect critical incidents, and standardized alerting aligned with ITIL incident management.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "Completed"
         },
         {
-          title: "CCNA / Networking Labs",
-          description: "Enterprise network topologies with VLANs, inter-VLAN routing, ACLs, and OSPF. Simulated link failures, broadcast storms, and security policy enforcement. Full troubleshooting procedures documented.",
-          technologies: ["Cisco", "Packet Tracer", "Cybersecurity"],
+          title: "Enterprise Networking Lab (CCNA-Level)",
+          description: "Problem: Validate routing, segmentation, and security designs against realistic enterprise network scenarios before applying changes to production-like environments.\n\nSolution: Built multi-site topologies in Cisco Packet Tracer and EVE-NG covering routing and switching, VLAN segmentation, inter-VLAN routing, ACLs, NAT/PAT, OSPF, and trunking. Simulated link failures, broadcast storms, and policy enforcement, documenting structured troubleshooting procedures for each scenario.\n\nTechnologies: Cisco IOS, Packet Tracer, EVE-NG, Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF.\n\nOutcome: Strong practical networking experience based on CCNA-level knowledge, including routing, switching, VLANs, ACLs, NAT/PAT and enterprise network troubleshooting.",
+          technologies: ["Cisco", "Packet Tracer", "Networking"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
         },
         {
-          title: "Python Automation Scripts",
-          description: "Boto3 utilities for AWS reporting, IAM auditing, EC2 lifecycle, and S3 inventory. Bash and PowerShell scripts for log parsing, M365 user provisioning, and scheduled health checks.",
+          title: "Cloud & Systems Automation Toolkit",
+          description: "Problem: Repetitive operational tasks across AWS and Microsoft 365 environments consumed engineering time and increased the risk of human error.\n\nSolution: Built a toolkit of Python (Boto3), PowerShell, and Bash scripts to automate AWS resource inventory and reporting, IAM auditing, EC2 lifecycle actions, S3 housekeeping, Microsoft 365 and Active Directory user provisioning, and scheduled health checks. Standardized logging, error handling, and reporting outputs.\n\nTechnologies: Python (Boto3), PowerShell, Bash, AWS (EC2, S3, IAM, CloudWatch), Microsoft 365, Active Directory.\n\nOutcome: Reduced manual workload on recurring operational tasks, improved consistency in administration activities, and increased visibility over cloud and identity resources.",
           technologies: ["Python", "AWS", "Linux"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
         },
         {
-          title: "IT Support Documentation",
-          description: "Runbooks, SOPs, and KB articles for L1/L2 incident handling: TCP/IP, DNS, DHCP, VPN, Active Directory, and Microsoft 365. ITIL-aligned workflows and post-incident reviews.",
+          title: "IT Operations Runbooks & Knowledge Base",
+          description: "Problem: Inconsistent incident handling and tribal knowledge slowed down resolution times and onboarding of new support staff.\n\nSolution: Designed a structured set of runbooks, SOPs, and knowledge base articles covering L1/L2 incident handling for TCP/IP, DNS, DHCP, VPN, Active Directory, Microsoft 365, Intune, and Windows Server. Standardized ITIL-aligned workflows for incident, problem, and change management, including post-incident review templates.\n\nTechnologies: ITIL, Active Directory, Microsoft 365, Intune, Windows Server, Networking fundamentals.\n\nOutcome: Faster and more consistent incident resolution, clearer escalation paths, and reusable operational documentation supporting reliability and team scalability.",
           technologies: ["Networking", "Cybersecurity"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
