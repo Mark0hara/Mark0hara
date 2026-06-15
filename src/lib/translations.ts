@@ -28,44 +28,33 @@ export const translations = {
       title: "Professional Experience",
       jobs: [
         {
-          company: "Fiverr / Freelance",
-          companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
-          position: "IT Support Engineer (L1/L2)",
-          location: "Remote",
-          period: "January 2025 – December 2025",
-          achievements: [
-            "Delivered L1/L2 remote support for 50+ international clients via AnyDesk and TeamViewer with outstanding ratings.",
-            "Administered Microsoft 365 tenants: user provisioning, Exchange Online, conditional access policies.",
-            "Performed TCP/IP, DNS, DHCP, and VPN troubleshooting across Windows and Linux environments.",
-            "Conducted root cause analysis (RCA) on recurring incidents and documented resolutions in internal KB.",
-            "Built monitoring procedures and standardized technical documentation for client onboarding.",
-            "Applied ITIL-aligned workflows for incident management, escalation, and change requests."
-          ]
-        },
-        {
-          company: "National Institute of Statistics",
+          company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
-          position: "Infrastructure Support Lead",
+          position: "IT Support Engineer",
           location: "Santiago, Paseo Bulnes",
           period: "January 2024 – July 2024",
           achievements: [
-            "Monitored critical distributed infrastructure (300+ endpoints) during national census operations using centralized dashboards.",
-            "Coordinated device deployment and provisioning, reducing incident response time by 30%.",
-            "Performed real-time incident triage, escalation, and resolution following ITIL standards.",
-            "Produced operational reports and maintained internal knowledge base for field support teams."
+            "Provided enterprise IT support across a distributed operational environment of 300+ end-user devices during national census operations.",
+            "Executed device deployment, provisioning, and configuration to ensure operational readiness and continuity in critical field operations.",
+            "Performed real-time monitoring, incident triage, escalation, and resolution following ITIL-aligned processes.",
+            "Diagnosed and resolved hardware, software, connectivity, and end-user incidents under strict response-time requirements.",
+            "Maintained technical documentation, operational runbooks, and knowledge base entries for field support teams.",
+            "Contributed to operational reliability and incident reduction through structured troubleshooting and proactive monitoring."
           ]
         },
         {
           company: "SC Informática",
           companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "Cloud Operations & IT Administrator",
+          position: "IT Support Technician",
           location: "Santiago, Macul",
           period: "May 2023 – December 2023",
           achievements: [
-            "Managed IAM policies, user access, and licensing across AWS and Microsoft 365 environments.",
-            "Built automated AWS-based reporting (Boto3 + CloudWatch) improving resource visibility and compliance by 20%.",
-            "Performed remote diagnostics and incident analysis using enterprise ticketing and support tools.",
-            "Owned cloud operations tasks: cost monitoring, access governance, and infrastructure documentation."
+            "Delivered hardware and software support, equipment maintenance, and end-user assistance in a professional services environment.",
+            "Administered Windows desktop environments, including user accounts, drivers, updates, and standard productivity software.",
+            "Provided on-site and remote technical support, resolving incidents related to operating systems, peripherals, and connectivity.",
+            "Managed incident tickets from intake to resolution, ensuring clear communication with users and accurate problem documentation.",
+            "Applied systematic troubleshooting to diagnose hardware failures, software conflicts, and basic network issues.",
+            "Built foundational systems administration experience supporting day-to-day business operations."
           ]
         }
       ]
@@ -236,35 +225,35 @@ export const translations = {
       projects: [
         {
           title: "AWS High-Availability Architecture",
-          description: "Multi-AZ architecture on AWS with auto-scaling EC2 instances, Application Load Balancer, and CloudWatch alarms. IAM least-privilege policies, VPC security groups, and 99.9% uptime in testing.",
+          description: "Problem: Single-AZ workloads with no automatic recovery created downtime risk and limited visibility into resource health.\n\nSolution: Designed and deployed a multi-AZ AWS architecture using EC2 Auto Scaling behind an Application Load Balancer, VPC segmentation with public/private subnets, hardened Security Groups and NACLs, and least-privilege IAM policies. Integrated CloudWatch alarms and SNS notifications for proactive incident detection.\n\nTechnologies: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nOutcome: Resilient, self-healing infrastructure with 99.9% uptime in load testing, automated scaling under demand, and end-to-end observability across compute and network layers.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
           title: "Zabbix Enterprise Deployment",
-          description: "Zabbix server on EC2 monitoring on-prem and cloud resources. Custom CloudWatch metrics, SNS alerting, and Zabbix triggers for CPU, memory, disk, and network anomalies. MTTD reduced by 40%.",
+          description: "Problem: Lack of unified visibility across hybrid on-prem and cloud infrastructure delayed incident detection and response.\n\nSolution: Deployed a Zabbix monitoring server on AWS EC2 with agents distributed across Windows and Linux hosts. Built custom templates, triggers, and escalation rules for CPU, memory, disk, services, and network anomalies. Integrated CloudWatch metrics and SNS notifications to centralize alerts and on-call workflows.\n\nTechnologies: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nOutcome: Centralized observability across hybrid infrastructure, faster mean time to detect critical incidents, and standardized alerting aligned with ITIL incident management.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "Completed"
         },
         {
-          title: "CCNA / Networking Labs",
-          description: "Enterprise network topologies with VLANs, inter-VLAN routing, ACLs, and OSPF. Simulated link failures, broadcast storms, and security policy enforcement. Full troubleshooting procedures documented.",
-          technologies: ["Cisco", "Packet Tracer", "Cybersecurity"],
+          title: "Enterprise Networking Lab (CCNA-Level)",
+          description: "Problem: Validate routing, segmentation, and security designs against realistic enterprise network scenarios before applying changes to production-like environments.\n\nSolution: Built multi-site topologies in Cisco Packet Tracer and EVE-NG covering routing and switching, VLAN segmentation, inter-VLAN routing, ACLs, NAT/PAT, OSPF, and trunking. Simulated link failures, broadcast storms, and policy enforcement, documenting structured troubleshooting procedures for each scenario.\n\nTechnologies: Cisco IOS, Packet Tracer, EVE-NG, Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF.\n\nOutcome: Strong practical networking experience based on CCNA-level knowledge, including routing, switching, VLANs, ACLs, NAT/PAT and enterprise network troubleshooting.",
+          technologies: ["Cisco", "Packet Tracer", "Networking"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
         },
         {
-          title: "Python Automation Scripts",
-          description: "Boto3 utilities for AWS reporting, IAM auditing, EC2 lifecycle, and S3 inventory. Bash and PowerShell scripts for log parsing, M365 user provisioning, and scheduled health checks.",
+          title: "Cloud & Systems Automation Toolkit",
+          description: "Problem: Repetitive operational tasks across AWS and Microsoft 365 environments consumed engineering time and increased the risk of human error.\n\nSolution: Built a toolkit of Python (Boto3), PowerShell, and Bash scripts to automate AWS resource inventory and reporting, IAM auditing, EC2 lifecycle actions, S3 housekeeping, Microsoft 365 and Active Directory user provisioning, and scheduled health checks. Standardized logging, error handling, and reporting outputs.\n\nTechnologies: Python (Boto3), PowerShell, Bash, AWS (EC2, S3, IAM, CloudWatch), Microsoft 365, Active Directory.\n\nOutcome: Reduced manual workload on recurring operational tasks, improved consistency in administration activities, and increased visibility over cloud and identity resources.",
           technologies: ["Python", "AWS", "Linux"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
         },
         {
-          title: "IT Support Documentation",
-          description: "Runbooks, SOPs, and KB articles for L1/L2 incident handling: TCP/IP, DNS, DHCP, VPN, Active Directory, and Microsoft 365. ITIL-aligned workflows and post-incident reviews.",
+          title: "IT Operations Runbooks & Knowledge Base",
+          description: "Problem: Inconsistent incident handling and tribal knowledge slowed down resolution times and onboarding of new support staff.\n\nSolution: Designed a structured set of runbooks, SOPs, and knowledge base articles covering L1/L2 incident handling for TCP/IP, DNS, DHCP, VPN, Active Directory, Microsoft 365, Intune, and Windows Server. Standardized ITIL-aligned workflows for incident, problem, and change management, including post-incident review templates.\n\nTechnologies: ITIL, Active Directory, Microsoft 365, Intune, Windows Server, Networking fundamentals.\n\nOutcome: Faster and more consistent incident resolution, clearer escalation paths, and reusable operational documentation supporting reliability and team scalability.",
           technologies: ["Networking", "Cybersecurity"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
@@ -300,44 +289,33 @@ export const translations = {
       title: "Experiencia Profesional",
       jobs: [
         {
-          company: "Fiverr / Freelance",
-          companyLogo: "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b107a31ef6830829585e7d58950d828b/fiverr.png",
-          position: "IT Support Engineer (L1/L2)",
-          location: "Remoto",
-          period: "Enero 2025 – Diciembre 2025",
-          achievements: [
-            "Soporte remoto L1/L2 para 50+ clientes internacionales vía AnyDesk y TeamViewer con evaluaciones sobresalientes.",
-            "Administración de tenants Microsoft 365: provisioning de usuarios, Exchange Online, políticas de acceso condicional.",
-            "Troubleshooting de TCP/IP, DNS, DHCP y VPN en entornos Windows y Linux.",
-            "Root cause analysis (RCA) en incidentes recurrentes y documentación de resoluciones en KB interna.",
-            "Creación de procedimientos de monitoreo y documentación técnica estandarizada para onboarding de clientes.",
-            "Flujos de trabajo alineados a ITIL para gestión de incidentes, escalamiento y solicitudes de cambio."
-          ]
-        },
-        {
-          company: "Instituto Nacional de Estadísticas",
+          company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
-          position: "Líder de Soporte de Infraestructura",
+          position: "IT Support Engineer",
           location: "Santiago, Paseo Bulnes",
           period: "Enero 2024 – Julio 2024",
           achievements: [
-            "Monitoreo de infraestructura crítica distribuida (300+ endpoints) durante operaciones del censo nacional con dashboards centralizados.",
-            "Coordinación de despliegue y provisioning de dispositivos, reduciendo tiempos de respuesta en 30%.",
-            "Triage de incidentes en tiempo real, escalamiento y resolución siguiendo estándares ITIL.",
-            "Elaboración de reportes operativos y mantenimiento de base de conocimiento interna para equipos de soporte en campo."
+            "Soporte TI empresarial sobre un entorno operativo distribuido de más de 300 dispositivos durante operaciones del censo nacional.",
+            "Despliegue, provisioning y configuración de equipos para asegurar la continuidad operativa en operaciones críticas de campo.",
+            "Monitoreo en tiempo real, triage de incidentes, escalamiento y resolución siguiendo procesos alineados a ITIL.",
+            "Diagnóstico y resolución de incidentes de hardware, software, conectividad y soporte al usuario final con tiempos de respuesta exigentes.",
+            "Mantenimiento de documentación técnica, runbooks operativos y artículos de base de conocimiento para equipos de soporte en terreno.",
+            "Contribución a la confiabilidad operativa y a la reducción de incidentes mediante troubleshooting estructurado y monitoreo proactivo."
           ]
         },
         {
           company: "SC Informática",
           companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "Cloud Operations & Administrador TI",
+          position: "IT Support Technician",
           location: "Santiago, Macul",
           period: "Mayo 2023 – Diciembre 2023",
           achievements: [
-            "Gestión de políticas IAM, acceso de usuarios y licencias en entornos AWS y Microsoft 365.",
-            "Desarrollo de reportes automatizados con AWS (Boto3 + CloudWatch) mejorando visibilidad de recursos y compliance en 20%.",
-            "Diagnóstico remoto y análisis de incidentes con herramientas de ticketing y soporte empresarial.",
-            "Tareas de operaciones cloud: monitoreo de costos, gobernanza de acceso y documentación de infraestructura."
+            "Soporte de hardware y software, mantenimiento de equipos y asistencia al usuario final en un entorno de servicios profesionales.",
+            "Administración de entornos Windows: cuentas de usuario, drivers, actualizaciones y software de productividad estándar.",
+            "Soporte técnico presencial y remoto, resolviendo incidentes de sistemas operativos, periféricos y conectividad.",
+            "Gestión de tickets de incidentes desde la apertura hasta el cierre, con comunicación clara al usuario y documentación precisa.",
+            "Troubleshooting sistemático para diagnosticar fallas de hardware, conflictos de software y problemas básicos de red.",
+            "Bases sólidas de administración de sistemas en soporte a operaciones diarias del negocio."
           ]
         }
       ]
@@ -507,36 +485,36 @@ export const translations = {
       },
       projects: [
         {
-          title: "Plataforma de Monitoreo AWS",
-          description: "Arquitectura multi-AZ en AWS con EC2 auto-scaling, Application Load Balancer y alarmas CloudWatch. Políticas IAM de mínimo privilegio, security groups de VPC y 99.9% uptime en pruebas.",
+          title: "Arquitectura AWS de Alta Disponibilidad",
+          description: "Problema: Cargas en una sola AZ sin recuperación automática generaban riesgo de downtime y visibilidad limitada sobre la salud de los recursos.\n\nSolución: Diseño y despliegue de una arquitectura multi-AZ en AWS con EC2 Auto Scaling detrás de un Application Load Balancer, segmentación de VPC con subnets públicas/privadas, Security Groups y NACLs endurecidos, y políticas IAM de mínimo privilegio. Integración de alarmas CloudWatch y notificaciones SNS para detección proactiva de incidentes.\n\nTecnologías: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nResultado: Infraestructura resiliente y auto-reparable con 99.9% de uptime en pruebas de carga, escalamiento automático según demanda y observabilidad extremo a extremo en capas de cómputo y red.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
         {
           title: "Despliegue Empresarial de Zabbix",
-          description: "Servidor Zabbix en EC2 monitoreando recursos on-prem y cloud. Métricas custom de CloudWatch, alertas SNS y triggers Zabbix para CPU, memoria, disco y red. MTTD reducido en 40%.",
+          description: "Problema: Falta de visibilidad unificada sobre infraestructura híbrida on-prem y cloud, retrasando la detección y respuesta a incidentes.\n\nSolución: Despliegue de un servidor Zabbix sobre AWS EC2 con agentes distribuidos en hosts Windows y Linux. Creación de templates, triggers y reglas de escalamiento para CPU, memoria, disco, servicios y anomalías de red. Integración con métricas de CloudWatch y notificaciones SNS para centralizar alertas y flujos on-call.\n\nTecnologías: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nResultado: Observabilidad centralizada sobre infraestructura híbrida, reducción del MTTD en incidentes críticos y alertas estandarizadas alineadas a gestión de incidentes ITIL.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "Completado"
         },
         {
-          title: "Laboratorios de Networking / CCNA",
-          description: "Topologías de red empresariales con VLANs, inter-VLAN routing, ACLs y OSPF. Simulación de fallas de enlace, broadcast storms y enforcement de políticas de seguridad. Documentación completa de troubleshooting.",
-          technologies: ["Cisco", "Packet Tracer", "Ciberseguridad"],
+          title: "Laboratorio de Networking Empresarial (Nivel CCNA)",
+          description: "Problema: Validar diseños de routing, segmentación y seguridad sobre escenarios realistas de redes empresariales antes de aplicar cambios en entornos similares a producción.\n\nSolución: Construcción de topologías multi-sitio en Cisco Packet Tracer y EVE-NG cubriendo routing y switching, segmentación VLAN, inter-VLAN routing, ACLs, NAT/PAT, OSPF y trunking. Simulación de fallas de enlace, broadcast storms y enforcement de políticas, documentando procedimientos de troubleshooting estructurados.\n\nTecnologías: Cisco IOS, Packet Tracer, EVE-NG, Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF.\n\nResultado: Experiencia práctica sólida en networking basada en conocimiento de nivel CCNA, incluyendo routing, switching, VLANs, ACLs, NAT/PAT y troubleshooting de redes empresariales.",
+          technologies: ["Cisco", "Packet Tracer", "Redes"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completado"
         },
         {
-          title: "Scripts de Automatización en Python",
-          description: "Utilidades Boto3 para reportes AWS, auditoría IAM, ciclo de vida EC2 e inventario S3. Scripts Bash y PowerShell para parsing de logs, provisioning M365 y chequeos de salud programados.",
+          title: "Toolkit de Automatización Cloud y Sistemas",
+          description: "Problema: Tareas operativas repetitivas en entornos AWS y Microsoft 365 consumían tiempo de ingeniería e incrementaban el riesgo de error humano.\n\nSolución: Construcción de un toolkit en Python (Boto3), PowerShell y Bash para automatizar inventario y reportes de recursos AWS, auditoría IAM, acciones de ciclo de vida EC2, mantenimiento de S3, provisioning de usuarios en Microsoft 365 y Active Directory, y chequeos de salud programados. Estandarización de logging, manejo de errores y reporting.\n\nTecnologías: Python (Boto3), PowerShell, Bash, AWS (EC2, S3, IAM, CloudWatch), Microsoft 365, Active Directory.\n\nResultado: Reducción de la carga manual sobre tareas operativas recurrentes, mayor consistencia en actividades de administración y mejor visibilidad sobre recursos cloud e identidad.",
           technologies: ["Python", "AWS", "Linux"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completado"
         },
         {
-          title: "Documentación de Soporte TI",
-          description: "Runbooks, SOPs y artículos KB para manejo de incidentes L1/L2: TCP/IP, DNS, DHCP, VPN, Active Directory y Microsoft 365. Flujos alineados a ITIL y revisiones post-incidente.",
+          title: "Runbooks y Base de Conocimiento de Operaciones TI",
+          description: "Problema: El manejo inconsistente de incidentes y el conocimiento tribal aumentaban los tiempos de resolución y dificultaban el onboarding de nuevo personal de soporte.\n\nSolución: Diseño de un set estructurado de runbooks, SOPs y artículos de base de conocimiento para el manejo de incidentes L1/L2 sobre TCP/IP, DNS, DHCP, VPN, Active Directory, Microsoft 365, Intune y Windows Server. Estandarización de flujos alineados a ITIL para gestión de incidentes, problemas y cambios, incluyendo plantillas de post-incident review.\n\nTecnologías: ITIL, Active Directory, Microsoft 365, Intune, Windows Server, fundamentos de Redes.\n\nResultado: Resolución de incidentes más rápida y consistente, rutas de escalamiento más claras y documentación operativa reutilizable que sustenta la confiabilidad y la escalabilidad del equipo.",
           technologies: ["Redes", "Ciberseguridad"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completado"
