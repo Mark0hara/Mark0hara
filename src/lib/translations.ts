@@ -12,21 +12,36 @@ export const translations = {
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "IT Support Engineer · AWS Cloud Enthusiast · Infrastructure & Monitoring",
-      availability: "Open to Cloud Support / IT Engineer roles",
+      subtitle: "IT Support Engineer · Cloud Infrastructure · Networking & Monitoring",
+      availability: "Open to IT Support, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
-      description: "Cloud-focused engineer with hands-on experience in AWS infrastructure, incident troubleshooting, and monitoring. Proven track record resolving L1/L2 incidents, automating operational tasks, and maintaining high-availability environments.",
+      description: "Telecommunications and Network Engineer with hands-on experience supporting enterprise environments across AWS cloud infrastructure, Microsoft 365, Active Directory, Windows Server, monitoring and networking. Focused on operational reliability, structured troubleshooting and ITIL-aligned incident management.",
       downloadCV: "Download CV",
       contactMe: "Let's Talk",
       bullets: [
-        "AWS Certified — EC2, S3, IAM, CloudWatch, Lambda, Cost Explorer",
-        "L1/L2 Incident Response — RCA, escalation, ITIL-based workflows",
-        "Monitoring & Alerting — Zabbix, CloudWatch dashboards, SNS notifications"
+        "Enterprise IT Support — Windows Server, Microsoft 365, Active Directory, Intune",
+        "Cloud Infrastructure — AWS EC2, VPC, CloudWatch, Auto Scaling, S3, IAM",
+        "Monitoring & Observability — Zabbix, Grafana, CloudWatch, SNS alerting",
+        "Networking (CCNA-level) — Routing & Switching, VLANs, ACLs, NAT/PAT, troubleshooting"
       ]
     },
     experience: {
       title: "Professional Experience",
       jobs: [
+        {
+          company: "Fiverr",
+          companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Fiverr_Logo_09.2020.svg/2560px-Fiverr_Logo_09.2020.svg.png",
+          position: "Freelancer – IT Support Engineer",
+          location: "Remote",
+          period: "January 2025 – December 2025",
+          achievements: [
+            "Supported more than 50 international clients across diverse technical environments.",
+            "Delivered L1/L2 technical support for Windows systems, networking issues and Microsoft 365 environments.",
+            "Performed troubleshooting for TCP/IP connectivity, VPN access and security-related incidents.",
+            "Implemented monitoring solutions and technical documentation to improve operational visibility.",
+            "Conducted Root Cause Analysis (RCA) and contributed to continuous process improvement."
+          ]
+        },
         {
           company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
