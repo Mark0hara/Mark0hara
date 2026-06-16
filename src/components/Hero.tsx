@@ -17,12 +17,24 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Availability pill */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-8 rounded-full border border-border bg-card text-xs font-medium text-muted-foreground animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full border border-border bg-card text-xs font-medium text-muted-foreground animate-fade-up">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500/60 opacity-60 animate-pulse" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
             </span>
             {(t.hero as any).availability ?? 'Open to roles'}
+          </div>
+
+          {/* Professional credentials */}
+          <div className="flex flex-wrap justify-center gap-2 mb-8 animate-fade-up" style={{ animationDelay: '0.03s' }}>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-primary/30 bg-primary/5 text-[11px] font-semibold text-primary">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              AWS Certified Cloud Practitioner
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-accent/30 bg-accent/5 text-[11px] font-semibold text-accent">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+              English C1
+            </span>
           </div>
 
           <h1
