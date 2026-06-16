@@ -529,6 +529,20 @@ export const translations = {
           status: "Completado"
         },
         {
+          title: "Monitoreo Empresarial con Zabbix",
+          description: "Problema: Falta de visibilidad unificada sobre infraestructura híbrida on-prem y cloud, retrasando la detección y respuesta a incidentes.\n\nSolución: Despliegue de un servidor Zabbix sobre AWS EC2 con agentes distribuidos en hosts Windows y Linux. Creación de templates, triggers y reglas de escalamiento para CPU, memoria, disco, servicios y anomalías de red. Integración con métricas de CloudWatch y notificaciones SNS para centralizar alertas y flujos on-call.\n\nTecnologías: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nResultado: Observabilidad centralizada sobre infraestructura híbrida, reducción del MTTD en incidentes críticos y alertas estandarizadas alineadas a gestión de incidentes ITIL.",
+          technologies: ["Zabbix", "AWS", "Linux"],
+          githubUrl: "https://github.com/marco-jara",
+          status: "Completado"
+        },
+        {
+          title: "Arquitectura de Infraestructura AWS",
+          description: "Problema: Cargas en una sola AZ sin recuperación automática generaban riesgo de downtime y visibilidad limitada sobre la salud de los recursos.\n\nSolución: Diseño y despliegue de una arquitectura multi-AZ en AWS con EC2 Auto Scaling detrás de un Application Load Balancer, segmentación de VPC con subnets públicas/privadas, Security Groups y NACLs endurecidos, y políticas IAM de mínimo privilegio. Integración de alarmas CloudWatch y notificaciones SNS para detección proactiva de incidentes.\n\nTecnologías: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nResultado: Arquitectura de alta disponibilidad capaz de escalar automáticamente, balancear carga y centralizar el monitoreo entre servicios AWS, con observabilidad extremo a extremo en capas de cómputo y red.",
+          technologies: ["AWS", "Python"],
+          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
+          status: "Completado"
+        },
+        {
           title: "Laboratorio de Networking Empresarial (Nivel CCNA)",
           description: "Problema: Validar diseños de routing, segmentación y seguridad sobre escenarios realistas de redes empresariales antes de aplicar cambios en entornos similares a producción.\n\nSolución: Construcción de topologías multi-sitio en Cisco Packet Tracer y EVE-NG cubriendo routing y switching, segmentación VLAN, inter-VLAN routing, ACLs, NAT/PAT, OSPF y trunking. Simulación de fallas de enlace, broadcast storms y enforcement de políticas, documentando procedimientos de troubleshooting estructurados.\n\nTecnologías: Cisco IOS, Packet Tracer, EVE-NG, Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF.\n\nResultado: Experiencia práctica sólida en networking basada en conocimiento de nivel CCNA, incluyendo routing, switching, VLANs, ACLs, NAT/PAT y troubleshooting de redes empresariales.",
           technologies: ["Cisco", "Packet Tracer", "Redes"],
