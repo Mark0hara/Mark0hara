@@ -5,7 +5,7 @@
 </p>
 
 <h3 align="center">
-IT Support Engineer | Cloud Infrastructure | Networking & Systems Administration
+IT Support Engineer • Cloud Infrastructure • Networking & Systems Administration
 </h3>
 
 <p align="center">
@@ -16,9 +16,9 @@ Passionate about cloud infrastructure, enterprise networking, monitoring solutio
 
 ## 👨‍💼 About Me
 
-I am a Telecommunications and Network Engineer with hands-on experience in IT support, systems administration, cloud infrastructure and monitoring solutions.
-
-My experience includes supporting enterprise environments, managing Microsoft 365 services, troubleshooting Windows systems, implementing monitoring platforms, building AWS-based solutions and designing network infrastructures based on advanced Cisco networking concepts.
+<p align="justify">
+I am a Telecommunications and Network Engineer with hands-on experience in IT support, systems administration, cloud infrastructure and monitoring solutions. My experience includes supporting enterprise environments, managing Microsoft 365 services, troubleshooting Windows systems, implementing monitoring platforms, building AWS-based solutions and designing network infrastructures based on advanced Cisco networking concepts.
+</p>
 
 ### Current Focus
 
@@ -56,9 +56,9 @@ My experience includes supporting enterprise environments, managing Microsoft 36
 ### ☁️ Cloud & Infrastructure
 
 <p>
-<img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/aws.png" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="45"/>
-<img src="https://www.freepnglogos.com/uploads/vmware-png-logo/vmware-workstation-universal-keygen-png-logo-0.png" width="45"/>
+<img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/aws.png" width="60"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60"/>
+<img src="https://www.freepnglogos.com/uploads/vmware-png-logo/vmware-workstation-universal-keygen-png-logo-0.png" width="60"/>
 </p>
 
 AWS • Docker • VMware
@@ -70,9 +70,9 @@ AWS • Docker • VMware
 ### 🖥️ Systems Administration
 
 <p>
-<img src="https://img.icons8.com/color/48/office-365.png" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="45"/>
+<img src="https://img.icons8.com/color/48/office-365.png" width="60"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="60"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="60"/>
 </p>
 
 Microsoft 365 • Windows Server • Linux
@@ -84,8 +84,8 @@ Microsoft 365 • Windows Server • Linux
 ### 📊 Monitoring & Observability
 
 <p>
-<img src="https://www.vectorlogo.zone/logos/zabbix/zabbix-icon.svg" width="45"/>
-<img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" width="45"/>
+<img src="https://www.vectorlogo.zone/logos/zabbix/zabbix-icon.svg" width="60"/>
+<img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" width="60"/>
 </p>
 
 Zabbix • Grafana • CloudWatch
@@ -101,12 +101,10 @@ Zabbix • Grafana • CloudWatch
 ### 🌐 Networking
 
 <p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/120px-Cisco_logo.svg.png"  width="100"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/120px-Cisco_logo.svg.png"  width="150"/>
 </p>
 
 Routing • Switching • VLANs • ACLs • NAT/PAT
-
-<sub>Strong practical networking experience based on CCNA-level knowledge</sub>
 
 </td>
 
@@ -127,8 +125,8 @@ Python • Bash • PowerShell
 ### 🎧 IT Support
 
 <p>
-<img src="https://img.icons8.com/color/48/remote-desktop.png" width="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="45"/>
+<img src="https://img.icons8.com/color/48/remote-desktop.png" width="100"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="100"/>
 </p>
 
 Remote Support • ITIL • Jira
