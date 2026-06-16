@@ -82,39 +82,59 @@ export const translations = {
       period: "2018 – 2023"
     },
     skills: {
-      title: "Tech Stack",
-      subtitle: "Core technologies I work with daily. Move the mouse or touch to interact 🔧",
-      cloud: [
-        { name: 'AWS', description: 'EC2, S3, Lambda, CloudWatch, IAM, VPC, Cost Explorer, SNS' },
-        { name: 'Linux', description: 'Ubuntu, CentOS, Bash scripting, systemd, journalctl, cron' },
-        { name: 'Networking', description: 'TCP/IP, DNS, DHCP, VPN, VLANs, SNMP, Routing, Subnetting' },
-      ],
-      development: [
-        { name: 'CloudWatch', description: 'Metrics, alarms, dashboards, log groups, anomaly detection' },
-        { name: 'Zabbix', description: 'Agent-based monitoring, triggers, escalations, custom templates' },
-        { name: 'Python', description: 'Boto3, automation scripts, log parsing, API integrations' },
-        { name: 'PowerShell', description: 'AD automation, M365 management, scheduled tasks' },
-      ],
-      softSkills: [
-        { name: 'ITIL', description: 'Incident, Problem, Change Management workflows' },
-        { name: 'Troubleshooting', description: 'Systematic diagnosis, RCA, escalation procedures' },
-        { name: 'Documentation', description: 'Runbooks, SOPs, knowledge base articles' },
-        { name: 'Advanced English', description: 'Technical oral and written communication (C1)' }
-      ],
-      categories: {
-        cloud: {
-          title: "Cloud & Networking",
-          description: "AWS, Linux, TCP/IP, VPN, DNS, VLANs, IAM"
+      title: "Technical Skills & Core Competencies",
+      subtitle: "Technologies, platforms and operational skills used across cloud infrastructure, enterprise IT support, networking, monitoring and automation.",
+      interactionHint: "Move the mouse or touch to interact — hover any tag to pause and read.",
+      groups: [
+        {
+          key: 'cloud',
+          title: 'Cloud & Infrastructure',
+          description: 'Design, deployment, monitoring and administration of AWS cloud infrastructure.',
+          color: '#06b6d4',
+          icon: 'cloud',
+          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups', 'NACLs']
         },
-        development: {
-          title: "Monitoring & Automation",
-          description: "CloudWatch, Zabbix, Python (Boto3), PowerShell"
+        {
+          key: 'systems',
+          title: 'Systems Administration',
+          description: 'Identity, endpoint and enterprise systems administration.',
+          color: '#a78bfa',
+          icon: 'server',
+          items: ['Windows Server', 'Active Directory', 'Microsoft 365', 'Exchange Online', 'Intune', 'Group Policy (GPO)']
         },
-        soft: {
-          title: "Operations & Methodology",
-          description: "ITIL, Troubleshooting, RCA, Documentation, English C1"
+        {
+          key: 'networking',
+          title: 'Networking',
+          description: 'Enterprise networking, troubleshooting and network services.',
+          color: '#3b82f6',
+          icon: 'network',
+          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT/PAT', 'OSPF', 'SNMP', 'Routing & Switching']
+        },
+        {
+          key: 'monitoring',
+          title: 'Monitoring & Observability',
+          description: 'Infrastructure monitoring, alerting and operational visibility.',
+          color: '#22c55e',
+          icon: 'activity',
+          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Alerting', 'Dashboards', 'Log Analysis']
+        },
+        {
+          key: 'automation',
+          title: 'Automation',
+          description: 'Operational automation, scripting and cloud administration.',
+          color: '#f59e0b',
+          icon: 'terminal',
+          items: ['Python', 'PowerShell', 'Bash', 'Boto3']
+        },
+        {
+          key: 'operations',
+          title: 'IT Operations',
+          description: 'Operational support, incident response and process standardization.',
+          color: '#ec4899',
+          icon: 'book',
+          items: ['ITIL', 'Incident Management', 'Root Cause Analysis', 'Troubleshooting', 'Documentation', 'Runbooks', 'SOPs']
         }
-      },
+      ],
       technical: {
         title: "Technical Skills",
         cloud: {
@@ -358,39 +378,59 @@ export const translations = {
       period: "2018 – 2023"
     },
     skills: {
-      title: "Stack Técnico",
-      subtitle: "Tecnologías core con las que trabajo a diario. Mueve el mouse o toca para interactuar 🔧",
-      cloud: [
-        { name: 'AWS', description: 'EC2, S3, Lambda, CloudWatch, IAM, VPC, Cost Explorer, SNS' },
-        { name: 'Linux', description: 'Ubuntu, CentOS, Bash scripting, systemd, journalctl, cron' },
-        { name: 'Networking', description: 'TCP/IP, DNS, DHCP, VPN, VLANs, SNMP, Routing, Subnetting' },
-      ],
-      development: [
-        { name: 'CloudWatch', description: 'Métricas, alarmas, dashboards, log groups, detección de anomalías' },
-        { name: 'Zabbix', description: 'Monitoreo basado en agentes, triggers, escalaciones, templates custom' },
-        { name: 'Python', description: 'Boto3, scripts de automatización, parsing de logs, integraciones API' },
-        { name: 'PowerShell', description: 'Automatización AD, gestión M365, tareas programadas' },
-      ],
-      softSkills: [
-        { name: 'ITIL', description: 'Flujos de Incident, Problem y Change Management' },
-        { name: 'Troubleshooting', description: 'Diagnóstico sistemático, RCA, procedimientos de escalamiento' },
-        { name: 'Documentación', description: 'Runbooks, SOPs, artículos de knowledge base' },
-        { name: 'Inglés Avanzado', description: 'Comunicación técnica oral y escrita (C1)' }
-      ],
-      categories: {
-        cloud: {
-          title: "Cloud & Networking",
-          description: "AWS, Linux, TCP/IP, VPN, DNS, VLANs, IAM"
+      title: "Habilidades Técnicas y Competencias Principales",
+      subtitle: "Tecnologías, plataformas y habilidades operativas que utilizo en infraestructura cloud, soporte TI empresarial, networking, monitoreo y automatización.",
+      interactionHint: "Mueve el mouse o toca para interactuar — pasa el cursor sobre un tag para pausar y leer.",
+      groups: [
+        {
+          key: 'cloud',
+          title: 'Cloud e Infraestructura',
+          description: 'Diseño, despliegue, monitoreo y administración de infraestructura cloud en AWS.',
+          color: '#06b6d4',
+          icon: 'cloud',
+          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups', 'NACLs']
         },
-        development: {
-          title: "Monitoreo & Automatización",
-          description: "CloudWatch, Zabbix, Python (Boto3), PowerShell"
+        {
+          key: 'systems',
+          title: 'Administración de Sistemas',
+          description: 'Administración de identidad, endpoints y sistemas empresariales.',
+          color: '#a78bfa',
+          icon: 'server',
+          items: ['Windows Server', 'Active Directory', 'Microsoft 365', 'Exchange Online', 'Intune', 'Group Policy (GPO)']
         },
-        soft: {
-          title: "Operaciones & Metodología",
-          description: "ITIL, Troubleshooting, RCA, Documentación, Inglés C1"
+        {
+          key: 'networking',
+          title: 'Networking',
+          description: 'Networking empresarial, troubleshooting y servicios de red.',
+          color: '#3b82f6',
+          icon: 'network',
+          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT/PAT', 'OSPF', 'SNMP', 'Routing & Switching']
+        },
+        {
+          key: 'monitoring',
+          title: 'Monitoreo y Observabilidad',
+          description: 'Monitoreo de infraestructura, alertas y visibilidad operativa.',
+          color: '#22c55e',
+          icon: 'activity',
+          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Alertas', 'Dashboards', 'Análisis de Logs']
+        },
+        {
+          key: 'automation',
+          title: 'Automatización',
+          description: 'Automatización operativa, scripting y administración cloud.',
+          color: '#f59e0b',
+          icon: 'terminal',
+          items: ['Python', 'PowerShell', 'Bash', 'Boto3']
+        },
+        {
+          key: 'operations',
+          title: 'Operaciones TI',
+          description: 'Soporte operativo, respuesta a incidentes y estandarización de procesos.',
+          color: '#ec4899',
+          icon: 'book',
+          items: ['ITIL', 'Gestión de Incidentes', 'Análisis de Causa Raíz', 'Troubleshooting', 'Documentación', 'Runbooks', 'SOPs']
         }
-      },
+      ],
       technical: {
         title: "Habilidades Técnicas",
         cloud: {
