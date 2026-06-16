@@ -130,8 +130,8 @@ export const translations = {
           items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
         },
         database: {
-          title: "Systems",
-          items: ["Windows Server", "Active Directory", "Microsoft 365", "Exchange Online"]
+          title: "Systems & Identity",
+          items: ["Windows Server", "Active Directory", "Group Policy (GPO)", "Microsoft 365", "Exchange Online", "Intune"]
         },
         support: {
           title: "Monitoring",
@@ -406,8 +406,8 @@ export const translations = {
           items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
         },
         database: {
-          title: "Sistemas",
-          items: ["Windows Server", "Active Directory", "Microsoft 365", "Exchange Online"]
+          title: "Sistemas e Identidad",
+          items: ["Windows Server", "Active Directory", "Group Policy (GPO)", "Microsoft 365", "Exchange Online", "Intune"]
         },
         support: {
           title: "Monitoreo",
