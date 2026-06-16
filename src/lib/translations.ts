@@ -2,7 +2,7 @@
 export const translations = {
   en: {
     nav: {
-      home: "Home",
+      home: "Holaxd",
       experience: "Experience",
       skills: "Tech Stack",
       methodology: "Methodology",
@@ -287,7 +287,7 @@ export const translations = {
       contact: "Contacto",
     },
     hero: {
-      title: "MARCO JARA CUEVAS",
+      title: "MARCO ANTONIO JARA CUEVAS",
       subtitle: "IT Support Engineer · Infraestructura Cloud · Networking & Monitoreo",
       availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
