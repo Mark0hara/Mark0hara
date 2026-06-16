@@ -1,6 +1,23 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Shield, Terminal, Network, Box, Activity, Mail, Code, Server, BookOpen, Users, Brain, Globe, Cloud, Database, Search, FileText, Wrench } from 'lucide-react';
+import { Terminal, Network, Activity, Server, BookOpen, Cloud, type LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+
+const ICONS: Record<string, LucideIcon> = {
+  cloud: Cloud,
+  server: Server,
+  network: Network,
+  activity: Activity,
+  terminal: Terminal,
+  book: BookOpen,
+};
+
+type Skill = {
+  name: string;
+  description: string;
+  color: string;
+  groupTitle: string;
+  icon: LucideIcon;
+};
 
 const SkillsCloud = () => {
   const { t } = useLanguage();
@@ -8,28 +25,21 @@ const SkillsCloud = () => {
   const [hoveredTag, setHoveredTag] = useState<number | null>(null);
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
 
-  const iconMap: Record<string, typeof Cloud> = {
-    'AWS': Cloud,
-    'Linux': Terminal,
-    'Networking': Network,
-    'CloudWatch': Activity,
-    'Zabbix': Activity,
-    'Python': Code,
-    'PowerShell': Terminal,
-    'ITIL': BookOpen,
-    'Troubleshooting': Wrench,
-    'Documentation': FileText,
-    'Documentación': FileText,
-    'Advanced English': Globe,
-    'Inglés Avanzado': Globe
-  };
-
-  const skills = useMemo(() => {
-    const cloudSkills = t.skills.cloud.map((skill: { name: string; description: string }) => ({ ...skill, color: '#06b6d4' }));
-    const devSkills = t.skills.development.map((skill: { name: string; description: string }) => ({ ...skill, color: '#c084fc' }));
-    const softSkills = t.skills.softSkills.map((skill: { name: string; description: string }) => ({ ...skill, color: '#3b82f6' }));
-    
-    return [...cloudSkills, ...devSkills, ...softSkills];
+  const skills = useMemo<Skill[]>(() => {
+    const out: Skill[] = [];
+    for (const g of t.skills.groups) {
+      const Icon = ICONS[g.icon] || Cloud;
+      for (const item of g.items) {
+        out.push({
+          name: item,
+          description: `${g.title} — ${g.description}`,
+          color: g.color,
+          groupTitle: g.title,
+          icon: Icon,
+        });
+      }
+    }
+    return out;
   }, [t.skills]);
 
   const [tagPositions, setTagPositions] = useState<Array<{ x: number; y: number; z: number }>>([]);
@@ -105,22 +115,30 @@ const SkillsCloud = () => {
     };
   }, []);
 
+  // Slow auto-rotation; pauses when a tag is hovered
+  const hoveredRef = useRef<number | null>(null);
+  useEffect(() => { hoveredRef.current = hoveredTag; }, [hoveredTag]);
+
   useEffect(() => {
     let autoRotation = { x: 0, y: 0 };
-    const animate = () => {
-      autoRotation.y += 0.0025;
-      autoRotation.x += 0.001;
+    let last = performance.now();
+    const animate = (now: number) => {
+      const dt = Math.min(now - last, 64);
+      last = now;
+      if (hoveredRef.current === null) {
+        // ~0.072 rad/s on Y, ~0.03 rad/s on X — calm, professional
+        autoRotation.y += 0.000072 * dt;
+        autoRotation.x += 0.00003 * dt;
+      }
       setRotation({
         x: autoRotation.x + targetRotationRef.current.x,
         y: autoRotation.y + targetRotationRef.current.y
       });
       animationRef.current = requestAnimationFrame(animate);
     };
-    animate();
+    animationRef.current = requestAnimationFrame(animate);
     return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
+      if (animationRef.current) cancelAnimationFrame(animationRef.current);
     };
   }, []);
 
@@ -157,8 +175,11 @@ const SkillsCloud = () => {
   return (
     <div className="w-full flex items-center justify-center p-4 md:p-8 relative">
       <div className="text-center relative z-10 w-full">
-        <p className="text-muted-foreground mb-8 md:mb-12 max-w-2xl mx-auto text-sm md:text-base">
+        <p className="text-muted-foreground mb-2 max-w-2xl mx-auto text-sm md:text-base">
           {t.skills.subtitle}
+        </p>
+        <p className="text-muted-foreground/70 mb-8 md:mb-10 max-w-2xl mx-auto text-xs">
+          {t.skills.interactionHint}
         </p>
         
         <div 
@@ -174,7 +195,7 @@ const SkillsCloud = () => {
           {rotatedPositions.map((rotated, i) => {
             const isHovered = hoveredTag === i;
             const skill = skills[i];
-            const Icon = iconMap[skill.name] || Code;
+            const Icon = skill.icon;
 
             return (
               <div
@@ -224,18 +245,12 @@ const SkillsCloud = () => {
         </div>
         
         <div className="mt-8 flex gap-3 md:gap-4 justify-center items-center text-xs md:text-sm text-muted-foreground flex-wrap px-4">
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-cyan-500"></div>
-            <span>{t.skills.categories.cloud.title}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-purple-400"></div>
-            <span>{t.skills.categories.development.title}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-            <span>{t.skills.categories.soft.title}</span>
-          </div>
+          {t.skills.groups.map((g) => (
+            <div key={g.key} className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: g.color }} />
+              <span>{g.title}</span>
+            </div>
+          ))}
         </div>
       </div>
 
