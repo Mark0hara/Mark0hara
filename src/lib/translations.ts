@@ -287,7 +287,7 @@ export const translations = {
       contact: "Contacto",
     },
     hero: {
-      title: "MARCO ANTONIO JARA CUEVAS",
+      title: "MARCO JARA CUEVAS",
       subtitle: "IT Support Engineer · Infraestructura Cloud · Networking & Monitoreo",
       availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
