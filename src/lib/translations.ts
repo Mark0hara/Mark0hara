@@ -239,20 +239,6 @@ export const translations = {
       },
       projects: [
         {
-          title: "AWS High-Availability Architecture",
-          description: "Problem: Single-AZ workloads with no automatic recovery created downtime risk and limited visibility into resource health.\n\nSolution: Designed and deployed a multi-AZ AWS architecture using EC2 Auto Scaling behind an Application Load Balancer, VPC segmentation with public/private subnets, hardened Security Groups and NACLs, and least-privilege IAM policies. Integrated CloudWatch alarms and SNS notifications for proactive incident detection.\n\nTechnologies: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nOutcome: Implemented a highly available architecture capable of automatic scaling, load balancing and centralized monitoring across AWS services, with end-to-end observability across compute and network layers.",
-          technologies: ["AWS", "Python"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completed"
-        },
-        {
-          title: "Zabbix Enterprise Deployment",
-          description: "Problem: Lack of unified visibility across hybrid on-prem and cloud infrastructure delayed incident detection and response.\n\nSolution: Deployed a Zabbix monitoring server on AWS EC2 with agents distributed across Windows and Linux hosts. Built custom templates, triggers, and escalation rules for CPU, memory, disk, services, and network anomalies. Integrated CloudWatch metrics and SNS notifications to centralize alerts and on-call workflows.\n\nTechnologies: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nOutcome: Centralized observability across hybrid infrastructure, faster mean time to detect critical incidents, and standardized alerting aligned with ITIL incident management.",
-          technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/marco-jara",
-          status: "Completed"
-        },
-        {
           title: "Zabbix Enterprise Monitoring",
           description: "Problem: Lack of unified visibility across hybrid on-prem and cloud infrastructure delayed incident detection and response.\n\nSolution: Deployed a Zabbix monitoring server on AWS EC2 with agents distributed across Windows and Linux hosts. Built custom templates, triggers, and escalation rules for CPU, memory, disk, services, and network anomalies. Integrated CloudWatch metrics and SNS notifications to centralize alerts and on-call workflows.\n\nTechnologies: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nOutcome: Centralized observability across hybrid infrastructure, faster mean time to detect critical incidents, and standardized alerting aligned with ITIL incident management.",
           technologies: ["Zabbix", "AWS", "Linux"],
