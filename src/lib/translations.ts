@@ -12,10 +12,10 @@ export const translations = {
     },
     hero: {
       title: "Marco Antonio Jara Cuevas",
-      subtitle: "IT Support Engineer · AWS Cloud · Enterprise Infrastructure & Networking",
+      subtitle: "IT Support Engineer | AWS Cloud | Infrastructure & Networking",
       availability: "Open to IT Support, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
-      description: "Telecommunications and Network Engineer with hands-on experience in enterprise IT support, AWS cloud infrastructure, monitoring, networking and automation.",
+      description: "Telecommunications and Network Engineer with hands-on experience in enterprise IT support, AWS cloud infrastructure, monitoring, networking and automation. Experienced supporting corporate environments, deploying infrastructure, troubleshooting complex incidents and maintaining operational reliability through monitoring and structured documentation.",
       downloadCV: "Download CV",
       contactMe: "Let's Talk",
       bullets: [
@@ -126,12 +126,12 @@ export const translations = {
           items: ["IAM Policies", "Security Groups", "NACLs", "Incident Response"]
         },
         networking: {
-          title: "Networking",
-          items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
+          title: "Enterprise Networking",
+          items: ["Routing & Switching", "VLANs", "ACLs", "NAT/PAT", "OSPF", "TCP/IP", "DNS", "DHCP", "VPN", "Troubleshooting"]
         },
         database: {
-          title: "Systems",
-          items: ["Windows Server", "Active Directory", "Microsoft 365", "Exchange Online"]
+          title: "Systems & Identity",
+          items: ["Windows Server", "Active Directory", "Group Policy (GPO)", "Microsoft 365", "Exchange Online", "Intune"]
         },
         support: {
           title: "Monitoring",
@@ -239,17 +239,17 @@ export const translations = {
       },
       projects: [
         {
-          title: "AWS High-Availability Architecture",
-          description: "Problem: Single-AZ workloads with no automatic recovery created downtime risk and limited visibility into resource health.\n\nSolution: Designed and deployed a multi-AZ AWS architecture using EC2 Auto Scaling behind an Application Load Balancer, VPC segmentation with public/private subnets, hardened Security Groups and NACLs, and least-privilege IAM policies. Integrated CloudWatch alarms and SNS notifications for proactive incident detection.\n\nTechnologies: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nOutcome: Resilient, self-healing infrastructure with 99.9% uptime in load testing, automated scaling under demand, and end-to-end observability across compute and network layers.",
-          technologies: ["AWS", "Python"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completed"
-        },
-        {
-          title: "Zabbix Enterprise Deployment",
+          title: "Zabbix Enterprise Monitoring",
           description: "Problem: Lack of unified visibility across hybrid on-prem and cloud infrastructure delayed incident detection and response.\n\nSolution: Deployed a Zabbix monitoring server on AWS EC2 with agents distributed across Windows and Linux hosts. Built custom templates, triggers, and escalation rules for CPU, memory, disk, services, and network anomalies. Integrated CloudWatch metrics and SNS notifications to centralize alerts and on-call workflows.\n\nTechnologies: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nOutcome: Centralized observability across hybrid infrastructure, faster mean time to detect critical incidents, and standardized alerting aligned with ITIL incident management.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
+          status: "Completed"
+        },
+        {
+          title: "AWS Infrastructure Architecture",
+          description: "Problem: Single-AZ workloads with no automatic recovery created downtime risk and limited visibility into resource health.\n\nSolution: Designed and deployed a multi-AZ AWS architecture using EC2 Auto Scaling behind an Application Load Balancer, VPC segmentation with public/private subnets, hardened Security Groups and NACLs, and least-privilege IAM policies. Integrated CloudWatch alarms and SNS notifications for proactive incident detection.\n\nTechnologies: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nOutcome: Implemented a highly available architecture capable of automatic scaling, load balancing and centralized monitoring across AWS services, with end-to-end observability across compute and network layers.",
+          technologies: ["AWS", "Python"],
+          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
@@ -288,10 +288,10 @@ export const translations = {
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "IT Support Engineer · Infraestructura Cloud · Networking & Monitoreo",
+      subtitle: "IT Support Engineer | AWS Cloud | Infraestructura y Networking",
       availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
-      description: "Ingeniero en Telecomunicaciones y Redes con experiencia práctica soportando entornos empresariales en infraestructura cloud AWS, Microsoft 365, Active Directory, Windows Server, monitoreo y networking. Enfocado en confiabilidad operativa, troubleshooting estructurado y gestión de incidentes alineada a ITIL.",
+      description: "Ingeniero en Telecomunicaciones y Redes con experiencia práctica en soporte TI empresarial, infraestructura cloud en AWS, monitoreo, networking y automatización. Con experiencia soportando entornos corporativos, desplegando infraestructura, resolviendo incidentes complejos y manteniendo la confiabilidad operativa mediante monitoreo y documentación estructurada.",
       downloadCV: "Descargar CV",
       contactMe: "Hablemos",
       bullets: [
@@ -402,12 +402,12 @@ export const translations = {
           items: ["Políticas IAM", "Security Groups", "NACLs", "Respuesta a Incidentes"]
         },
         networking: {
-          title: "Networking",
-          items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
+          title: "Networking Empresarial",
+          items: ["Routing & Switching", "VLANs", "ACLs", "NAT/PAT", "OSPF", "TCP/IP", "DNS", "DHCP", "VPN", "Troubleshooting"]
         },
         database: {
-          title: "Sistemas",
-          items: ["Windows Server", "Active Directory", "Microsoft 365", "Exchange Online"]
+          title: "Sistemas e Identidad",
+          items: ["Windows Server", "Active Directory", "Group Policy (GPO)", "Microsoft 365", "Exchange Online", "Intune"]
         },
         support: {
           title: "Monitoreo",
@@ -515,17 +515,17 @@ export const translations = {
       },
       projects: [
         {
-          title: "Arquitectura AWS de Alta Disponibilidad",
-          description: "Problema: Cargas en una sola AZ sin recuperación automática generaban riesgo de downtime y visibilidad limitada sobre la salud de los recursos.\n\nSolución: Diseño y despliegue de una arquitectura multi-AZ en AWS con EC2 Auto Scaling detrás de un Application Load Balancer, segmentación de VPC con subnets públicas/privadas, Security Groups y NACLs endurecidos, y políticas IAM de mínimo privilegio. Integración de alarmas CloudWatch y notificaciones SNS para detección proactiva de incidentes.\n\nTecnologías: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nResultado: Infraestructura resiliente y auto-reparable con 99.9% de uptime en pruebas de carga, escalamiento automático según demanda y observabilidad extremo a extremo en capas de cómputo y red.",
-          technologies: ["AWS", "Python"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completado"
-        },
-        {
-          title: "Despliegue Empresarial de Zabbix",
+          title: "Monitoreo Empresarial con Zabbix",
           description: "Problema: Falta de visibilidad unificada sobre infraestructura híbrida on-prem y cloud, retrasando la detección y respuesta a incidentes.\n\nSolución: Despliegue de un servidor Zabbix sobre AWS EC2 con agentes distribuidos en hosts Windows y Linux. Creación de templates, triggers y reglas de escalamiento para CPU, memoria, disco, servicios y anomalías de red. Integración con métricas de CloudWatch y notificaciones SNS para centralizar alertas y flujos on-call.\n\nTecnologías: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nResultado: Observabilidad centralizada sobre infraestructura híbrida, reducción del MTTD en incidentes críticos y alertas estandarizadas alineadas a gestión de incidentes ITIL.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
+          status: "Completado"
+        },
+        {
+          title: "Arquitectura de Infraestructura AWS",
+          description: "Problema: Cargas en una sola AZ sin recuperación automática generaban riesgo de downtime y visibilidad limitada sobre la salud de los recursos.\n\nSolución: Diseño y despliegue de una arquitectura multi-AZ en AWS con EC2 Auto Scaling detrás de un Application Load Balancer, segmentación de VPC con subnets públicas/privadas, Security Groups y NACLs endurecidos, y políticas IAM de mínimo privilegio. Integración de alarmas CloudWatch y notificaciones SNS para detección proactiva de incidentes.\n\nTecnologías: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nResultado: Arquitectura de alta disponibilidad capaz de escalar automáticamente, balancear carga y centralizar el monitoreo entre servicios AWS, con observabilidad extremo a extremo en capas de cómputo y red.",
+          technologies: ["AWS", "Python"],
+          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
         {
