@@ -126,8 +126,8 @@ export const translations = {
           items: ["IAM Policies", "Security Groups", "NACLs", "Incident Response"]
         },
         networking: {
-          title: "Networking",
-          items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
+          title: "Enterprise Networking",
+          items: ["Routing & Switching", "VLANs", "ACLs", "NAT/PAT", "OSPF", "TCP/IP", "DNS", "DHCP", "VPN", "Troubleshooting"]
         },
         database: {
           title: "Systems & Identity",
@@ -402,8 +402,8 @@ export const translations = {
           items: ["Políticas IAM", "Security Groups", "NACLs", "Respuesta a Incidentes"]
         },
         networking: {
-          title: "Networking",
-          items: ["TCP/IP", "DNS/DHCP", "VPN", "VLANs", "Subnetting", "SNMP"]
+          title: "Networking Empresarial",
+          items: ["Routing & Switching", "VLANs", "ACLs", "NAT/PAT", "OSPF", "TCP/IP", "DNS", "DHCP", "VPN", "Troubleshooting"]
         },
         database: {
           title: "Sistemas e Identidad",
