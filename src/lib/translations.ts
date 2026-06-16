@@ -12,10 +12,10 @@ export const translations = {
     },
     hero: {
       title: "Marco Antonio Jara Cuevas",
-      subtitle: "IT Support Engineer · AWS Cloud · Enterprise Infrastructure & Networking",
+      subtitle: "IT Support Engineer | AWS Cloud | Infrastructure & Networking",
       availability: "Open to IT Support, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
-      description: "Telecommunications and Network Engineer with hands-on experience in enterprise IT support, AWS cloud infrastructure, monitoring, networking and automation.",
+      description: "Telecommunications and Network Engineer with hands-on experience in enterprise IT support, AWS cloud infrastructure, monitoring, networking and automation. Experienced supporting corporate environments, deploying infrastructure, troubleshooting complex incidents and maintaining operational reliability through monitoring and structured documentation.",
       downloadCV: "Download CV",
       contactMe: "Let's Talk",
       bullets: [
@@ -288,10 +288,10 @@ export const translations = {
     },
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "IT Support Engineer · Infraestructura Cloud · Networking & Monitoreo",
+      subtitle: "IT Support Engineer | AWS Cloud | Infraestructura y Networking",
       availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
-      description: "Ingeniero en Telecomunicaciones y Redes con experiencia práctica soportando entornos empresariales en infraestructura cloud AWS, Microsoft 365, Active Directory, Windows Server, monitoreo y networking. Enfocado en confiabilidad operativa, troubleshooting estructurado y gestión de incidentes alineada a ITIL.",
+      description: "Ingeniero en Telecomunicaciones y Redes con experiencia práctica en soporte TI empresarial, infraestructura cloud en AWS, monitoreo, networking y automatización. Con experiencia soportando entornos corporativos, desplegando infraestructura, resolviendo incidentes complejos y manteniendo la confiabilidad operativa mediante monitoreo y documentación estructurada.",
       downloadCV: "Descargar CV",
       contactMe: "Hablemos",
       bullets: [
