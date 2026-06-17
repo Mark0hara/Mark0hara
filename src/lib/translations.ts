@@ -379,21 +379,21 @@ export const translations = {
     },
     skills: {
       title: "Habilidades Técnicas y Competencias Principales",
-      subtitle: "Tecnologías, plataformas y habilidades operativas que utilizo en infraestructura cloud, soporte TI empresarial, networking, monitoreo y automatización.",
-      interactionHint: "Mueve el mouse o toca para interactuar — pasa el cursor sobre un tag para pausar y leer.",
+      subtitle: "Dominios técnicos, plataformas y experiencia operativa desarrollados en soporte TI empresarial, infraestructura cloud, monitoreo, networking y automatización.",
+      interactionHint: "",
       groups: [
         {
           key: 'cloud',
-          title: 'Cloud e Infraestructura',
-          description: 'Diseño, despliegue, monitoreo y administración de infraestructura cloud en AWS.',
+          title: 'Infraestructura Cloud',
+          description: 'Despliegue, monitoreo y administración de entornos cloud en AWS.',
           color: '#06b6d4',
           icon: 'cloud',
-          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups', 'NACLs']
+          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups']
         },
         {
           key: 'systems',
           title: 'Administración de Sistemas',
-          description: 'Administración de identidad, endpoints y sistemas empresariales.',
+          description: 'Administración de endpoints, identidad y ecosistema Microsoft empresarial.',
           color: '#a78bfa',
           icon: 'server',
           items: ['Windows Server', 'Active Directory', 'Microsoft 365', 'Exchange Online', 'Intune', 'Group Policy (GPO)']
@@ -401,34 +401,34 @@ export const translations = {
         {
           key: 'networking',
           title: 'Networking',
-          description: 'Networking empresarial, troubleshooting y servicios de red.',
+          description: 'Networking empresarial, segmentación y troubleshooting.',
           color: '#3b82f6',
           icon: 'network',
-          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT/PAT', 'OSPF', 'SNMP', 'Routing & Switching']
+          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT', 'OSPF', 'SNMP', 'Routing & Switching']
         },
         {
           key: 'monitoring',
           title: 'Monitoreo y Observabilidad',
-          description: 'Monitoreo de infraestructura, alertas y visibilidad operativa.',
+          description: 'Monitoreo, alertas y visibilidad operativa.',
           color: '#22c55e',
           icon: 'activity',
-          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Alertas', 'Dashboards', 'Análisis de Logs']
+          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Dashboards', 'Análisis de Logs']
         },
         {
           key: 'automation',
           title: 'Automatización',
-          description: 'Automatización operativa, scripting y administración cloud.',
+          description: 'Automatización operativa y scripting.',
           color: '#f59e0b',
           icon: 'terminal',
-          items: ['Python', 'PowerShell', 'Bash', 'Boto3']
+          items: ['Python', 'PowerShell', 'Bash']
         },
         {
           key: 'operations',
           title: 'Operaciones TI',
-          description: 'Soporte operativo, respuesta a incidentes y estandarización de procesos.',
+          description: 'Soporte operativo, respuesta a incidentes y mejora de procesos.',
           color: '#ec4899',
           icon: 'book',
-          items: ['ITIL', 'Gestión de Incidentes', 'Análisis de Causa Raíz', 'Troubleshooting', 'Documentación', 'Runbooks', 'SOPs']
+          items: ['ITIL', 'Gestión de Incidentes', 'Análisis de Causa Raíz', 'Troubleshooting', 'Documentación', 'Runbooks']
         }
       ],
       technical: {
