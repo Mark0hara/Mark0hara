@@ -91,50 +91,79 @@ const Portfolio: React.FC = () => {
                 className={`glass-card card-hover overlay-gradient group scroll-scale ${projectAnimation.isVisible ? 'visible' : ''}`}
                 style={{ transitionDelay: `${index * 0.15}s` }}
               >
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <CardTitle className="text-lg group-hover:text-gradient-shimmer transition-all duration-300">
-                    {project.title}
-                  </CardTitle>
+              <CardHeader className="pb-4">
+                <div className="flex justify-between items-start gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
+                    {project.icon && (
+                      <span className="text-3xl leading-none shrink-0" aria-hidden="true">
+                        {project.icon}
+                      </span>
+                    )}
+                    <CardTitle className="text-lg group-hover:text-gradient-shimmer transition-all duration-300 truncate">
+                      {project.title}
+                    </CardTitle>
+                  </div>
                   <Badge className={getStatusColor(project.status)}>
                     {project.status}
                   </Badge>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-6 leading-relaxed whitespace-pre-line text-sm">
-                  {project.description}
-                </p>
-                
-                {/* Technologies */}
+                {/* Problem / Solution / Outcome */}
+                <dl className="space-y-3 mb-6 text-sm">
+                  <div>
+                    <dt className="text-[11px] font-semibold uppercase tracking-wider text-primary mb-1">
+                      {t.portfolios.problemLabel}
+                    </dt>
+                    <dd className="text-muted-foreground leading-relaxed">{project.problem}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-[11px] font-semibold uppercase tracking-wider text-primary mb-1">
+                      {t.portfolios.solutionLabel}
+                    </dt>
+                    <dd className="text-muted-foreground leading-relaxed">{project.solution}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-[11px] font-semibold uppercase tracking-wider text-primary mb-1">
+                      {t.portfolios.outcomeLabel}
+                    </dt>
+                    <dd className="text-muted-foreground leading-relaxed">{project.outcome}</dd>
+                  </div>
+                </dl>
+
+                {/* Visual Stack */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold mb-3 text-foreground">{t.portfolios.technologiesUsed}</h4>
+                  <h4 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+                    {t.portfolios.technologiesUsed}
+                  </h4>
                   <div className="flex flex-wrap gap-3">
                     {project.technologies.map((tech, techIndex) => {
                       const techImage = getTechnologyImage(tech);
                       return (
-                        <div 
+                        <div
                           key={techIndex}
-                          className="flex items-center gap-2 px-3 py-2 bg-secondary/50 rounded-lg hover:bg-secondary transition-all duration-300 pop-hover border-glow-animate"
+                          title={tech}
+                          aria-label={tech}
+                          className="flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/40 border border-border/50 hover:bg-secondary hover:border-primary/40 transition-all duration-300 pop-hover"
                         >
                           {techImage ? (
-                            <img 
-                              src={techImage} 
-                              alt={tech} 
-                              className="w-5 h-5 object-contain"
+                            <img
+                              src={techImage}
+                              alt={tech}
+                              className="w-8 h-8 object-contain"
                               onError={(e) => {
-                                // Fallback if image fails to load
                                 e.currentTarget.style.display = 'none';
                               }}
                             />
-                          ) : null}
-                          <span className="text-xs font-medium">{tech}</span>
+                          ) : (
+                            <span className="text-[10px] font-semibold text-center px-1">{tech}</span>
+                          )}
                         </div>
                       );
                     })}
                   </div>
                 </div>
-                
+
                 {/* Action Buttons */}
                 <div className="flex gap-3">
                   <Button 
