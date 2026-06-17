@@ -250,7 +250,10 @@ export const translations = {
     portfolios: {
       title: "Projects",
       subtitle: "Real-world cloud infrastructure, monitoring, and networking projects demonstrating hands-on engineering skills.",
-      technologiesUsed: "Stack:",
+      technologiesUsed: "Stack",
+      problemLabel: "Problem",
+      solutionLabel: "Solution",
+      outcomeLabel: "Outcome",
       viewCode: "View Code",
       cta: {
         title: "Let's Build Something Together",
@@ -259,36 +262,51 @@ export const translations = {
       },
       projects: [
         {
+          icon: "🖥️",
           title: "Zabbix Enterprise Monitoring",
-          description: "Problem: Lack of unified visibility across hybrid on-prem and cloud infrastructure delayed incident detection and response.\n\nSolution: Deployed a Zabbix monitoring server on AWS EC2 with agents distributed across Windows and Linux hosts. Built custom templates, triggers, and escalation rules for CPU, memory, disk, services, and network anomalies. Integrated CloudWatch metrics and SNS notifications to centralize alerts and on-call workflows.\n\nTechnologies: Zabbix, AWS EC2, CloudWatch, SNS, Linux, Bash.\n\nOutcome: Centralized observability across hybrid infrastructure, faster mean time to detect critical incidents, and standardized alerting aligned with ITIL incident management.",
+          problem: "Limited visibility across hybrid on-prem and cloud infrastructure made incident detection and troubleshooting inefficient.",
+          solution: "Deployed a centralized Zabbix monitoring stack on AWS EC2 with Windows and Linux agents, custom templates, triggers, and CloudWatch/SNS integration for alerting.",
+          outcome: "Unified observability across hybrid infrastructure with standardized, ITIL-aligned alerting and faster incident detection.",
           technologies: ["Zabbix", "AWS", "Linux"],
           githubUrl: "https://github.com/marco-jara",
           status: "Completed"
         },
         {
+          icon: "☁️",
           title: "AWS Infrastructure Architecture",
-          description: "Problem: Single-AZ workloads with no automatic recovery created downtime risk and limited visibility into resource health.\n\nSolution: Designed and deployed a multi-AZ AWS architecture using EC2 Auto Scaling behind an Application Load Balancer, VPC segmentation with public/private subnets, hardened Security Groups and NACLs, and least-privilege IAM policies. Integrated CloudWatch alarms and SNS notifications for proactive incident detection.\n\nTechnologies: AWS EC2, VPC, Auto Scaling, ALB, IAM, CloudWatch, SNS, S3, Python (Boto3).\n\nOutcome: Implemented a highly available architecture capable of automatic scaling, load balancing and centralized monitoring across AWS services, with end-to-end observability across compute and network layers.",
+          problem: "Single-AZ workloads without automatic recovery created downtime risk and limited visibility into resource health.",
+          solution: "Designed a multi-AZ AWS architecture with EC2 Auto Scaling behind an ALB, segmented VPC, hardened Security Groups, and least-privilege IAM, monitored via CloudWatch and SNS.",
+          outcome: "Resilient, automatically scalable infrastructure with centralized monitoring and improved operational reliability.",
           technologies: ["AWS", "Python"],
           githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
+          icon: "🌐",
           title: "Enterprise Networking Lab (CCNA-Level)",
-          description: "Problem: Validate routing, segmentation, and security designs against realistic enterprise network scenarios before applying changes to production-like environments.\n\nSolution: Built multi-site topologies in Cisco Packet Tracer and EVE-NG covering routing and switching, VLAN segmentation, inter-VLAN routing, ACLs, NAT/PAT, OSPF, and trunking. Simulated link failures, broadcast storms, and policy enforcement, documenting structured troubleshooting procedures for each scenario.\n\nTechnologies: Cisco IOS, Packet Tracer, EVE-NG, Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF.\n\nOutcome: Strong practical networking experience based on CCNA-level knowledge, including routing, switching, VLANs, ACLs, NAT/PAT and enterprise network troubleshooting.",
+          problem: "Routing, segmentation, and security designs needed to be validated on realistic enterprise topologies before production-like rollout.",
+          solution: "Built multi-site labs in Cisco Packet Tracer and EVE-NG covering routing & switching, VLANs, inter-VLAN routing, ACLs, NAT/PAT, and OSPF, with structured troubleshooting procedures.",
+          outcome: "Strong practical networking experience at CCNA level with documented troubleshooting workflows for enterprise scenarios.",
           technologies: ["Cisco", "Packet Tracer", "Networking"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
         },
         {
+          icon: "⚙️",
           title: "Cloud & Systems Automation Toolkit",
-          description: "Problem: Repetitive operational tasks across AWS and Microsoft 365 environments consumed engineering time and increased the risk of human error.\n\nSolution: Built a toolkit of Python (Boto3), PowerShell, and Bash scripts to automate AWS resource inventory and reporting, IAM auditing, EC2 lifecycle actions, S3 housekeeping, Microsoft 365 and Active Directory user provisioning, and scheduled health checks. Standardized logging, error handling, and reporting outputs.\n\nTechnologies: Python (Boto3), PowerShell, Bash, AWS (EC2, S3, IAM, CloudWatch), Microsoft 365, Active Directory.\n\nOutcome: Reduced manual workload on recurring operational tasks, improved consistency in administration activities, and increased visibility over cloud and identity resources.",
+          problem: "Repetitive operational tasks across AWS and Microsoft 365 consumed engineering time and increased the risk of human error.",
+          solution: "Built a toolkit of Python, PowerShell, and Bash scripts to automate AWS inventory, IAM auditing, EC2/S3 lifecycle actions, and M365/AD user provisioning with standardized logging.",
+          outcome: "Reduced manual workload on recurring tasks and improved consistency and visibility across cloud and identity operations.",
           technologies: ["Python", "AWS", "Linux"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
         },
         {
+          icon: "📘",
           title: "IT Operations Runbooks & Knowledge Base",
-          description: "Problem: Inconsistent incident handling and tribal knowledge slowed down resolution times and onboarding of new support staff.\n\nSolution: Designed a structured set of runbooks, SOPs, and knowledge base articles covering L1/L2 incident handling for TCP/IP, DNS, DHCP, VPN, Active Directory, Microsoft 365, Intune, and Windows Server. Standardized ITIL-aligned workflows for incident, problem, and change management, including post-incident review templates.\n\nTechnologies: ITIL, Active Directory, Microsoft 365, Intune, Windows Server, Networking fundamentals.\n\nOutcome: Faster and more consistent incident resolution, clearer escalation paths, and reusable operational documentation supporting reliability and team scalability.",
+          problem: "Inconsistent incident handling and tribal knowledge slowed resolution times and onboarding of new support staff.",
+          solution: "Designed structured runbooks, SOPs, and knowledge base articles for L1/L2 incidents across networking, Active Directory, Microsoft 365, Intune, and Windows Server, aligned to ITIL.",
+          outcome: "Faster, more consistent incident resolution with clearer escalation paths and reusable operational documentation.",
           technologies: ["Networking", "Cybersecurity"],
           githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
