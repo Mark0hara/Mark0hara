@@ -83,21 +83,21 @@ export const translations = {
     },
     skills: {
       title: "Technical Skills & Core Competencies",
-      subtitle: "Technologies, platforms and operational skills used across cloud infrastructure, enterprise IT support, networking, monitoring and automation.",
-      interactionHint: "Move the mouse or touch to interact — hover any tag to pause and read.",
+      subtitle: "Technical domains, platforms and operational expertise developed through enterprise IT support, cloud infrastructure, monitoring, networking and automation.",
+      interactionHint: "",
       groups: [
         {
           key: 'cloud',
-          title: 'Cloud & Infrastructure',
-          description: 'Design, deployment, monitoring and administration of AWS cloud infrastructure.',
+          title: 'Cloud Infrastructure',
+          description: 'Deployment, monitoring and administration of AWS cloud environments.',
           color: '#06b6d4',
           icon: 'cloud',
-          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups', 'NACLs']
+          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups']
         },
         {
           key: 'systems',
           title: 'Systems Administration',
-          description: 'Identity, endpoint and enterprise systems administration.',
+          description: 'Enterprise endpoint, identity and Microsoft ecosystem administration.',
           color: '#a78bfa',
           icon: 'server',
           items: ['Windows Server', 'Active Directory', 'Microsoft 365', 'Exchange Online', 'Intune', 'Group Policy (GPO)']
@@ -105,34 +105,34 @@ export const translations = {
         {
           key: 'networking',
           title: 'Networking',
-          description: 'Enterprise networking, troubleshooting and network services.',
+          description: 'Enterprise networking, segmentation and troubleshooting.',
           color: '#3b82f6',
           icon: 'network',
-          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT/PAT', 'OSPF', 'SNMP', 'Routing & Switching']
+          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT', 'OSPF', 'SNMP', 'Routing & Switching']
         },
         {
           key: 'monitoring',
           title: 'Monitoring & Observability',
-          description: 'Infrastructure monitoring, alerting and operational visibility.',
+          description: 'Monitoring, alerting and operational visibility.',
           color: '#22c55e',
           icon: 'activity',
-          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Alerting', 'Dashboards', 'Log Analysis']
+          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Dashboards', 'Log Analysis']
         },
         {
           key: 'automation',
           title: 'Automation',
-          description: 'Operational automation, scripting and cloud administration.',
+          description: 'Operational automation and scripting.',
           color: '#f59e0b',
           icon: 'terminal',
-          items: ['Python', 'PowerShell', 'Bash', 'Boto3']
+          items: ['Python', 'PowerShell', 'Bash']
         },
         {
           key: 'operations',
           title: 'IT Operations',
-          description: 'Operational support, incident response and process standardization.',
+          description: 'Operational support, incident response and process improvement.',
           color: '#ec4899',
           icon: 'book',
-          items: ['ITIL', 'Incident Management', 'Root Cause Analysis', 'Troubleshooting', 'Documentation', 'Runbooks', 'SOPs']
+          items: ['ITIL', 'Incident Management', 'Root Cause Analysis', 'Troubleshooting', 'Documentation', 'Runbooks']
         }
       ],
       technical: {
