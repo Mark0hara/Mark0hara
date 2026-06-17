@@ -30,10 +30,10 @@ const Index = () => {
           <Hero />
           <Skills />
           <Experience />
-          <Education />
           <Portfolio />
           <HowIWork />
           <Certifications />
+          <Education />
           <Contact />
         </main>
       </div>
