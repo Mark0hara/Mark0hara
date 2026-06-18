@@ -11,7 +11,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "Marco Antonio Jara Cuevas",
+      title: "MARCO ANTONIO JARA CUEVAS",
       subtitle: "IT Support Engineer | AWS Cloud | Infrastructure & Networking",
       availability: "Open to IT Support, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
@@ -350,7 +350,7 @@ export const translations = {
       jobs: [
         {
           company: "Fiverr",
-          companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Fiverr_Logo_09.2020.svg/2560px-Fiverr_Logo_09.2020.svg.png",
+          companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/500px-Fiverr_Logo_09.2020.svg.png",
           position: "Freelancer – IT Support Engineer",
           location: "Remoto",
           period: "Enero 2025 – Diciembre 2025",
