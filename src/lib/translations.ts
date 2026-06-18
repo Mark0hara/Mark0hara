@@ -47,7 +47,7 @@ export const translations = {
           companyLogo: "censo",
           position: "IT Support Engineer",
           location: "Santiago, Paseo Bulnes",
-          period: "January 2024 – July 2024",
+          period: "January 2024 – December 2024",
           achievements: [
             "Provided enterprise IT support across a distributed operational environment of 300+ end-user devices during national census operations.",
             "Executed device deployment, provisioning, and configuration to ensure operational readiness and continuity in critical field operations.",
@@ -270,7 +270,7 @@ export const translations = {
           outcome: "Reduced mean time to detect infrastructure incidents and standardized alerting across hybrid environments under ITIL-aligned workflows.",
           keySkills: ["Zabbix", "AWS CloudWatch", "Infrastructure Monitoring", "Incident Response"],
           technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/marco-jara",
+          githubUrl: "https://github.com/Mark0hara",
           status: "Completed"
         },
         {
@@ -359,7 +359,7 @@ export const translations = {
             "Entregué soporte técnico L1/L2 en sistemas Windows, redes y entornos Microsoft 365.",
             "Realicé troubleshooting de conectividad TCP/IP, acceso VPN e incidentes relacionados con seguridad.",
             "Implementé soluciones de monitoreo y documentación técnica para mejorar la visibilidad operativa.",
-            "Ejecuté análisis de causa raíz (RCA) y contribuí a la mejora continua de procesos."
+            "Ejecuté análisis de causa raíz (RCA) y apoyé a la mejora continua de procesos."
           ]
         },
         {
@@ -367,7 +367,7 @@ export const translations = {
           companyLogo: "censo",
           position: "IT Support Engineer",
           location: "Santiago, Paseo Bulnes",
-          period: "Enero 2024 – Julio 2024",
+          period: "Enero 2024 – Diciembre 2024",
           achievements: [
             "Soporte TI empresarial sobre un entorno operativo distribuido de más de 300 dispositivos durante operaciones del censo nacional.",
             "Despliegue, provisioning y configuración de equipos para asegurar la continuidad operativa en operaciones críticas de campo.",
@@ -590,7 +590,7 @@ export const translations = {
           outcome: "Reduje el tiempo medio de detección de incidentes de infraestructura y estandaricé las alertas en entornos híbridos bajo flujos de trabajo alineados a ITIL.",
           keySkills: ["Zabbix", "AWS CloudWatch", "Monitoreo de Infraestructura", "Respuesta a Incidentes"],
           technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/marco-jara",
+          githubUrl: "https://github.com/Mark0hara",
           status: "Completado"
         },
         {
