@@ -164,6 +164,26 @@ const Portfolio: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Key Skills (ATS reinforcement) */}
+                {project.keySkills && project.keySkills.length > 0 && (
+                  <div className="mb-6">
+                    <h4 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+                      {t.portfolios.keySkillsLabel}
+                    </h4>
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.keySkills.map((skill, i) => (
+                        <Badge
+                          key={i}
+                          variant="outline"
+                          className="px-2 py-0.5 text-[10px] font-medium bg-muted/30 border-border/60 text-muted-foreground rounded-md"
+                        >
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 {/* Action Buttons */}
                 <div className="flex gap-3">
                   <Button 
