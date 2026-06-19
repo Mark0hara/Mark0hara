@@ -347,11 +347,11 @@ export const translations = {
       contact: "Contacto",
     },
     hero: {
-      title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "IT Support Engineer | AWS Cloud | Infraestructura y Networking",
+      title: "Ingeniero de Soporte TI | Especialista en Cloud AWS",
+      subtitle: "Experiencia en soporte corporativo, infraestructura cloud, monitoreo, automatización y administración de redes.",
       availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
-      description: "Ingeniero en Telecomunicaciones y Redes con experiencia práctica en soporte TI empresarial, infraestructura cloud en AWS, monitoreo, networking y automatización. Con experiencia soportando entornos corporativos, desplegando infraestructura, resolviendo incidentes complejos y manteniendo la confiabilidad operativa mediante monitoreo y documentación estructurada.",
+      description: "Experiencia comprobada en soporte de operaciones a gran escala, despliegue de cientos de dispositivos, administración de entornos empresariales e implementación de soluciones de monitoreo con AWS y Zabbix. Enfocado en entregar servicios TI confiables, escalables y eficientes en entornos cloud y on-premise.",
       downloadCV: "Descargar CV",
       contactMe: "Hablemos",
       bullets: [
@@ -418,57 +418,73 @@ export const translations = {
       period: "2018 – 2023"
     },
     skills: {
-      title: "Habilidades Técnicas y Competencias Principales",
-      subtitle: "Dominios técnicos, plataformas y experiencia operativa desarrollados en soporte TI empresarial, infraestructura cloud, monitoreo, networking y automatización.",
+      title: "Competencias Principales",
+      subtitle: "Capacidades profesionales desarrolladas en soporte TI empresarial, infraestructura cloud, monitoreo, networking, automatización y operaciones alineadas a ITIL.",
       interactionHint: "",
       groups: [
         {
           key: 'cloud',
           title: 'Infraestructura Cloud',
-          description: 'Despliegue, monitoreo y administración de entornos cloud en AWS.',
+          description: 'Diseño, despliegue y administración de entornos AWS con EC2, VPC, IAM, S3 y CloudWatch.',
           color: '#06b6d4',
           icon: 'cloud',
-          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups']
-        },
-        {
-          key: 'systems',
-          title: 'Administración de Sistemas',
-          description: 'Administración de endpoints, identidad y ecosistema Microsoft empresarial.',
-          color: '#a78bfa',
-          icon: 'server',
-          items: ['Windows Server', 'Active Directory', 'Microsoft 365', 'Exchange Online', 'Intune', 'Group Policy (GPO)']
-        },
-        {
-          key: 'networking',
-          title: 'Networking',
-          description: 'Networking empresarial, segmentación y troubleshooting.',
-          color: '#3b82f6',
-          icon: 'network',
-          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT', 'OSPF', 'SNMP', 'Routing & Switching']
+          items: []
         },
         {
           key: 'monitoring',
           title: 'Monitoreo y Observabilidad',
-          description: 'Monitoreo, alertas y visibilidad operativa.',
+          description: 'Visibilidad operativa, alertas y detección de incidentes con Zabbix, CloudWatch, Grafana y análisis de logs.',
           color: '#22c55e',
           icon: 'activity',
-          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Dashboards', 'Análisis de Logs']
+          items: []
+        },
+        {
+          key: 'support',
+          title: 'Soporte TI Empresarial',
+          description: 'Soporte L1/L2, triage de incidentes y asistencia al usuario final en entornos corporativos Windows.',
+          color: '#0ea5e9',
+          icon: 'headset',
+          items: []
+        },
+        {
+          key: 'identity',
+          title: 'Active Directory y Microsoft 365',
+          description: 'Administración de usuarios e identidad, GPOs, Exchange Online y gestión de dispositivos con Intune.',
+          color: '#a78bfa',
+          icon: 'users',
+          items: []
+        },
+        {
+          key: 'networking',
+          title: 'Administración de Redes',
+          description: 'Routing, switching, VLANs, ACLs, NAT/PAT, VPN, DNS/DHCP y troubleshooting estructurado de redes.',
+          color: '#3b82f6',
+          icon: 'network',
+          items: []
         },
         {
           key: 'automation',
-          title: 'Automatización',
-          description: 'Automatización operativa y scripting.',
+          title: 'Automatización y Scripting',
+          description: 'Automatización operativa con Python (Boto3), PowerShell y Bash para eliminar tareas manuales repetitivas.',
           color: '#f59e0b',
           icon: 'terminal',
-          items: ['Python', 'PowerShell', 'Bash']
+          items: []
         },
         {
-          key: 'operations',
-          title: 'Operaciones TI',
-          description: 'Soporte operativo, respuesta a incidentes y mejora de procesos.',
+          key: 'itil',
+          title: 'Gestión de Incidentes ITIL',
+          description: 'Prácticas de incidentes, problemas y cambios: triage, escalamiento, RCA y revisión post-incidente.',
           color: '#ec4899',
+          icon: 'shield',
+          items: []
+        },
+        {
+          key: 'docs',
+          title: 'Documentación Técnica',
+          description: 'Runbooks, SOPs y artículos de base de conocimiento que estandarizan operaciones y aceleran el onboarding.',
+          color: '#f43f5e',
           icon: 'book',
-          items: ['ITIL', 'Gestión de Incidentes', 'Análisis de Causa Raíz', 'Troubleshooting', 'Documentación', 'Runbooks']
+          items: []
         }
       ],
       technical: {
