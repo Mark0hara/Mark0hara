@@ -11,11 +11,11 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "IT Support Engineer | AWS Cloud | Infrastructure & Networking",
+      title: "IT Support Engineer | AWS Cloud Enthusiast",
+      subtitle: "Experienced in enterprise IT support, cloud infrastructure, monitoring, automation, and network troubleshooting.",
       availability: "Open to IT Support, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
-      description: "Telecommunications and Network Engineer with hands-on experience in enterprise IT support, AWS cloud infrastructure, monitoring, networking and automation. Experienced supporting corporate environments, deploying infrastructure, troubleshooting complex incidents and maintaining operational reliability through monitoring and structured documentation.",
+      description: "Proven experience supporting large-scale operations, deploying hundreds of devices, managing enterprise environments, and building monitoring solutions using AWS and Zabbix. Focused on delivering reliable, scalable, and efficient IT services across cloud and on-premise infrastructure.",
       downloadCV: "Download CV",
       contactMe: "Let's Talk",
       bullets: [
@@ -82,57 +82,73 @@ export const translations = {
       period: "2018 – 2023"
     },
     skills: {
-      title: "Technical Skills & Core Competencies",
-      subtitle: "Technical domains, platforms and operational expertise developed through enterprise IT support, cloud infrastructure, monitoring, networking and automation.",
+      title: "Core Competencies",
+      subtitle: "Professional capabilities developed through enterprise IT support, cloud infrastructure, monitoring, networking, automation and ITIL-aligned operations.",
       interactionHint: "",
       groups: [
         {
           key: 'cloud',
           title: 'Cloud Infrastructure',
-          description: 'Deployment, monitoring and administration of AWS cloud environments.',
+          description: 'Design, deployment and administration of AWS environments with EC2, VPC, IAM, S3 and CloudWatch.',
           color: '#06b6d4',
           icon: 'cloud',
-          items: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'SNS', 'Security Groups']
-        },
-        {
-          key: 'systems',
-          title: 'Systems Administration',
-          description: 'Enterprise endpoint, identity and Microsoft ecosystem administration.',
-          color: '#a78bfa',
-          icon: 'server',
-          items: ['Windows Server', 'Active Directory', 'Microsoft 365', 'Exchange Online', 'Intune', 'Group Policy (GPO)']
-        },
-        {
-          key: 'networking',
-          title: 'Networking',
-          description: 'Enterprise networking, segmentation and troubleshooting.',
-          color: '#3b82f6',
-          icon: 'network',
-          items: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'VLANs', 'ACLs', 'NAT', 'OSPF', 'SNMP', 'Routing & Switching']
+          items: []
         },
         {
           key: 'monitoring',
           title: 'Monitoring & Observability',
-          description: 'Monitoring, alerting and operational visibility.',
+          description: 'Operational visibility, alerting and incident detection using Zabbix, CloudWatch, Grafana and log analysis.',
           color: '#22c55e',
           icon: 'activity',
-          items: ['Zabbix', 'CloudWatch', 'Grafana', 'Dashboards', 'Log Analysis']
+          items: []
+        },
+        {
+          key: 'support',
+          title: 'Enterprise IT Support',
+          description: 'L1/L2 support, incident triage and end-user assistance across corporate Windows environments.',
+          color: '#0ea5e9',
+          icon: 'headset',
+          items: []
+        },
+        {
+          key: 'identity',
+          title: 'Active Directory & Microsoft 365',
+          description: 'User and identity administration, GPOs, Exchange Online and Intune device management.',
+          color: '#a78bfa',
+          icon: 'users',
+          items: []
+        },
+        {
+          key: 'networking',
+          title: 'Network Administration',
+          description: 'Routing, switching, VLANs, ACLs, NAT/PAT, VPN, DNS/DHCP and structured network troubleshooting.',
+          color: '#3b82f6',
+          icon: 'network',
+          items: []
         },
         {
           key: 'automation',
-          title: 'Automation',
-          description: 'Operational automation and scripting.',
+          title: 'Automation & Scripting',
+          description: 'Operational automation with Python (Boto3), PowerShell and Bash to remove repetitive manual work.',
           color: '#f59e0b',
           icon: 'terminal',
-          items: ['Python', 'PowerShell', 'Bash']
+          items: []
         },
         {
-          key: 'operations',
-          title: 'IT Operations',
-          description: 'Operational support, incident response and process improvement.',
+          key: 'itil',
+          title: 'ITIL Incident Management',
+          description: 'Incident, problem and change practices: triage, escalation, RCA and post-incident review.',
           color: '#ec4899',
+          icon: 'shield',
+          items: []
+        },
+        {
+          key: 'docs',
+          title: 'Technical Documentation',
+          description: 'Runbooks, SOPs and knowledge base articles that standardize operations and accelerate onboarding.',
+          color: '#f43f5e',
           icon: 'book',
-          items: ['ITIL', 'Incident Management', 'Root Cause Analysis', 'Troubleshooting', 'Documentation', 'Runbooks']
+          items: []
         }
       ],
       technical: {
