@@ -2,7 +2,7 @@ import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Cloud, Server, Network, Activity, Terminal, Wrench, type LucideIcon } from 'lucide-react';
+import { Cloud, Server, Network, Activity, Terminal, Wrench, Headset, Users, ShieldCheck, BookOpen, type LucideIcon } from 'lucide-react';
 
 const ICONS: Record<string, LucideIcon> = {
   cloud: Cloud,
@@ -10,7 +10,11 @@ const ICONS: Record<string, LucideIcon> = {
   network: Network,
   activity: Activity,
   terminal: Terminal,
-  book: Wrench,
+  book: BookOpen,
+  headset: Headset,
+  users: Users,
+  shield: ShieldCheck,
+  wrench: Wrench,
 };
 
 const Skills: React.FC = () => {
@@ -60,17 +64,19 @@ const Skills: React.FC = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {group.description}
                 </p>
-                <div className="mt-auto flex flex-wrap gap-1.5">
-                  {group.items.map((item) => (
-                    <Badge
-                      key={item}
-                      variant="outline"
-                      className="px-2.5 py-0.5 text-[11px] font-medium bg-muted/40 border-border text-foreground rounded-md"
-                    >
-                      {item}
-                    </Badge>
-                  ))}
-                </div>
+                {group.items && group.items.length > 0 && (
+                  <div className="mt-auto flex flex-wrap gap-1.5">
+                    {group.items.map((item) => (
+                      <Badge
+                        key={item}
+                        variant="outline"
+                        className="px-2.5 py-0.5 text-[11px] font-medium bg-muted/40 border-border text-foreground rounded-md"
+                      >
+                        {item}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
               </article>
             );
           })}
