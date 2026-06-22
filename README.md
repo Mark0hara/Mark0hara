@@ -1,7 +1,7 @@
 <!-- Banner superior -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3A7BD5,100:00D2FF&height=200&section=header&text=Hi👋,%20I'm%20Marco%20Jara%20Cuevas&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
+  img src="https://capsule-render.vercel.app/api?type=waving&color=0:3A7BD5,100:00D2FF&height=200&section=header&text=Hi👋,%20I'm%20Marco%20Jara%20Cuevas&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
 </p>
 
 <h3 align="center">
