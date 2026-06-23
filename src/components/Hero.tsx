@@ -101,12 +101,6 @@ const Hero: React.FC = () => {
                 LinkedIn
               </a>
             </Button>
-            <Button size="lg" variant="ghost" asChild className="hover-glow">
-              <a href="/cv-marco-jara.pdf" target="_blank" rel="noopener noreferrer" download>
-                <FileDown className="w-4 h-4 mr-2" />
-                {t.hero.downloadCV}
-              </a>
-            </Button>
           </div>
 
           {/* Contact line */}

@@ -57,7 +57,7 @@ Typography: Inter for body, **Geist** or **Space Grotesk** for headings (Vercel/
 **`src/components/Hero.tsx`**
 - Role title: "IT Support Engineer | AWS Cloud Enthusiast | Infrastructure & Monitoring"
 - Tech badge row: AWS, Zabbix, Python, Networking, IT Support, Cloud Infrastructure (as pill chips)
-- CTA row: **LinkedIn**, **GitHub** (new), **Resume / Download CV**, **Contact**
+- CTA row: **LinkedIn**, **GitHub** (new), **Contact**
 - Remove typewriter (or keep static), remove floating blurs, remove parallax
 - Clean two-column or centered layout with generous whitespace
 
