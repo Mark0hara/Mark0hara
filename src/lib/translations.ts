@@ -16,7 +16,6 @@ export const translations = {
       availability: "Open to IT Support, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
       description: "Proven experience supporting large-scale operations, deploying hundreds of devices, managing enterprise environments, and building monitoring solutions using AWS and Zabbix. Focused on delivering reliable, scalable, and efficient IT services across cloud and on-premise infrastructure.",
-      downloadCV: "Download CV",
       contactMe: "Let's Talk",
       bullets: [
         "Enterprise IT Support — Windows Server, Microsoft 365, Active Directory, Intune",
@@ -352,7 +351,6 @@ export const translations = {
       availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
       location: "Santiago - Chile",
       description: "Experiencia comprobada en soporte de operaciones a gran escala, despliegue de cientos de dispositivos, administración de entornos empresariales e implementación de soluciones de monitoreo con AWS y Zabbix. Enfocado en entregar servicios TI confiables, escalables y eficientes en entornos cloud y on-premise.",
-      downloadCV: "Descargar CV",
       contactMe: "Hablemos",
       bullets: [
         "Soporte TI Empresarial — Windows Server, Microsoft 365, Active Directory, Intune",

@@ -24,7 +24,7 @@ const ParticlesBackground: React.FC = () => {
     const particleCount = 50;
     const maxDistance = 150;
 
-    // Create particles
+    // Crear particulas
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
@@ -38,22 +38,21 @@ const ParticlesBackground: React.FC = () => {
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Update and draw particles
       particles.forEach((particle, i) => {
         particle.x += particle.vx;
         particle.y += particle.vy;
 
-        // Bounce off edges
+        // Rebotes
         if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
         if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
 
-        // Draw particle
+        // dibujos de particulas
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(59, 130, 246, 0.3)'; // primary color
+        ctx.fillStyle = 'rgba(59, 130, 246, 0.3)'; // color primario
         ctx.fill();
 
-        // Draw connections
+        // conexioens de lineas
         particles.slice(i + 1).forEach((otherParticle) => {
           const dx = particle.x - otherParticle.x;
           const dy = particle.y - otherParticle.y;
