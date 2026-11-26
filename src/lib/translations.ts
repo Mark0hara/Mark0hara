@@ -13,7 +13,7 @@ export const translations = {
     hero: {
       title: "MARCO ANTONIO JARA CUEVAS",
       subtitle: "Experienced in enterprise IT support, cloud infrastructure, monitoring, automation, and network troubleshooting.",
-      availability: "Open to IT Support, Cloud Support & Infrastructure roles",
+      availability: "Open to IT Support, Networking, Cloud Support & Infrastructure roles",
       location: "Santiago - Chile",
       description: "Proven experience supporting large-scale operations, deploying hundreds of devices, managing enterprise environments, and building monitoring solutions using AWS and Zabbix. Focused on delivering reliable, scalable, and efficient IT services across cloud and on-premise infrastructure.",
       contactMe: "Let's Talk",
