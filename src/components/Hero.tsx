@@ -90,6 +90,12 @@ const Hero: React.FC = () => {
               <ArrowRight className="w-4 h-4 ml-2 arrow-icon" />
             </Button>
             <Button size="lg" variant="outline" asChild className="hover-glow">
+              <a href="/CV-Marco-Jara.pdf" download>
+                <FileDown className="w-4 h-4 mr-2" />
+                {t.hero.downloadCV}
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="hover-glow">
               <a href="https://github.com/Mark0hara" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 GitHub
