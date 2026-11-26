@@ -622,7 +622,7 @@ export const translations = {
           outcome: "Reduje el tiempo medio de detección de incidentes de infraestructura y estandaricé las alertas en entornos híbridos bajo flujos de trabajo alineados a ITIL.",
           keySkills: ["Zabbix", "AWS CloudWatch", "Monitoreo de Infraestructura", "Respuesta a Incidentes"],
           technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/Mark0hara",
+          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completado"
         },
         {
