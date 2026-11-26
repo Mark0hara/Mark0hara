@@ -307,7 +307,7 @@ export const translations = {
           solution: "Built multi-site labs in Cisco Packet Tracer and EVE-NG covering routing and switching, VLANs and inter-VLAN routing, ACLs, NAT/PAT and OSPF, and documented step-by-step troubleshooting procedures for common Layer 2 and Layer 3 issues.",
           outcome: "Consolidated practical CCNA-level networking experience and produced reusable troubleshooting workflows for enterprise network scenarios.",
           keySkills: ["Networking", "Routing & Switching", "VLANs", "OSPF", "Troubleshooting"],
-          technologies: ["Cisco", "Packet Tracer", "Networking"],
+          technologies: ["Cisco", "Packet Tracer", "EVE-NG", "Networking"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completed"
         },
@@ -643,7 +643,7 @@ export const translations = {
           solution: "Construí laboratorios multi-sitio en Cisco Packet Tracer y EVE-NG cubriendo routing y switching, VLANs y enrutamiento inter-VLAN, ACLs, NAT/PAT y OSPF, y documenté procedimientos de troubleshooting paso a paso para incidentes comunes de capa 2 y capa 3.",
           outcome: "Consolidé experiencia práctica en networking a nivel CCNA y generé flujos de troubleshooting reutilizables para escenarios de red empresariales.",
           keySkills: ["Networking", "Routing & Switching", "VLANs", "OSPF", "Troubleshooting"],
-          technologies: ["Cisco", "Packet Tracer", "Redes"],
+          technologies: ["Cisco", "Packet Tracer", "EVE-NG", "Redes"],
           githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
           status: "Completado"
         },
