@@ -5,8 +5,7 @@
 </p>
 
 <h3 align="center">
-IT Support Engineer • Cloud Infrastructure • Networking & Systems Administration
-</h3>
+IT Support Engineer | Infrastructure & Cloud Support | Enterprise Networking</h3>
 
 <p align="center">
 Passionate about cloud infrastructure, enterprise networking, monitoring solutions and technical support operations.
