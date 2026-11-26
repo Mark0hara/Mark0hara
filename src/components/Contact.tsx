@@ -57,14 +57,7 @@ const Contact: React.FC = () => {
       });
 
       toast({
-        title: 'Error',
-        description: t.contact.form.error,
-        variant: 'destructive'
-      });
-
-      toast({
-        title: 'Error',
-        description: 'Hubo un problema al enviar tu mensaje. Por favor, intenta de nuevo.',
+        title: t.contact.form.error,
         variant: 'destructive'
       });
     } finally {

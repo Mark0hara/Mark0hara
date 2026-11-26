@@ -6,6 +6,7 @@ import Education from '@/components/Education';
 import Skills from '@/components/Skills';
 import HowIWork from '@/components/HowIWork';
 import Certifications from '@/components/Certifications';
+import Languages from '@/components/Languages';
 import Portfolio from '@/components/Portfolio';
 import Contact from '@/components/Contact';
 import ScrollProgress from '@/components/ScrollProgress';
@@ -16,9 +17,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative bg-background text-foreground">
-      {/* Static, very subtle background accent */}
-      <div className="fixed inset-0 background-pattern pointer-events-none" />
-
+      <div className="fixed inset-0 background-pattern pointer-events-none" aria-hidden="true" />
       <ScrollProgress />
 
       <div
@@ -29,10 +28,11 @@ const Index = () => {
         <main>
           <Hero />
           <Skills />
-          <Experience />
           <Portfolio />
+          <Experience />
           <HowIWork />
           <Certifications />
+          <Languages />
           <Education />
           <Contact />
         </main>

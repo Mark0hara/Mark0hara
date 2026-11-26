@@ -61,11 +61,13 @@ const Skills: React.FC = () => {
                     {group.title}
                   </h3>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  {group.description}
-                </p>
+                {group.description && (
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    {group.description}
+                  </p>
+                )}
                 {group.items && group.items.length > 0 && (
-                  <div className="mt-auto flex flex-wrap gap-1.5">
+                  <div className="mt-4 flex flex-wrap gap-1.5">
                     {group.items.map((item) => (
                       <Badge
                         key={item}

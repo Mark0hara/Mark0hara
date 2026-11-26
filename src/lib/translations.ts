@@ -3,27 +3,110 @@ export const translations = {
   en: {
     nav: {
       home: "Home",
-      experience: "Experience",
-      skills: "Tech Stack",
-      methodology: "Methodology",
-      certifications: "Certifications",
+      skills: "Expertise",
       portfolios: "Projects",
+      experience: "Experience",
+      methodology: "How I Work",
+      certifications: "Certifications",
+      languages: "Languages",
+      education: "Education",
       contact: "Contact",
     },
     hero: {
-      title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "Experienced in enterprise IT support, cloud infrastructure, monitoring, automation, and network troubleshooting.",
-      availability: "Open to IT Support, Networking, Cloud Support & Infrastructure roles",
-      location: "Santiago - Chile",
-      description: "Proven experience supporting large-scale operations, deploying hundreds of devices, managing enterprise environments, and building monitoring solutions using AWS and Zabbix. Focused on delivering reliable, scalable, and efficient IT services across cloud and on-premise infrastructure.",
-      contactMe: "Let's Talk",
+      title: "Marco Jara Cuevas",
+      role: "IT Support Engineer",
+      subtitle: "Infrastructure & Cloud Support | Enterprise Networking",
+      availability: "Open to IT Support, Infrastructure, Cloud Support and Network Support roles",
+      location: "Santiago, Chile",
+      description: "IT Support Engineer with experience in technical support, incident resolution, Microsoft 365 administration and IT operations. Hands-on work with infrastructure monitoring, networking and AWS services. Focused on operational continuity, troubleshooting and clear documentation.",
       downloadCV: "Download CV",
-      bullets: [
-        "Enterprise IT Support — Windows Server, Microsoft 365, Active Directory, Intune",
-        "Cloud Infrastructure — AWS EC2, VPC, CloudWatch, Auto Scaling, S3, IAM",
-        "Monitoring & Observability — Zabbix, Grafana, CloudWatch, SNS alerting",
-        "Enterprise Networking — Routing & Switching, VLANs, ACLs, NAT/PAT, OSPF, TCP/IP, DNS, DHCP, VPN and troubleshooting."
-      ]
+      emailMe: "Email me",
+    },
+    skills: {
+      title: "Technical Expertise",
+      subtitle: "Technical capabilities applied to IT support, infrastructure, networking, monitoring and cloud operations.",
+      groups: [
+        {
+          key: "support",
+          title: "IT Support & Operations",
+          description: "",
+          color: "#0ea5e9",
+          icon: "headset",
+          items: ["Incident management", "Troubleshooting", "Remote support", "Ticketing", "ITIL practices", "Documentation"],
+        },
+        {
+          key: "microsoft",
+          title: "Microsoft & Systems",
+          description: "",
+          color: "#a78bfa",
+          icon: "server",
+          items: ["Microsoft 365", "Exchange", "Active Directory", "Intune", "Windows", "Windows Server", "Linux", "VMware"],
+        },
+        {
+          key: "networking",
+          title: "Networking",
+          description: "",
+          color: "#3b82f6",
+          icon: "network",
+          items: ["TCP/IP", "VLAN", "Routing & Switching", "OSPF", "ACL", "NAT/PAT", "DNS", "DHCP", "VPN", "Cisco"],
+        },
+        {
+          key: "cloud",
+          title: "Cloud (AWS)",
+          description: "",
+          color: "#06b6d4",
+          icon: "cloud",
+          items: ["VPC", "IAM", "SNS", "CloudWatch", "EC2 (lab)", "S3 (lab)"],
+        },
+        {
+          key: "monitoring",
+          title: "Monitoring & Automation",
+          description: "",
+          color: "#22c55e",
+          icon: "activity",
+          items: ["Zabbix", "Grafana", "SNMPv3", "Python", "PowerShell", "Bash"],
+        },
+        {
+          key: "additional",
+          title: "Additional exposure",
+          description: "",
+          color: "#f59e0b",
+          icon: "wrench",
+          items: ["Docker", "AWS Lambda", "DynamoDB"],
+        },
+      ],
+    },
+    portfolios: {
+      title: "Featured Projects",
+      subtitle: "Infrastructure monitoring and AWS metrics work, with implementation details and verified repository access where available.",
+      problemLabel: "Problem",
+      solutionLabel: "Solution",
+      implementationLabel: "Implementation",
+      outcomeLabel: "Results",
+      technologiesUsed: "Technologies",
+      viewCode: "View Repository",
+      projects: [
+        {
+          title: "Infrastructure Monitoring with Zabbix & Grafana",
+          context: "SC Informática · June 2023 – January 2024",
+          problem: "Network and equipment failures and abnormal resource usage needed to be detected quickly.",
+          solution: "Zabbix appliance on AlmaLinux monitoring six Linux and Windows virtual machines over SNMPv3, with Grafana dashboards.",
+          implementation: "Deployed on premises, then migrated to AWS. Email and Telegram alerts for network outages. SNS and CloudWatch notifications for virtual machine usage and cost.",
+          outcome: "Detected a NAS copy job running twice a day that drove unusually high disk usage. Identified unnecessary processes saturating CPU and disk writes on computers, improving equipment use. Outages triggered immediate notifications.",
+          technologies: ["Zabbix", "Grafana", "SNMPv3", "Linux", "AWS", "SNS", "CloudWatch", "Telegram"],
+          githubUrl: "",
+        },
+        {
+          title: "Network Metrics to AWS CloudWatch",
+          context: "",
+          problem: "Collect basic availability and traffic data from network devices in CloudWatch.",
+          solution: "Python script that pings devices and reads SNMP values using a community string.",
+          implementation: "Devices and OIDs are defined in a YAML file. Results are published as custom CloudWatch metrics with boto3.",
+          outcome: "",
+          technologies: ["Python", "AWS CloudWatch"],
+          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
+        },
+      ],
     },
     experience: {
       title: "Professional Experience",
@@ -31,183 +114,80 @@ export const translations = {
         {
           company: "Fiverr",
           companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/500px-Fiverr_Logo_09.2020.svg.png",
-          position: "Freelancer – IT Support Engineer",
+          position: "Freelance – IT Support & Infrastructure",
           location: "Remote",
-          period: "January 2025 – December 2025",
+          period: "January 2025 – October 2026",
           achievements: [
-            "Provided remote IT support to 50+ international clients through Fiverr.",
-            "Resolved Windows, Microsoft 365, networking and connectivity incidents in remote environments.",
-            "Troubleshot VPN, DNS, DHCP, TCP/IP and endpoint-related issues.",
-            "Created technical documentation and step-by-step procedures to reduce recurring incidents.",
-            "Maintained high client satisfaction through effective communication and timely resolution."
-          ]
+            "Supported 50+ international clients remotely.",
+            "Resolved L1/L2 incidents in Windows and Linux environments.",
+            "Diagnosed hardware, software, Microsoft 365, TCP/IP and VPN issues.",
+            "Configured networks and applications and documented each intervention.",
+          ],
         },
         {
           company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
-          position: "IT Support Engineer",
-          location: "Santiago, Paseo Bulnes",
-          period: "January 2024 – December 2024",
+          position: "IT Support Manager / Infrastructure Support",
+          location: "Santiago, Chile",
+          period: "January 2024 – January 2025 · Census 2024",
           achievements: [
-            "Provided enterprise IT support across a distributed operational environment of 300+ end-user devices during national census operations.",
-            "Executed device deployment, provisioning, and configuration to ensure operational readiness and continuity in critical field operations.",
-            "Performed real-time monitoring, incident triage, escalation, and resolution following ITIL-aligned processes.",
-            "Diagnosed and resolved hardware, software, connectivity, and end-user incidents under strict response-time requirements.",
-            "Maintained technical documentation, operational runbooks, and knowledge base entries for field support teams.",
-            "Contributed to operational reliability and incident reduction through structured troubleshooting and proactive monitoring."
-          ]
+            "Provided L1/L2 support in a critical national operation, managing incidents and requests through ticketing.",
+            "Prepared, configured, deployed and supported 300+ networked devices for end users.",
+            "Diagnosed hardware, software, operating system, peripheral and connectivity failures.",
+            "Tracked inventory and documented procedures and solutions under ITIL guidelines.",
+          ],
         },
         {
           company: "SC Informática",
-          companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
-          position: "IT Support Technician",
-          location: "Santiago, Macul",
-          period: "May 2023 – December 2023",
+          companyLogo: "/logos/sc-informatica.jpg",
+          position: "Project Engineer / IT Administrator",
+          location: "Santiago, Chile",
+          period: "June 2023 – January 2024",
           achievements: [
-            "Delivered hardware and software support, equipment maintenance, and end-user assistance in a professional services environment.",
-            "Administered Windows desktop environments, including user accounts, drivers, updates, and standard productivity software.",
-            "Provided on-site and remote technical support, resolving incidents related to operating systems, peripherals, and connectivity.",
-            "Managed incident tickets from intake to resolution, ensuring clear communication with users and accurate problem documentation.",
-            "Applied systematic troubleshooting to diagnose hardware failures, software conflicts, and basic network issues.",
-            "Built foundational systems administration experience supporting day-to-day business operations."
-          ]
-        }
-      ]
-    },
-    education: {
-      title: "Education",
-      degree: "Telecommunications, Connectivity and Network Engineering",
-      university: "INACAP TECHNOLOGICAL UNIVERSITY",
-      location: "Santiago, Center",
-      period: "2018 – 2023"
-    },
-    skills: {
-      title: "Core Competencies",
-      subtitle: "Professional capabilities developed through enterprise IT support, cloud infrastructure, monitoring, networking, automation and ITIL-aligned operations.",
-      interactionHint: "",
-      groups: [
-        {
-          key: 'cloud',
-          title: 'Cloud Infrastructure',
-          description: 'Design, deployment and administration of AWS environments with EC2, VPC, IAM, S3 and CloudWatch.',
-          color: '#06b6d4',
-          icon: 'cloud',
-          items: []
+            "Administered Microsoft 365 users, access and licences, and supported Active Directory and Windows Server.",
+            "Implemented network and equipment monitoring with Zabbix and Grafana, with email and Telegram alerts.",
+            "Deployed Windows 10/11 corporate images and migrated mail accounts and user profiles.",
+            "Provided L1/L2 support, implemented infrastructure and managed client requests through ticketing.",
+          ],
         },
         {
-          key: 'monitoring',
-          title: 'Monitoring & Observability',
-          description: 'Operational visibility, alerting and incident detection using Zabbix, CloudWatch, Grafana and log analysis.',
-          color: '#22c55e',
-          icon: 'activity',
-          items: []
+          company: "Walmart Chile – SuperBodega aCuenta",
+          companyLogo: "",
+          position: "Treasury Supervisor (additional experience)",
+          location: "Part-time, weekends",
+          period: "September 2024 – Present",
+          achievements: [
+            "Resolve operational contingencies in real time and coordinate teams to restore service.",
+            "Oversee cash custody, closing and reconciliation controls.",
+          ],
         },
-        {
-          key: 'support',
-          title: 'Enterprise IT Support',
-          description: 'L1/L2 support, incident triage and end-user assistance across corporate Windows environments.',
-          color: '#0ea5e9',
-          icon: 'headset',
-          items: []
-        },
-        {
-          key: 'identity',
-          title: 'Active Directory & Microsoft 365',
-          description: 'User and identity administration, GPOs, Exchange Online and Intune device management.',
-          color: '#a78bfa',
-          icon: 'users',
-          items: []
-        },
-        {
-          key: 'networking',
-          title: 'Network Administration',
-          description: 'Routing, switching, VLANs, ACLs, NAT/PAT, VPN, DNS/DHCP and structured network troubleshooting.',
-          color: '#3b82f6',
-          icon: 'network',
-          items: []
-        },
-        {
-          key: 'automation',
-          title: 'Automation & Scripting',
-          description: 'Operational automation with Python (Boto3), PowerShell and Bash to remove repetitive manual work.',
-          color: '#f59e0b',
-          icon: 'terminal',
-          items: []
-        },
-        {
-          key: 'itil',
-          title: 'ITIL Incident Management',
-          description: 'Incident, problem and change practices: triage, escalation, RCA and post-incident review.',
-          color: '#ec4899',
-          icon: 'shield',
-          items: []
-        },
-        {
-          key: 'docs',
-          title: 'Technical Documentation',
-          description: 'Runbooks, SOPs and knowledge base articles that standardize operations and accelerate onboarding.',
-          color: '#f43f5e',
-          icon: 'book',
-          items: []
-        }
       ],
-      technical: {
-        title: "Technical Skills",
-        cloud: {
-          title: "Cloud Platforms",
-          items: ["AWS (EC2, S3, IAM, VPC, Lambda)", "CloudWatch", "Cost Explorer", "SNS"]
-        },
-        security: {
-          title: "Security & Compliance",
-          items: ["IAM Policies", "Security Groups", "NACLs", "Incident Response"]
-        },
-        networking: {
-          title: "Enterprise Networking",
-          items: ["Routing & Switching", "VLANs", "ACLs", "NAT/PAT", "OSPF", "TCP/IP", "DNS", "DHCP", "VPN", "Troubleshooting"]
-        },
-        database: {
-          title: "Systems & Identity",
-          items: ["Windows Server", "Active Directory", "Group Policy (GPO)", "Microsoft 365", "Exchange Online", "Intune"]
-        },
-        support: {
-          title: "Monitoring",
-          items: ["Zabbix", "CloudWatch Dashboards", "SNS Alerts", "Log Analysis"]
-        },
-        programming: {
-          title: "Automation",
-          items: ["Python (Boto3)", "Bash", "PowerShell"]
-        }
-      },
-      soft: {
-        title: "Professional Skills",
-        items: ["Systematic troubleshooting under pressure", "Root cause analysis (RCA)", "Clear incident communication", "Priority-based triage", "Cross-team collaboration", "ITIL-aligned workflows", "Attention to detail in logs and metrics", "Runbook and SOP creation", "Client-facing technical support", "Continuous learning mindset"]
-      }
     },
     methodology: {
       title: "How I Work",
-      subtitle: "Structured troubleshooting methodology for cloud and infrastructure incidents",
+      subtitle: "A structured approach to restoring service, communicating clearly and preventing recurring issues.",
       steps: [
         {
           title: "1. Detect & Triage",
-          description: "Alert fires from CloudWatch or Zabbix. I classify severity (P1–P4), identify blast radius, and determine if immediate action or escalation is needed.",
-          icon: "alert"
+          description: "Receive the ticket or monitoring alert, assess impact and priority, and decide whether to escalate.",
+          icon: "alert",
         },
         {
           title: "2. Investigate & Isolate",
-          description: "Check CloudWatch logs, EC2 instance status, security groups, and network configs. Reproduce the issue. Narrow down to the failing component — is it compute, network, IAM, or application-level?",
-          icon: "search"
+          description: "Gather evidence from logs, metrics and the user, then narrow the fault to device, system, network or service.",
+          icon: "search",
         },
         {
-          title: "3. Resolve & Document",
-          description: "Apply the fix: restart services, adjust IAM policies, modify security groups, scale resources. Validate resolution with metrics. Document RCA, timeline, and preventive actions in the knowledge base.",
-          icon: "check"
+          title: "3. Resolve & Verify",
+          description: "Apply the fix, confirm recovery with the affected users and close the ticket.",
+          icon: "check",
         },
         {
-          title: "4. Prevent & Automate",
-          description: "Create CloudWatch alarms for early detection. Write Boto3 scripts to automate repetitive fixes. Update runbooks so the next engineer can resolve it faster.",
-          icon: "shield"
-        }
-      ]
+          title: "4. Document & Improve",
+          description: "Record cause and solution, and identify repetitive issues that can be prevented or automated.",
+          icon: "shield",
+        },
+      ],
     },
     certifications: {
       title: "Certifications",
@@ -219,39 +199,84 @@ export const translations = {
           name: "AWS Certified Cloud Practitioner",
           logo: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png",
           status: "Completed",
-          credlyUrl: "https://www.credly.com/badges/c81c5fdb-1736-413e-b37c-316ed9d9e985/linked_in_profile"
+          meta: "",
+          credlyUrl: "https://www.credly.com/badges/c81c5fdb-1736-413e-b37c-316ed9d9e985/linked_in_profile",
+          certificateUrl: "",
+          pdfPath: "",
         },
         {
-          name: "Advanced English C1 (EF SET)",
-          logo: "https://pbs.twimg.com/profile_images/1846105019013013504/XUA9kTZh_400x400.jpg",
+          name: "Google IT Support Professional Certificate",
+          logo: "",
           status: "Completed",
-          certificateUrl: "https://cert.efset.org/ZWypQE",
-          pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
+          meta: "",
+          credlyUrl: "",
+          certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/D229BVZHNN3D",
+          pdfPath: "",
         },
         {
-          name: "Data Network Security - Specialization",
+          name: "Data Network Security",
           logo: "https://www.acreditta.com/_next/image?url=https%3A%2F%2Facreditta-rutas-prod.s3.amazonaws.com%2Fmedia%2Fpublic%2Fbadge_templates%2Fimages%2F1640_badge_template_4ad4f3a4-1cbb-4493-b92a-4df013da5f7d%2Fmedium.png%3Ftime%3D1766074817936&w=1920&q=75",
           status: "Completed",
+          meta: "Desafío Latam / Talento Digital · 204 hours · 2025",
+          credlyUrl: "",
           certificateUrl: "https://www.acreditta.com/credential/4eac24dc-ed6c-4483-8084-30e6da7a4bdd",
-          pdfPath: "/certificates/Certificado_Seguridad.pdf"
+          pdfPath: "/certificates/Certificado_Seguridad.pdf",
         },
         {
-          name: "AWS Solutions Architect Associate",
+          name: "EF SET English C1",
+          logo: "/logos/efset.jpg",
+          status: "Completed",
+          meta: "Reading and listening · 68/100 · 2025",
+          credlyUrl: "",
+          certificateUrl: "https://cert.efset.org/ZWypQE",
+          pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf",
+        },
+        {
+          name: "AWS Certified Solutions Architect – Associate",
           logo: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png",
-          status: "In Progress"
-        }
-      ]
+          status: "In Progress",
+          meta: "",
+          credlyUrl: "",
+          certificateUrl: "",
+          pdfPath: "",
+        },
+        {
+          name: "AWS Certified CloudOps Engineer – Associate",
+          logo: "",
+          status: "In Progress",
+          meta: "",
+          credlyUrl: "",
+          certificateUrl: "",
+          pdfPath: "",
+        },
+        {
+          name: "Cisco CCNA renewal",
+          logo: "",
+          status: "In Progress",
+          meta: "Originally earned in 2020 · Expired",
+          credlyUrl: "",
+          certificateUrl: "",
+          pdfPath: "",
+        },
+      ],
     },
     languages: {
       title: "Languages",
       items: {
         spanish: "Spanish: Native",
-        english: "English: Advanced (C1)"
-      }
+        english: "English: Professional working proficiency (B2)",
+      },
+    },
+    education: {
+      title: "Education",
+      degree: "Telecommunications, Connectivity and Network Engineering",
+      university: "INACAP",
+      location: "Santiago, Chile",
+      period: "Graduated June 2023",
     },
     contact: {
-      title: "Available for Cloud Roles",
-      subtitle: "Open to Cloud Support Engineer, Cloud Engineer, and Infrastructure roles. Let's connect.",
+      title: "Let's Connect",
+      subtitle: "Open to IT Support, Infrastructure Support, Cloud Support and Network Support roles.",
       form: {
         name: "Your Name",
         email: "Your Email",
@@ -260,106 +285,117 @@ export const translations = {
         send: "Send Message",
         sending: "Sending...",
         success: "Message sent successfully!",
-        error: "Error sending message. Please try again."
-      }
-    },
-    portfolios: {
-      title: "Projects",
-      subtitle: "Real-world cloud infrastructure, monitoring, and networking projects demonstrating hands-on engineering skills.",
-      technologiesUsed: "Stack",
-      problemLabel: "Problem",
-      solutionLabel: "Solution",
-      outcomeLabel: "Outcome",
-      keySkillsLabel: "Key Skills",
-      viewCode: "View Code",
-      cta: {
-        title: "Let's Build Something Together",
-        subtitle: "Open to collaborating on cloud infrastructure and monitoring projects.",
-        button: "Get In Touch"
+        error: "Error sending message. Please try again.",
       },
-      projects: [
-        {
-          icon: "🖥️",
-          title: "Zabbix Enterprise Monitoring",
-          problem: "Limited visibility across on-premise and AWS infrastructure delayed incident detection and made root cause analysis difficult for the operations team.",
-          solution: "Deployed a centralized Zabbix server on AWS EC2 with Windows and Linux agents, configured custom templates, triggers and severity-based alerting, and integrated notifications through CloudWatch and SNS.",
-          outcome: "Reduced mean time to detect infrastructure incidents and standardized alerting across hybrid environments under ITIL-aligned workflows.",
-          keySkills: ["Zabbix", "AWS CloudWatch", "Infrastructure Monitoring", "Incident Response"],
-          technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completed"
-        },
-        {
-          icon: "☁️",
-          title: "AWS Infrastructure Architecture",
-          problem: "Workloads running in a single Availability Zone without automatic recovery exposed services to downtime and offered no clear view of resource health.",
-          solution: "Designed and deployed a multi-AZ AWS architecture with EC2 Auto Scaling behind an Application Load Balancer, a segmented VPC with public and private subnets, hardened Security Groups, least-privilege IAM roles and CloudWatch metrics with SNS alerting.",
-          outcome: "Eliminated single points of failure for compute workloads and enabled real-time visibility of CPU, network and instance health from a single CloudWatch dashboard.",
-          keySkills: ["AWS", "EC2", "VPC", "CloudWatch", "Cloud Infrastructure"],
-          technologies: ["AWS", "Python"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completed"
-        },
-        {
-          icon: "🌐",
-          title: "Enterprise Networking Lab (CCNA-Level)",
-          problem: "Routing, segmentation and access-control designs needed to be validated on realistic enterprise topologies before applying changes in production-like environments.",
-          solution: "Built multi-site labs in Cisco Packet Tracer and EVE-NG covering routing and switching, VLANs and inter-VLAN routing, ACLs, NAT/PAT and OSPF, and documented step-by-step troubleshooting procedures for common Layer 2 and Layer 3 issues.",
-          outcome: "Consolidated practical CCNA-level networking experience and produced reusable troubleshooting workflows for enterprise network scenarios.",
-          keySkills: ["Networking", "Routing & Switching", "VLANs", "OSPF", "Troubleshooting"],
-          technologies: ["Cisco", "Packet Tracer", "EVE-NG", "Networking"],
-          githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
-          status: "Completed"
-        },
-        {
-          icon: "⚙️",
-          title: "Cloud & Systems Automation Toolkit",
-          problem: "Recurring operational tasks across AWS and Microsoft 365 consumed support hours and introduced inconsistencies when executed manually by different engineers.",
-          solution: "Built a toolkit of Python, PowerShell and Bash scripts to automate AWS resource inventory, IAM auditing, EC2 and S3 lifecycle actions, and Microsoft 365 and Active Directory user provisioning, with standardized logging for every execution.",
-          outcome: "Reduced manual effort on repetitive cloud and identity tasks and produced consistent, auditable execution records across environments.",
-          keySkills: ["Python", "PowerShell", "AWS", "Active Directory", "Automation"],
-          technologies: ["Python", "AWS", "Linux"],
-          githubUrl: "https://github.com/Mark0hara",
-          status: "Completed"
-        },
-        {
-          icon: "📘",
-          title: "IT Operations Runbooks & Knowledge Base",
-          problem: "Inconsistent incident handling and undocumented institutional knowledge slowed resolution times and made onboarding new support engineers difficult.",
-          solution: "Documented structured runbooks, standard operating procedures and knowledge base articles for L1 and L2 incidents covering networking, Active Directory, Microsoft 365, Intune and Windows Server, aligned with ITIL incident and problem management practices.",
-          outcome: "Standardized incident response across the support team and shortened onboarding time for new engineers through reusable operational documentation.",
-          keySkills: ["ITIL", "Incident Management", "Documentation", "Active Directory", "Microsoft 365"],
-          technologies: ["Networking", "Cybersecurity"],
-          githubUrl: "https://github.com/Mark0hara",
-          status: "Completed"
-        }
-      ]
-    }
+    },
   },
   es: {
     nav: {
       home: "Inicio",
-      experience: "Experiencia",
-      skills: "Stack Técnico",
-      methodology: "Metodología",
-      certifications: "Certificaciones",
+      skills: "Conocimientos",
       portfolios: "Proyectos",
+      experience: "Experiencia",
+      methodology: "Cómo Trabajo",
+      certifications: "Certificaciones",
+      languages: "Idiomas",
+      education: "Educación",
       contact: "Contacto",
     },
     hero: {
-      title: "MARCO ANTONIO JARA CUEVAS",
-      subtitle: "Experiencia en soporte corporativo, infraestructura cloud, monitoreo, automatización y administración de redes.",
-      availability: "Disponible para roles de IT Support, Cloud Support e Infraestructura",
-      location: "Santiago - Chile",
-      description: "Experiencia comprobada en soporte de operaciones a gran escala, despliegue de cientos de dispositivos, administración de entornos empresariales e implementación de soluciones de monitoreo con AWS y Zabbix. Enfocado en entregar servicios TI confiables, escalables y eficientes en entornos cloud y on-premise.",
-      contactMe: "Hablemos",
+      title: "Marco Jara Cuevas",
+      role: "IT Support Engineer",
+      subtitle: "Soporte de Infraestructura y Cloud | Redes Empresariales",
+      availability: "Disponible para roles de Soporte TI, Infraestructura, Cloud Support y Soporte de Redes",
+      location: "Santiago, Chile",
+      description: "IT Support Engineer con experiencia en soporte técnico, resolución de incidentes, administración de Microsoft 365 y operaciones TI. Trabajo práctico con monitoreo de infraestructura, redes y servicios AWS. Enfocado en la continuidad operacional, el troubleshooting y una documentación clara.",
       downloadCV: "Descargar CV",
-      bullets: [
-        "Soporte TI Empresarial — Windows Server, Microsoft 365, Active Directory, Intune",
-        "Infraestructura Cloud — AWS EC2, VPC, CloudWatch, Auto Scaling, S3, IAM",
-        "Monitoreo y Observabilidad — Zabbix, Grafana, CloudWatch, alertas SNS",
-        "Networking (nivel CCNA) — Routing & Switching, VLANs, ACLs, NAT/PAT, troubleshooting"
-      ]
+      emailMe: "Enviarme un correo",
+    },
+    skills: {
+      title: "Conocimientos Técnicos",
+      subtitle: "Capacidades técnicas aplicadas al soporte TI, la infraestructura, las redes, el monitoreo y las operaciones cloud.",
+      groups: [
+        {
+          key: "support",
+          title: "Soporte TI y Operaciones",
+          description: "",
+          color: "#0ea5e9",
+          icon: "headset",
+          items: ["Gestión de incidentes", "Troubleshooting", "Soporte remoto", "Ticketing", "Prácticas ITIL", "Documentación"],
+        },
+        {
+          key: "microsoft",
+          title: "Microsoft y Sistemas",
+          description: "",
+          color: "#a78bfa",
+          icon: "server",
+          items: ["Microsoft 365", "Exchange", "Active Directory", "Intune", "Windows", "Windows Server", "Linux", "VMware"],
+        },
+        {
+          key: "networking",
+          title: "Redes",
+          description: "",
+          color: "#3b82f6",
+          icon: "network",
+          items: ["TCP/IP", "VLAN", "Routing & Switching", "OSPF", "ACL", "NAT/PAT", "DNS", "DHCP", "VPN", "Cisco"],
+        },
+        {
+          key: "cloud",
+          title: "Cloud (AWS)",
+          description: "",
+          color: "#06b6d4",
+          icon: "cloud",
+          items: ["VPC", "IAM", "SNS", "CloudWatch", "EC2 (laboratorio)", "S3 (laboratorio)"],
+        },
+        {
+          key: "monitoring",
+          title: "Monitoreo y Automatización",
+          description: "",
+          color: "#22c55e",
+          icon: "activity",
+          items: ["Zabbix", "Grafana", "SNMPv3", "Python", "PowerShell", "Bash"],
+        },
+        {
+          key: "additional",
+          title: "Experiencia adicional",
+          description: "",
+          color: "#f59e0b",
+          icon: "wrench",
+          items: ["Docker", "AWS Lambda", "DynamoDB"],
+        },
+      ],
+    },
+    portfolios: {
+      title: "Proyectos Destacados",
+      subtitle: "Trabajos de monitoreo de infraestructura y métricas en AWS, con detalles de implementación y acceso verificado al repositorio cuando está disponible.",
+      problemLabel: "Problema",
+      solutionLabel: "Solución",
+      implementationLabel: "Implementación",
+      outcomeLabel: "Resultados",
+      technologiesUsed: "Tecnologías",
+      viewCode: "Ver Repositorio",
+      projects: [
+        {
+          title: "Monitoreo de Infraestructura con Zabbix & Grafana",
+          context: "SC Informática · junio de 2023 – enero de 2024",
+          problem: "Era necesario detectar rápidamente fallas de red y equipos, además de un uso anormal de recursos.",
+          solution: "Appliance Zabbix en AlmaLinux para monitorear seis máquinas virtuales Linux y Windows mediante SNMPv3, con dashboards en Grafana.",
+          implementation: "Implementación on-premise y posterior migración a AWS. Alertas por correo electrónico y Telegram ante caídas de red. Notificaciones mediante SNS y CloudWatch para el uso de máquinas virtuales y los costos.",
+          outcome: "Detecté una tarea de copiado NAS ejecutándose dos veces al día que generaba un uso de disco inusualmente alto. Identifiqué procesos innecesarios que saturaban la CPU y las escrituras de disco en los equipos, mejorando su aprovechamiento. Las caídas generaban notificaciones inmediatas.",
+          technologies: ["Zabbix", "Grafana", "SNMPv3", "Linux", "AWS", "SNS", "CloudWatch", "Telegram"],
+          githubUrl: "",
+        },
+        {
+          title: "Métricas de Red hacia AWS CloudWatch",
+          context: "",
+          problem: "Recopilar datos básicos de disponibilidad y tráfico de dispositivos de red en CloudWatch.",
+          solution: "Script de Python que ejecuta ping a los dispositivos y lee valores SNMP mediante un community string.",
+          implementation: "Los dispositivos y OID se definen en un archivo YAML. Los resultados se publican como métricas personalizadas de CloudWatch con boto3.",
+          outcome: "",
+          technologies: ["Python", "AWS CloudWatch"],
+          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
+        },
+      ],
     },
     experience: {
       title: "Experiencia Profesional",
@@ -367,183 +403,80 @@ export const translations = {
         {
           company: "Fiverr",
           companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/500px-Fiverr_Logo_09.2020.svg.png",
-          position: "Freelancer – IT Support Engineer",
+          position: "Freelance – Soporte TI e Infraestructura",
           location: "Remoto",
-          period: "Enero 2025 – Diciembre 2025",
+          period: "Enero de 2025 – octubre de 2026",
           achievements: [
-            "Atendí a más de 50 clientes internacionales con altos niveles de satisfacción.",
-            "Entregué soporte técnico L1/L2 en sistemas Windows, redes y entornos Microsoft 365.",
-            "Realicé troubleshooting de conectividad TCP/IP, acceso VPN e incidentes relacionados con seguridad.",
-            "Implementé soluciones de monitoreo y documentación técnica para mejorar la visibilidad operativa.",
-            "Ejecuté análisis de causa raíz (RCA) y apoyé a la mejora continua de procesos."
-          ]
+            "Brindé soporte remoto a más de 50 clientes internacionales.",
+            "Resolví incidentes N1/N2 en entornos Windows y Linux.",
+            "Diagnostiqué problemas de hardware, software, Microsoft 365, TCP/IP y VPN.",
+            "Configuré redes y aplicaciones, y documenté cada intervención.",
+          ],
         },
         {
           company: "Instituto Nacional de Estadísticas (INE)",
           companyLogo: "censo",
-          position: "IT Support Engineer",
-          location: "Santiago, Paseo Bulnes",
-          period: "Enero 2024 – Diciembre 2024",
+          position: "Gestor de Soporte TI / Soporte de Infraestructura",
+          location: "Santiago, Chile",
+          period: "Enero de 2024 – enero de 2025 · Censo 2024",
           achievements: [
-            "Soporte TI empresarial sobre un entorno operativo distribuido de más de 300 dispositivos durante operaciones del censo nacional.",
-            "Despliegue, provisioning y configuración de equipos para asegurar la continuidad operativa en operaciones críticas de campo.",
-            "Monitoreo en tiempo real, triage de incidentes, escalamiento y resolución siguiendo procesos alineados a ITIL.",
-            "Diagnóstico y resolución de incidentes de hardware, software, conectividad y soporte al usuario final con tiempos de respuesta exigentes.",
-            "Mantenimiento de documentación técnica, runbooks operativos y artículos de base de conocimiento para equipos de soporte en terreno.",
-            "Contribución a la confiabilidad operativa y a la reducción de incidentes mediante troubleshooting estructurado y monitoreo proactivo."
-          ]
+            "Brindé soporte N1/N2 en una operación nacional crítica, gestionando incidentes y requerimientos mediante ticketing.",
+            "Preparé, configuré, desplegué y soporté más de 300 dispositivos conectados en red para usuarios finales.",
+            "Diagnostiqué fallas de hardware, software, sistemas operativos, periféricos y conectividad.",
+            "Controlé inventario y documenté procedimientos y soluciones bajo lineamientos ITIL.",
+          ],
         },
         {
           company: "SC Informática",
-          companyLogo: "/public/logos/sc-informatica.png",
-          position: "IT Support Technician",
-          location: "Santiago, Macul",
-          period: "Mayo 2023 – Diciembre 2023",
+          companyLogo: "/logos/sc-informatica.jpg",
+          position: "Ingeniero de Proyectos / Administrador TI",
+          location: "Santiago, Chile",
+          period: "Junio de 2023 – enero de 2024",
           achievements: [
-            "Soporte de hardware y software, mantenimiento de equipos y asistencia al usuario final en un entorno de servicios profesionales.",
-            "Administración de entornos Windows: cuentas de usuario, drivers, actualizaciones y software de productividad estándar.",
-            "Soporte técnico presencial y remoto, resolviendo incidentes de sistemas operativos, periféricos y conectividad.",
-            "Gestión de tickets de incidentes desde la apertura hasta el cierre, con comunicación clara al usuario y documentación precisa.",
-            "Troubleshooting sistemático para diagnosticar fallas de hardware, conflictos de software y problemas básicos de red.",
-            "Bases sólidas de administración de sistemas en soporte a operaciones diarias del negocio."
-          ]
-        }
-      ]
-    },
-    education: {
-      title: "Educación",
-      degree: "Ingeniería en Telecomunicaciones, Conectividad y Redes",
-      university: "UNIVERSIDAD TECNOLÓGICA INACAP",
-      location: "Santiago, Centro",
-      period: "2018 – 2023"
-    },
-    skills: {
-      title: "Competencias Principales",
-      subtitle: "Capacidades profesionales desarrolladas en soporte TI empresarial, infraestructura cloud, monitoreo, networking, automatización y operaciones alineadas a ITIL.",
-      interactionHint: "",
-      groups: [
-        {
-          key: 'cloud',
-          title: 'Infraestructura Cloud',
-          description: 'Diseño, despliegue y administración de entornos AWS con EC2, VPC, IAM, S3 y CloudWatch.',
-          color: '#06b6d4',
-          icon: 'cloud',
-          items: []
+            "Administré usuarios, accesos y licencias de Microsoft 365, y soporté Active Directory y Windows Server.",
+            "Implementé monitoreo de redes y equipos con Zabbix y Grafana, con alertas por correo electrónico y Telegram.",
+            "Desplegué imágenes corporativas de Windows 10/11 y migré cuentas de correo y perfiles de usuario.",
+            "Brindé soporte N1/N2, implementé infraestructura y gestioné requerimientos de clientes mediante ticketing.",
+          ],
         },
         {
-          key: 'monitoring',
-          title: 'Monitoreo y Observabilidad',
-          description: 'Visibilidad operativa, alertas y detección de incidentes con Zabbix, CloudWatch, Grafana y análisis de logs.',
-          color: '#22c55e',
-          icon: 'activity',
-          items: []
+          company: "Walmart Chile – SuperBodega aCuenta",
+          companyLogo: "",
+          position: "Supervisor de Tesorería (experiencia adicional)",
+          location: "Jornada parcial, fines de semana",
+          period: "Septiembre de 2024 – actualidad",
+          achievements: [
+            "Resuelvo contingencias operacionales en tiempo real y coordino equipos para restablecer el servicio.",
+            "Superviso la custodia de dinero, los cierres y los controles de cuadratura.",
+          ],
         },
-        {
-          key: 'support',
-          title: 'Soporte TI Empresarial',
-          description: 'Soporte L1/L2, triage de incidentes y asistencia al usuario final en entornos corporativos Windows.',
-          color: '#0ea5e9',
-          icon: 'headset',
-          items: []
-        },
-        {
-          key: 'identity',
-          title: 'Active Directory y Microsoft 365',
-          description: 'Administración de usuarios e identidad, GPOs, Exchange Online y gestión de dispositivos con Intune.',
-          color: '#a78bfa',
-          icon: 'users',
-          items: []
-        },
-        {
-          key: 'networking',
-          title: 'Administración de Redes',
-          description: 'Routing, switching, VLANs, ACLs, NAT/PAT, VPN, DNS/DHCP y troubleshooting estructurado de redes.',
-          color: '#3b82f6',
-          icon: 'network',
-          items: []
-        },
-        {
-          key: 'automation',
-          title: 'Automatización y Scripting',
-          description: 'Automatización operativa con Python (Boto3), PowerShell y Bash para eliminar tareas manuales repetitivas.',
-          color: '#f59e0b',
-          icon: 'terminal',
-          items: []
-        },
-        {
-          key: 'itil',
-          title: 'Gestión de Incidentes ITIL',
-          description: 'Prácticas de incidentes, problemas y cambios: triage, escalamiento, RCA y revisión post-incidente.',
-          color: '#ec4899',
-          icon: 'shield',
-          items: []
-        },
-        {
-          key: 'docs',
-          title: 'Documentación Técnica',
-          description: 'Runbooks, SOPs y artículos de base de conocimiento que estandarizan operaciones y aceleran el onboarding.',
-          color: '#f43f5e',
-          icon: 'book',
-          items: []
-        }
       ],
-      technical: {
-        title: "Habilidades Técnicas",
-        cloud: {
-          title: "Plataformas Cloud",
-          items: ["AWS (EC2, S3, IAM, VPC, Lambda)", "CloudWatch", "Cost Explorer", "SNS"]
-        },
-        security: {
-          title: "Seguridad & Compliance",
-          items: ["Políticas IAM", "Security Groups", "NACLs", "Respuesta a Incidentes"]
-        },
-        networking: {
-          title: "Networking Empresarial",
-          items: ["Routing & Switching", "VLANs", "ACLs", "NAT/PAT", "OSPF", "TCP/IP", "DNS", "DHCP", "VPN", "Troubleshooting"]
-        },
-        database: {
-          title: "Sistemas e Identidad",
-          items: ["Windows Server", "Active Directory", "Group Policy (GPO)", "Microsoft 365", "Exchange Online", "Intune"]
-        },
-        support: {
-          title: "Monitoreo",
-          items: ["Zabbix", "Dashboards CloudWatch", "Alertas SNS", "Análisis de Logs"]
-        },
-        programming: {
-          title: "Automatización",
-          items: ["Python (Boto3)", "Bash", "PowerShell"]
-        }
-      },
-      soft: {
-        title: "Habilidades Profesionales",
-        items: ["Troubleshooting sistemático bajo presión", "Root cause analysis (RCA)", "Comunicación clara de incidentes", "Triage basado en prioridad", "Colaboración cross-team", "Flujos de trabajo alineados a ITIL", "Atención al detalle en logs y métricas", "Creación de runbooks y SOPs", "Soporte técnico orientado al cliente", "Mentalidad de aprendizaje continuo"]
-      }
     },
     methodology: {
       title: "Cómo Trabajo",
-      subtitle: "Metodología estructurada de troubleshooting para incidentes cloud e infraestructura",
+      subtitle: "Un enfoque estructurado para restablecer el servicio, comunicar con claridad y prevenir problemas recurrentes.",
       steps: [
         {
-          title: "1. Detectar & Triagear",
-          description: "Se dispara alerta desde CloudWatch o Zabbix. Clasifico severidad (P1–P4), identifico radio de impacto y determino si se requiere acción inmediata o escalamiento.",
-          icon: "alert"
+          title: "1. Detectar y Priorizar",
+          description: "Recibo el ticket o la alerta de monitoreo, evalúo el impacto y la prioridad, y decido si es necesario escalar.",
+          icon: "alert",
         },
         {
-          title: "2. Investigar & Aislar",
-          description: "Reviso logs de CloudWatch, estado de instancias EC2, security groups y configuraciones de red. Reproduzco el issue. Aíslo el componente fallando — ¿es compute, network, IAM o nivel de aplicación?",
-          icon: "search"
+          title: "2. Investigar y Aislar",
+          description: "Reúno evidencia de logs, métricas y del usuario, y acoto la falla al dispositivo, sistema, red o servicio.",
+          icon: "search",
         },
         {
-          title: "3. Resolver & Documentar",
-          description: "Aplico el fix: reiniciar servicios, ajustar políticas IAM, modificar security groups, escalar recursos. Valido resolución con métricas. Documento RCA, timeline y acciones preventivas en la knowledge base.",
-          icon: "check"
+          title: "3. Resolver y Verificar",
+          description: "Aplico la solución, confirmo la recuperación con los usuarios afectados y cierro el ticket.",
+          icon: "check",
         },
         {
-          title: "4. Prevenir & Automatizar",
-          description: "Creo alarmas CloudWatch para detección temprana. Escribo scripts Boto3 para automatizar fixes repetitivos. Actualizo runbooks para que el próximo ingeniero lo resuelva más rápido.",
-          icon: "shield"
-        }
-      ]
+          title: "4. Documentar y Mejorar",
+          description: "Registro la causa y la solución, e identifico problemas repetitivos que puedan prevenirse o automatizarse.",
+          icon: "shield",
+        },
+      ],
     },
     certifications: {
       title: "Certificaciones",
@@ -555,39 +488,84 @@ export const translations = {
           name: "AWS Certified Cloud Practitioner",
           logo: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png",
           status: "Completado",
-          credlyUrl: "https://www.credly.com/badges/c81c5fdb-1736-413e-b37c-316ed9d9e985/linked_in_profile"
+          meta: "",
+          credlyUrl: "https://www.credly.com/badges/c81c5fdb-1736-413e-b37c-316ed9d9e985/linked_in_profile",
+          certificateUrl: "",
+          pdfPath: "",
         },
         {
-          name: "Inglés Avanzado C1 (EF SET)",
-          logo: "/public/logos/ef-set.png",
+          name: "Google IT Support Professional Certificate",
+          logo: "",
           status: "Completado",
-          certificateUrl: "https://cert.efset.org/ZWypQE",
-          pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
+          meta: "",
+          credlyUrl: "",
+          certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/D229BVZHNN3D",
+          pdfPath: "",
         },
         {
-          name: "Seguridad En Redes De Datos - Especialidad",
+          name: "Seguridad en Redes de Datos",
           logo: "https://www.acreditta.com/_next/image?url=https%3A%2F%2Facreditta-rutas-prod.s3.amazonaws.com%2Fmedia%2Fpublic%2Fbadge_templates%2Fimages%2F1640_badge_template_4ad4f3a4-1cbb-4493-b92a-4df013da5f7d%2Fmedium.png%3Ftime%3D1766074817936&w=1920&q=75",
           status: "Completado",
+          meta: "Desafío Latam / Talento Digital · 204 horas · 2025",
+          credlyUrl: "",
           certificateUrl: "https://www.acreditta.com/credential/4eac24dc-ed6c-4483-8084-30e6da7a4bdd",
-          pdfPath: "/certificates/Certificado_Seguridad.pdf"
+          pdfPath: "/certificates/Certificado_Seguridad.pdf",
         },
         {
-          name: "AWS Solutions Architect Associate",
+          name: "EF SET English C1",
+          logo: "/logos/efset.jpg",
+          status: "Completado",
+          meta: "Lectura y comprensión auditiva · 68/100 · 2025",
+          credlyUrl: "",
+          certificateUrl: "https://cert.efset.org/ZWypQE",
+          pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf",
+        },
+        {
+          name: "AWS Certified Solutions Architect – Associate",
           logo: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png",
-          status: "En Progreso"
-        }
-      ]
+          status: "En progreso",
+          meta: "",
+          credlyUrl: "",
+          certificateUrl: "",
+          pdfPath: "",
+        },
+        {
+          name: "AWS Certified CloudOps Engineer – Associate",
+          logo: "",
+          status: "En progreso",
+          meta: "",
+          credlyUrl: "",
+          certificateUrl: "",
+          pdfPath: "",
+        },
+        {
+          name: "Renovación de Cisco CCNA",
+          logo: "",
+          status: "En progreso",
+          meta: "Obtenida en 2020 · Expirada",
+          credlyUrl: "",
+          certificateUrl: "",
+          pdfPath: "",
+        },
+      ],
     },
     languages: {
       title: "Idiomas",
       items: {
         spanish: "Español: Nativo",
-        english: "Inglés: Avanzado (C1)"
-      }
+        english: "Inglés: Competencia profesional (B2)",
+      },
+    },
+    education: {
+      title: "Educación",
+      degree: "Ingeniería en Telecomunicaciones, Conectividad y Redes",
+      university: "INACAP",
+      location: "Santiago, Chile",
+      period: "Titulado en junio de 2023",
     },
     contact: {
-      title: "Disponible para Roles Cloud",
-      subtitle: "Abierto a posiciones de Cloud Support Engineer, Cloud Engineer e Infraestructura. Conectemos.",
+      title: "Conectemos",
+      subtitle: "Disponible para roles de Soporte TI, Soporte de Infraestructura, Cloud Support y Soporte de Redes.",
       form: {
         name: "Tu Nombre",
         email: "Tu Correo",
@@ -596,82 +574,10 @@ export const translations = {
         send: "Enviar Mensaje",
         sending: "Enviando...",
         success: "¡Mensaje enviado exitosamente!",
-        error: "Error al enviar el mensaje. Por favor intenta de nuevo."
-      }
-    },
-    portfolios: {
-      title: "Proyectos",
-      subtitle: "Proyectos reales de infraestructura cloud, monitoreo y networking que demuestran habilidades de ingeniería práctica.",
-      technologiesUsed: "Stack",
-      problemLabel: "Problema",
-      solutionLabel: "Solución",
-      outcomeLabel: "Resultado",
-      keySkillsLabel: "Competencias Clave",
-      viewCode: "Ver Código",
-      cta: {
-        title: "Construyamos Algo Juntos",
-        subtitle: "Abierto a colaborar en proyectos de infraestructura cloud y monitoreo.",
-        button: "Conectemos"
+        error: "Error al enviar el mensaje. Por favor, intenta de nuevo.",
       },
-      projects: [
-        {
-          icon: "🖥️",
-          title: "Monitoreo Empresarial con Zabbix",
-          problem: "La visibilidad limitada entre la infraestructura on-premise y AWS retrasaba la detección de incidentes y dificultaba el análisis de causa raíz por parte del equipo de operaciones.",
-          solution: "Implementé un servidor Zabbix centralizado en AWS EC2 con agentes Windows y Linux, configuré templates personalizados, triggers y alertas por severidad, e integré notificaciones a través de CloudWatch y SNS.",
-          outcome: "Reduje el tiempo medio de detección de incidentes de infraestructura y estandaricé las alertas en entornos híbridos bajo flujos de trabajo alineados a ITIL.",
-          keySkills: ["Zabbix", "AWS CloudWatch", "Monitoreo de Infraestructura", "Respuesta a Incidentes"],
-          technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completado"
-        },
-        {
-          icon: "☁️",
-          title: "Arquitectura de Infraestructura AWS",
-          problem: "Cargas ejecutándose en una sola zona de disponibilidad y sin recuperación automática exponían los servicios a interrupciones y no entregaban una visión clara del estado de los recursos.",
-          solution: "Diseñé y desplegué una arquitectura AWS multi-AZ con EC2 Auto Scaling detrás de un Application Load Balancer, una VPC segmentada con subredes públicas y privadas, Security Groups endurecidos, roles IAM de mínimo privilegio y métricas en CloudWatch con alertas vía SNS.",
-          outcome: "Eliminé los puntos únicos de falla en las cargas de cómputo y habilité visibilidad en tiempo real de CPU, red y estado de instancias desde un único dashboard de CloudWatch.",
-          keySkills: ["AWS", "EC2", "VPC", "CloudWatch", "Infraestructura Cloud"],
-          technologies: ["AWS", "Python"],
-          githubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
-          status: "Completado"
-        },
-        {
-          icon: "🌐",
-          title: "Laboratorio de Networking Empresarial (Nivel CCNA)",
-          problem: "Los diseños de routing, segmentación y control de acceso requerían validarse sobre topologías empresariales realistas antes de aplicar cambios en entornos similares a producción.",
-          solution: "Construí laboratorios multi-sitio en Cisco Packet Tracer y EVE-NG cubriendo routing y switching, VLANs y enrutamiento inter-VLAN, ACLs, NAT/PAT y OSPF, y documenté procedimientos de troubleshooting paso a paso para incidentes comunes de capa 2 y capa 3.",
-          outcome: "Consolidé experiencia práctica en networking a nivel CCNA y generé flujos de troubleshooting reutilizables para escenarios de red empresariales.",
-          keySkills: ["Networking", "Routing & Switching", "VLANs", "OSPF", "Troubleshooting"],
-          technologies: ["Cisco", "Packet Tracer", "EVE-NG", "Redes"],
-          githubUrl: "https://gitlab.com/mark-o-hara/network-configs",
-          status: "Completado"
-        },
-        {
-          icon: "⚙️",
-          title: "Toolkit de Automatización Cloud y Sistemas",
-          problem: "Las tareas operativas recurrentes en AWS y Microsoft 365 consumían horas de soporte y generaban inconsistencias al ser ejecutadas manualmente por distintos ingenieros.",
-          solution: "Desarrollé un toolkit en Python, PowerShell y Bash para automatizar el inventario de recursos AWS, la auditoría de IAM, el ciclo de vida de EC2 y S3 y el aprovisionamiento de usuarios en Microsoft 365 y Active Directory, con logging estandarizado en cada ejecución.",
-          outcome: "Reduje el esfuerzo manual en tareas cloud e identidad repetitivas y generé registros de ejecución consistentes y auditables entre entornos.",
-          keySkills: ["Python", "PowerShell", "AWS", "Active Directory", "Automatización"],
-          technologies: ["Python", "AWS", "Linux"],
-          githubUrl: "https://github.com/Mark0hara",
-          status: "Completado"
-        },
-        {
-          icon: "📘",
-          title: "Runbooks y Base de Conocimiento de Operaciones TI",
-          problem: "El manejo inconsistente de incidentes y el conocimiento no documentado aumentaban los tiempos de resolución y dificultaban la incorporación de nuevos ingenieros de soporte.",
-          solution: "Documenté runbooks estructurados, procedimientos operativos estándar y artículos de base de conocimiento para incidentes L1 y L2 en networking, Active Directory, Microsoft 365, Intune y Windows Server, alineados con las prácticas ITIL de gestión de incidentes y problemas.",
-          outcome: "Estandaricé la respuesta a incidentes en el equipo de soporte y reduje el tiempo de onboarding de nuevos ingenieros mediante documentación operativa reutilizable.",
-          keySkills: ["ITIL", "Gestión de Incidentes", "Documentación", "Active Directory", "Microsoft 365"],
-          technologies: ["Redes", "Ciberseguridad"],
-          githubUrl: "https://github.com/Mark0hara",
-          status: "Completado"
-        }
-      ]
-    }
-  }
+    },
+  },
 };
 
 export type Language = keyof typeof translations;

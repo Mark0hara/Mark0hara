@@ -1,5 +1,5 @@
 // Language Context Provider — instant, clean fade
-import React, { createContext, useContext, useState, ReactNode, useCallback } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useCallback, useEffect } from 'react';
 import { translations, Language, TranslationKey } from '@/lib/translations';
 
 interface LanguageContextType {
@@ -23,6 +23,10 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       setLanguageState(lang);
       window.setTimeout(() => setIsTransitioning(false), 160);
     }, 140);
+  }, [language]);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
   }, [language]);
 
   return (

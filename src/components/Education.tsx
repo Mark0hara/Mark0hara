@@ -9,9 +9,10 @@ const Education: React.FC = () => {
   const cardAnimation = useScrollAnimation();
 
   return (
-    <section className="py-20">
+    <section id="education" className="py-20" aria-labelledby="education-title">
       <div className="container mx-auto px-4">
-        <h2 
+        <h2
+          id="education-title"
           ref={titleAnimation.ref as React.RefObject<HTMLHeadingElement>}
           className={`text-3xl md:text-4xl font-bold text-center mb-12 scroll-animate ${titleAnimation.isVisible ? 'visible' : ''}`}
         >
