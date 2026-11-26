@@ -27,32 +27,35 @@ const Portfolio: React.FC = () => {
     }
   };
 
-  const getTechnologyImage = (tech: string) => {
-    const images: { [key: string]: string } = {
-      'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-      'AWS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-      'AWS CloudWatch': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-      'AWS Cloud': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-      'Zabbix': 'https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png',
-      'Linux': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
-      'GNS3': 'https://www.gns3.com/assets/custom/gns3/images/logo-colour.png',
-      'Cisco': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/250px-Cisco_logo_blue_2016.svg.png',
-      'Packet Tracer': 'https://upload.wikimedia.org/wikipedia/en/d/dc/Cisco_Packet_Tracer_Icon.png',
-      'Networking': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
-      'Redes': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
-      'Cybersecurity': 'https://camo.githubusercontent.com/b414bdc1ade50385aa0166a1c3bf336fc488e4a75d206b437fdd3c0bf392304a/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f31303334392f31303334393735322e706e67',
-      'Ciberseguridad': 'https://camo.githubusercontent.com/b414bdc1ade50385aa0166a1c3bf336fc488e4a75d206b437fdd3c0bf392304a/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f31303334392f31303334393735322e706e67',
-      'OSPF': 'https://cdn-icons-png.flaticon.com/512/1183/1183621.png',
-      'Boto3': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-      'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-      'TypeScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-      'Firebase': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
-      'Vercel': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg',
-      'Lovable': 'https://lovable.app/favicon.ico',
-    };
-
-    return images[tech] || '';
+const getTechnologyImage = (tech: string) => {
+  const images: { [key: string]: string } = {
+    'AWS': '/logos/aws.svg',
+    'AWS Cloud': '/logos/aws.svg',
+    'AWS CloudWatch': '/logos/aws cloudwatch.svg',
+    'Python': '/logos/Python.svg',
+    'Linux': '/logos/Linux.svg',
+    'Zabbix': '/logos/zabbix_logo.svg',
+    'Cisco': '/logos/cisco.svg',
+    'Packet Tracer': '/logos/packettracer.svg',
+    'Networking': '/logos/networking.svg',
+    'Redes': '/logos/networking.svg',
+    'OSPF': '/logos/networking.svg',
+    'Cybersecurity': '/logos/cybersecurity.svg',
+    'Ciberseguridad': '/logos/cybersecurity.svg',
+    'GNS3': '/logos/GNS3.svg',
+    'Active Directory': '/logos/active directory.svg',
+    'Docker': '/logos/docker.svg',
+    'VMware': '/logos/vmware.svg',
+    'Terraform': '/logos/terraform.svg',
+    'Ansible': '/logos/ansible.svg',
+    'Firebase': '/logos/firebase.svg',
+    'React': '/logos/react.svg',
+    'TypeScript': '/logos/typescript.svg',
+    'Vercel': '/logos/vercel.svg',
   };
+
+  return images[tech] || '';
+};
 
   const isGitLabUrl = (url: string) => url.includes('gitlab.com');
 
