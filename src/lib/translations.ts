@@ -17,6 +17,7 @@ export const translations = {
       location: "Santiago - Chile",
       description: "Proven experience supporting large-scale operations, deploying hundreds of devices, managing enterprise environments, and building monitoring solutions using AWS and Zabbix. Focused on delivering reliable, scalable, and efficient IT services across cloud and on-premise infrastructure.",
       contactMe: "Let's Talk",
+      downloadCV: "Download CV",
       bullets: [
         "Enterprise IT Support — Windows Server, Microsoft 365, Active Directory, Intune",
         "Cloud Infrastructure — AWS EC2, VPC, CloudWatch, Auto Scaling, S3, IAM",
@@ -285,7 +286,7 @@ export const translations = {
           outcome: "Reduced mean time to detect infrastructure incidents and standardized alerting across hybrid environments under ITIL-aligned workflows.",
           keySkills: ["Zabbix", "AWS CloudWatch", "Infrastructure Monitoring", "Incident Response"],
           technologies: ["Zabbix", "AWS", "Linux"],
-          githubUrl: "https://github.com/Mark0hara",
+          ggithubUrl: "https://github.com/Mark0hara/Network-Infrastructure-Monitoring",
           status: "Completed"
         },
         {
@@ -352,6 +353,7 @@ export const translations = {
       location: "Santiago - Chile",
       description: "Experiencia comprobada en soporte de operaciones a gran escala, despliegue de cientos de dispositivos, administración de entornos empresariales e implementación de soluciones de monitoreo con AWS y Zabbix. Enfocado en entregar servicios TI confiables, escalables y eficientes en entornos cloud y on-premise.",
       contactMe: "Hablemos",
+      downloadCV: "Descargar CV",
       bullets: [
         "Soporte TI Empresarial — Windows Server, Microsoft 365, Active Directory, Intune",
         "Infraestructura Cloud — AWS EC2, VPC, CloudWatch, Auto Scaling, S3, IAM",
