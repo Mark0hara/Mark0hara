@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
         subject: formData.subject,
         message: formData.message,
         timestamp: serverTimestamp(),
-        status: 'new' 
+        status: 'new'
       });
 
       logEvent(analytics, 'form_submit', {
@@ -45,17 +45,21 @@ const Contact: React.FC = () => {
 
       toast({
         title: t.contact.form.success,
-        description: 'Tu mensaje ha sido enviado exitosamente.',
       });
 
       setFormData({ name: '', email: '', subject: '', message: '' });
 
     } catch (error) {
-      
       logEvent(analytics, 'form_submit', {
         form_name: 'contact_form',
         success: false,
-        error: error.message
+        error: error instanceof Error ? error.message : 'Unknown error'
+      });
+
+      toast({
+        title: 'Error',
+        description: t.contact.form.error,
+        variant: 'destructive'
       });
 
       toast({
@@ -86,16 +90,16 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 px-4 relative overflow-hidden">
       <div className="absolute inset-0 opacity-20 dark:opacity-20">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-floating" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-floating" style={{animationDelay: '3s'}} />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-floating" style={{ animationDelay: '3s' }} />
       </div>
-      
+
       {/* Animated Waves */}
       <div className="absolute bottom-0 left-0 right-0">
         <AnimatedWaves />
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
-        <h2 
+        <h2
           ref={titleAnimation.ref as React.RefObject<HTMLHeadingElement>}
           className={`text-3xl md:text-4xl font-bold text-center mb-4 scroll-animate ${titleAnimation.isVisible ? 'visible' : ''}`}
         >
@@ -109,7 +113,7 @@ const Contact: React.FC = () => {
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <div 
+          <div
             ref={formAnimation.ref as React.RefObject<HTMLDivElement>}
             className={`glass-card rounded-lg p-6 md:p-8 card-hover scroll-scale ${formAnimation.isVisible ? 'visible' : ''}`}
           >
@@ -158,8 +162,8 @@ const Contact: React.FC = () => {
                   className="bg-background/50 focus:border-glow-animate transition-all duration-300"
                 />
               </div>
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 disabled={isSubmitting}
                 className="w-full gradient-primary btn-hover-effect btn-shine ripple-effect transition-all duration-300 hover:-translate-y-1"
               >
@@ -183,84 +187,84 @@ const Contact: React.FC = () => {
             {(() => {
               const emailAnimation = useScrollAnimation();
               return (
-                <div 
+                <div
                   ref={emailAnimation.ref as React.RefObject<HTMLDivElement>}
                   className={`glass-card rounded-lg p-6 card-hover overlay-gradient scroll-scale ${emailAnimation.isVisible ? 'visible' : ''}`}
                 >
-              <div className="flex items-center gap-4 stagger-children">
-                <div className="p-3 rounded-lg gradient-primary">
-                  <Mail className="w-6 h-6 text-primary-foreground" />
+                  <div className="flex items-center gap-4 stagger-children">
+                    <div className="p-3 rounded-lg gradient-primary">
+                      <Mail className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Email</p>
+                      <a
+                        href="mailto:marco.antonio.jc2000@gmail.com"
+                        className="text-foreground hover:text-primary transition-colors underline-animate"
+                        onClick={() => handleSocialClick('email', 'marco.antonio.jc2000@gmail.com')}
+                      >
+                        marco.antonio.jc2000@gmail.com
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <a 
-                    href="mailto:marco.antonio.jc2000@gmail.com" 
-                    className="text-foreground hover:text-primary transition-colors underline-animate"
-                    onClick={() => handleSocialClick('email', 'marco.antonio.jc2000@gmail.com')}
-                  >
-                    marco.antonio.jc2000@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
               );
             })()}
 
             {(() => {
               const linkedinAnimation = useScrollAnimation();
               return (
-                <div 
+                <div
                   ref={linkedinAnimation.ref as React.RefObject<HTMLDivElement>}
                   className={`glass-card rounded-lg p-6 card-hover overlay-gradient scroll-scale ${linkedinAnimation.isVisible ? 'visible' : ''}`}
-                  style={{transitionDelay: '0.1s'}}
+                  style={{ transitionDelay: '0.1s' }}
                 >
-              <div className="flex items-center gap-4 stagger-children">
-                <div className="p-3 rounded-lg gradient-primary">
-                  <Linkedin className="w-6 h-6 text-primary-foreground" />
+                  <div className="flex items-center gap-4 stagger-children">
+                    <div className="p-3 rounded-lg gradient-primary">
+                      <Linkedin className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">LinkedIn</p>
+                      <a
+                        href="https://linkedin.com/in/markoharasba580"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground hover:text-primary transition-colors underline-animate"
+                        onClick={() => handleSocialClick('linkedin', 'https://linkedin.com/in/markoharasba580')}
+                      >
+                        /in/markoharasba580
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">LinkedIn</p>
-                   <a 
-                     href="https://linkedin.com/in/markoharasba580" 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="text-foreground hover:text-primary transition-colors underline-animate"
-                     onClick={() => handleSocialClick('linkedin', 'https://linkedin.com/in/markoharasba580')}
-                   >
-                     /in/Mark_O'Hara
-                   </a>
-                </div>
-              </div>
-            </div>
               );
             })()}
 
             {(() => {
               const githubAnimation = useScrollAnimation();
               return (
-                <div 
+                <div
                   ref={githubAnimation.ref as React.RefObject<HTMLDivElement>}
                   className={`glass-card rounded-lg p-6 card-hover overlay-gradient scroll-scale ${githubAnimation.isVisible ? 'visible' : ''}`}
-                  style={{transitionDelay: '0.2s'}}
+                  style={{ transitionDelay: '0.2s' }}
                 >
-              <div className="flex items-center gap-4 stagger-children">
-                <div className="p-3 rounded-lg gradient-primary">
-                  <Github className="w-6 h-6 text-primary-foreground" />
+                  <div className="flex items-center gap-4 stagger-children">
+                    <div className="p-3 rounded-lg gradient-primary">
+                      <Github className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">GitHub</p>
+                      <a
+                        href="https://github.com/Mark0hara"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground hover:text-primary transition-colors underline-animate"
+                        onClick={() => handleSocialClick('github', 'https://github.com/Mark0hara')}
+                      >
+                        Mark0hara
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">GitHub</p>
-                   <a 
-                     href="https://github.com/Mark0hara/MarkOHaraIT" 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                     className="text-foreground hover:text-primary transition-colors underline-animate"
-                     onClick={() => handleSocialClick('github', 'https://github.com/Mark0hara/MarkOHaraIT')}
-                   >
-                     MarkOHaraIT
-                   </a>
-                </div>
-              </div>
-            </div>
               );
             })()}
           </div>
