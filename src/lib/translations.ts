@@ -395,7 +395,7 @@ export const translations = {
         },
         {
           company: "SC Informática",
-          companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq0jqwe13eOQXgCORzN56MDNiMnURvVHxzMw&s",
+          companyLogo: "/public/logos/sc-informatica.png",
           position: "IT Support Technician",
           location: "Santiago, Macul",
           period: "Mayo 2023 – Diciembre 2023",
@@ -559,7 +559,7 @@ export const translations = {
         },
         {
           name: "Inglés Avanzado C1 (EF SET)",
-          logo: "https://pbs.twimg.com/profile_images/1846105019013013504/XUA9kTZh_400x400.jpg",
+          logo: "/public/logos/ef-set.png",
           status: "Completado",
           certificateUrl: "https://cert.efset.org/ZWypQE",
           pdfPath: "/certificates/EF_SET_Certificate_Marco_Jara.pdf"
